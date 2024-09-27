@@ -6,7 +6,7 @@ import Toybox.System;
 class TimeMasterView extends WatchUi.View {
     var mode = 1;  // Class-level mode
     var timer = 1800;  // 30 minutes in seconds
-    var elapsed = 0.2; // Elapsed time in hours
+    var elapsed = 0; // Elapsed time in hours
     
     var _mode_label; 
     var _timer_label;
@@ -24,9 +24,9 @@ class TimeMasterView extends WatchUi.View {
         _elapsed_label = findDrawableById("elapsed_label");  // Retrieve elapsed label
         
         System.println("TimeMasterView.mc --- Layout set, labels loaded");
-        setModeType(2);  // Example: Set mode to Outdoor
-        setTimer(259);  // Example: Set timer to 30:00 (1800 seconds)
-        setElapsedTime(110);  // Example: Set elapsed time to 2 hours (7200 seconds)
+        setModeType(1);  // Example: Set mode to Outdoor
+        setTimer(DataManager.getCurrentTimer());  // Example: Set timer to 30:00 (1800 seconds)
+        setElapsedTime(0);  // Example: Set elapsed time to 2 hours (7200 seconds)
     }
 
     function onUpdate(dc as Dc) as Void {

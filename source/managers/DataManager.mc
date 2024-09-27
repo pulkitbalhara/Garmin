@@ -39,4 +39,100 @@ class DataManager {
         System.println("DataManager.mc --- Saving TotalMinutesInvested to Properties: " + minutes);
         Application.Properties.setValue("TotalMinutesInvested", minutes);
     }
+
+
+    // Work time
+    static function getWorkTime() as Number {
+        return Application.Storage.getValue("WorkTime");
+    }
+
+    static function setWorkTime(time as Number) as Void {
+        Application.Storage.setValue("WorkTime", time);
+    }
+
+    // Outdoor time
+    static function getOutdoorTime() as Number {
+        return Application.Storage.getValue("OutdoorTime");
+    }
+
+    static function setOutdoorTime(time as Number) as Void {
+        Application.Storage.setValue("OutdoorTime", time);
+    }
+
+    // Learning time
+    static function getLearningTime() as Number {
+        return Application.Storage.getValue("LearningTime");
+    }
+
+    static function setLearningTime(time as Number) as Void {
+        Application.Storage.setValue("LearningTime", time);
+    }
+
+    // Miscellaneous time
+    static function getMiscllTime() as Number {
+        return Application.Storage.getValue("MiscllTime");
+    }
+
+    static function setMiscllTime(time as Number) as Void {
+        Application.Storage.setValue("MiscllTime", time);
+    }
+
+    static function getTimerDuration() as Number {
+        System.println("DataManager.mc --- Fetching TimerDuration from Properties");
+        return Application.Properties.getValue("TimerDuration");
+    }
+
+    // Saves the TimerDuration to the application properties
+    static function setTimerDuration(timerDuration as Number) as Void {
+        System.println("DataManager.mc --- Saving TimerDuration to Properties: " + timerDuration);
+        Application.Properties.setValue("TimerDuration", timerDuration);
+    }
+
+   static function initializeData() as Void {
+    // Check and initialize TimerDuration
+    var timerDuration = DataManager.getTimerDuration();
+    if (timerDuration == null) {
+        System.println("initializeData.mc --- TimerDuration is null, setting default to 1800");
+        DataManager.setTimerDuration(1800);  // Default to 1800 seconds (30 minutes)
+    } else {
+        System.println("initializeData.mc --- TimerDuration found: " + timerDuration);
+    }
+
+    // Check and initialize WorkTime
+    var workTime = DataManager.getWorkTime();
+    if (workTime == null) {
+        System.println("initializeData.mc --- WorkTime is null, setting default to 0");
+        DataManager.setWorkTime(0);  // Default to 0
+    } else {
+        System.println("initializeData.mc --- WorkTime found: " + workTime);
+    }
+
+    // Check and initialize OutdoorTime
+    var outdoorTime = DataManager.getOutdoorTime();
+    if (outdoorTime == null) {
+        System.println("initializeData.mc --- OutdoorTime is null, setting default to 0");
+        DataManager.setOutdoorTime(0);  // Default to 0
+    } else {
+        System.println("initializeData.mc --- OutdoorTime found: " + outdoorTime);
+    }
+
+    // Check and initialize LearningTime
+    var learningTime = DataManager.getLearningTime();
+    if (learningTime == null) {
+        System.println("initializeData.mc --- LearningTime is null, setting default to 0");
+        DataManager.setLearningTime(0);  // Default to 0
+    } else {
+        System.println("initializeData.mc --- LearningTime found: " + learningTime);
+    }
+
+    // Check and initialize MiscllTime
+    var miscllTime = DataManager.getMiscllTime();
+    if (miscllTime == null) {
+        System.println("initializeData.mc --- MiscllTime is null, setting default to 0");
+        DataManager.setMiscllTime(0);  // Default to 0
+    } else {
+        System.println("initializeData.mc --- MiscllTime found: " + miscllTime);
+    }
+}
+
 }
