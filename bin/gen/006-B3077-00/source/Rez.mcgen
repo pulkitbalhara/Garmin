@@ -19,6 +19,20 @@ module Rez {
 
             return [rez_cmp_local_text_mode_label, rez_cmp_local_text_timer_label, rez_cmp_local_text_elapsed_label] as Array<WatchUi.Drawable>;
         }
+
+        function ModeLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_1290504513 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>5, :text=>"Select Mode", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_2191618806 = new WatchUi.Text({:color=>Graphics.COLOR_YELLOW, :locX=>(240 * 0.5), :locY=>50, :text=>"Work", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_1453419610 = new WatchUi.Text({:color=>Graphics.COLOR_GREEN, :locX=>(240 * 0.5), :locY=>80, :text=>"Outdoor", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_1012150641 = new WatchUi.Text({:color=>Graphics.COLOR_BLUE, :locX=>(240 * 0.5), :locY=>110, :text=>"Learning", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_4060623466 = new WatchUi.Text({:color=>Graphics.COLOR_ORANGE, :locX=>(240 * 0.5), :locY=>140, :text=>"Miscellaneous", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            return [rez_cmp_local_text_1290504513, rez_cmp_local_text_2191618806, rez_cmp_local_text_1453419610, rez_cmp_local_text_1012150641, rez_cmp_local_text_4060623466] as Array<WatchUi.Drawable>;
+        }
     } // Layouts
 
     module Menus {
@@ -27,6 +41,17 @@ module Rez {
                 Menu.initialize();
                 addItem("Start Session", :item_1);
                 addItem("Settings", :item_2);
+                addItem("Change Mode", :item_3);
+            }
+        }
+
+        class ModeMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Work", :mode_1);
+                addItem("Outdoor", :mode_2);
+                addItem("Learning", :mode_3);
+                addItem("Miscellaneous", :mode_4);
             }
         }
     } // Menus

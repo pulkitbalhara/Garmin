@@ -5,4 +5,5 @@
     <property id="MinutesLearning" type="Number">0</property>
     <property id="MinutesMiscll" type="Number">0</property>
     <property id="CurrentTimer" type="Number">1800</property>  <!-- Initialize to 30 minutes -->
+    <property id="Mode" type="Number">1</property>  <!-- Mode initialized to Work -->
 </properties>

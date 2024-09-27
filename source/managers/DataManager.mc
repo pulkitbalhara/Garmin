@@ -1,20 +1,42 @@
 import Toybox.Application;
 import Toybox.Lang;
+import Toybox.System;
 
 class DataManager {
-    
-    // Get the current timer value, handle case where property doesn't exist yet
-    static function getCurrentTimer() as Number {
-        var value = Application.Properties.getValue("CurrentTimer");
-        if (value == null) {
-            Application.Properties.setValue("CurrentTimer", 1800);  // Initialize to 1800 seconds if not set
-            return 1800;
-        }
-        return value;
+
+    // Fetches the saved mode from the application properties
+    static function getMode() as Number {
+        System.println("DataManager.mc --- Fetching Mode from Properties");
+        return Application.Properties.getValue("Mode");
     }
 
-    // Set the current timer value
+    // Saves the mode to the application properties
+    static function setMode(mode as Number) as Void {
+        System.println("DataManager.mc --- Saving Mode to Properties: " + mode);
+        Application.Properties.setValue("Mode", mode);
+    }
+
+    // Fetches the current timer value
+    static function getCurrentTimer() as Number {
+        System.println("DataManager.mc --- Fetching Timer from Properties");
+        return Application.Properties.getValue("CurrentTimer");
+    }
+
+    // Saves the current timer value
     static function setCurrentTimer(timer as Number) as Void {
+        System.println("DataManager.mc --- Saving Timer to Properties: " + timer);
         Application.Properties.setValue("CurrentTimer", timer);
+    }
+
+    // Fetches the total invested time
+    static function getTotalMinutesInvested() as Number {
+        System.println("DataManager.mc --- Fetching TotalMinutesInvested from Properties");
+        return Application.Properties.getValue("TotalMinutesInvested");
+    }
+
+    // Saves the total invested time
+    static function setTotalMinutesInvested(minutes as Number) as Void {
+        System.println("DataManager.mc --- Saving TotalMinutesInvested to Properties: " + minutes);
+        Application.Properties.setValue("TotalMinutesInvested", minutes);
     }
 }

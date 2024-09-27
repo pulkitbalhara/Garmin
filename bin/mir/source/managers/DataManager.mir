@@ -2,66 +2,130 @@
 import Toybox.Application;
 [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 4; ]
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 5; ]
 class DataManager{
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 4; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 4; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 7; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 8; ]
+    static
+    function getMode() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_8_40_11_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 9 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager.mc --- Fetching Mode from Properties";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 10 8 ]
+        %tmp.4 = getm $.Toybox.Application;
+        %tmp.5 = getv %tmp.4 :Properties;
+        %tmp.6 = getv function %tmp.5 :getValue;
+        %tmp.7 = "Mode";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        ret %tmp.8;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_8_40_11_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 14; ]
+    static
+    function setMode(mode as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_14_52_17_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 15 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager.mc --- Saving Mode to Properties: ";
+        %tmp.5 = lgetv %mode;
+        %tmp.6 = add %tmp.3 %tmp.5;
+        invoke %tmp.1 %tmp.2(%tmp.6);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 16 8 ]
+        %tmp.7 = getm $.Toybox.Application;
+        %tmp.8 = getv %tmp.7 :Properties;
+        %tmp.9 = getv function %tmp.8 :setValue;
+        %tmp.10 = "Mode";
+        %tmp.12 = lgetv %mode;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.12);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_14_52_17_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 20; ]
     static
     function getCurrentTimer() as Number {
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_7_48_14_4_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 8 8 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_7_48_14_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_7_48_14_4_stop" ]
-        %value.1 = local;
-        %tmp.1 = getm $.Toybox.Application;
-        %tmp.2 = getv %tmp.1 :Properties;
-        %tmp.3 = getv function %tmp.2 :getValue;
-        %tmp.4 = "CurrentTimer";
-        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
-        lputv %value.1 %tmp.5;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 9 8 ]
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_9_8_12_8_if_stmt:
-        %tmp.7 = lgetv %value.1;
-        %tmp.8 = null;
-        %tmp.9 = eq %tmp.7 %tmp.8;
-        bf %tmp.9 @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_9_8_12_8_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_9_8_12_8_if_true:
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_9_27_12_8_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 10 12 ]
-        %tmp.10 = getm $.Toybox.Application;
-        %tmp.11 = getv %tmp.10 :Properties;
-        %tmp.12 = getv function %tmp.11 :setValue;
-        %tmp.13 = "CurrentTimer";
-        %tmp.14 = 1800;
-        invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 11 12 ]
-        %tmp.15 = 1800;
-        ret %tmp.15;
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_9_27_12_8_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_9_8_12_8_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_9_8_12_8_if_end:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 13 8 ]
-        %tmp.17 = lgetv %value.1;
-        ret %tmp.17;
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_7_48_14_4_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_20_48_23_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 21 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager.mc --- Fetching Timer from Properties";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 22 8 ]
+        %tmp.4 = getm $.Toybox.Application;
+        %tmp.5 = getv %tmp.4 :Properties;
+        %tmp.6 = getv function %tmp.5 :getValue;
+        %tmp.7 = "CurrentTimer";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        ret %tmp.8;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_20_48_23_4_stop:
     }
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 17; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 26; ]
     static
     function setCurrentTimer(timer as Number) as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_17_61_19_4_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 18 8 ]
-        %tmp.1 = getm $.Toybox.Application;
-        %tmp.2 = getv %tmp.1 :Properties;
-        %tmp.3 = getv function %tmp.2 :setValue;
-        %tmp.4 = "CurrentTimer";
-        %tmp.6 = lgetv %timer;
-        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
-D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_17_61_19_4_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_26_61_29_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 27 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager.mc --- Saving Timer to Properties: ";
+        %tmp.5 = lgetv %timer;
+        %tmp.6 = add %tmp.3 %tmp.5;
+        invoke %tmp.1 %tmp.2(%tmp.6);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 28 8 ]
+        %tmp.7 = getm $.Toybox.Application;
+        %tmp.8 = getv %tmp.7 :Properties;
+        %tmp.9 = getv function %tmp.8 :setValue;
+        %tmp.10 = "CurrentTimer";
+        %tmp.12 = lgetv %timer;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.12);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_26_61_29_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 32; ]
+    static
+    function getTotalMinutesInvested() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_32_56_35_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 33 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager.mc --- Fetching TotalMinutesInvested from Properties";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 34 8 ]
+        %tmp.4 = getm $.Toybox.Application;
+        %tmp.5 = getv %tmp.4 :Properties;
+        %tmp.6 = getv function %tmp.5 :getValue;
+        %tmp.7 = "TotalMinutesInvested";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        ret %tmp.8;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_32_56_35_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 38; ]
+    static
+    function setTotalMinutesInvested(minutes as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_38_71_41_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 39 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager.mc --- Saving TotalMinutesInvested to Properties: ";
+        %tmp.5 = lgetv %minutes;
+        %tmp.6 = add %tmp.3 %tmp.5;
+        invoke %tmp.1 %tmp.2(%tmp.6);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 40 8 ]
+        %tmp.7 = getm $.Toybox.Application;
+        %tmp.8 = getv %tmp.7 :Properties;
+        %tmp.9 = getv function %tmp.8 :setValue;
+        %tmp.10 = "TotalMinutesInvested";
+        %tmp.12 = lgetv %minutes;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.12);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_38_71_41_4_stop:
     }
 }
 [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 1; ]

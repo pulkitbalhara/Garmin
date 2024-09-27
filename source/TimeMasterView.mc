@@ -86,4 +86,6 @@ class TimeMasterView extends WatchUi.View {
         System.println("TimeMasterView.mc --- Elapsed time set to: " + formattedElapsedTime);
         WatchUi.requestUpdate();  // Refresh the UI to reflect the change
     }
+
+    
 }

@@ -1,4 +1,0 @@
-<menu id="MainMenu">
-    <menu-item id="item_1" label="Start Session" />
-    <menu-item id="item_2" label="Settings" />
-</menu>
