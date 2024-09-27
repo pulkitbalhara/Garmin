@@ -267,21 +267,21 @@ D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_70_38_77_0_stop:
     }
     [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 79; ]
     function countdown() as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_79_33_88_4_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 80 8 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_8_87_8_if_stmt:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_79_33_89_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 81 8 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_8_88_8_if_stmt:
         %tmp.2 = getv ? :_currentDuration;
         %tmp.3 = 0;
         %tmp.4 = gt %tmp.2 %tmp.3;
-        bf %tmp.4 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_8_87_8_if_false;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_8_87_8_if_true:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_34_85_8_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 81 12 ]
+        bf %tmp.4 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_8_88_8_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_8_88_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_34_86_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 82 12 ]
         %tmp.5 = getv self :_currentDuration;
         %tmp.6 = 1;
         %tmp.7 = sub %tmp.5 %tmp.6;
         putv self :_currentDuration dup %tmp.7;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 82 12 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 83 12 ]
         %tmp.8 = getm $.Toybox.System;
         %tmp.9 = getv function %tmp.8 :println;
         %tmp.10 = "TimeMasterDelegate.mc --- Timer: ";
@@ -290,307 +290,317 @@ D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_34_85_8_start:
         %tmp.14 = " seconds left";
         %tmp.15 = add %tmp.13 %tmp.14;
         invoke %tmp.8 %tmp.9(%tmp.15);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 83 12 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 84 12 ]
         %tmp.17 = getv ? :DataManager;
         %tmp.18 = getv function %tmp.17 :setCurrentTimer;
         %tmp.20 = getv ? :_currentDuration;
         invoke %tmp.17 %tmp.18(%tmp.20);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 84 12 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 85 12 ]
         %tmp.21 = self;
         %tmp.22 = getv function %tmp.21 :updateUI;
         invoke %tmp.21 %tmp.22();
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_34_85_8_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_8_87_8_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_8_87_8_if_false:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_85_15_87_8_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 86 12 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_34_86_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_8_88_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_8_88_8_if_false:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_86_15_88_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 87 12 ]
         %tmp.23 = self;
         %tmp.24 = getv function %tmp.23 :endSession;
         invoke %tmp.23 %tmp.24();
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_85_15_87_8_stop:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_80_8_87_8_if_end:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_79_33_88_4_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_86_15_88_8_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_81_8_88_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_79_33_89_4_stop:
     }
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 90; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 91; ]
     function endSession() as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 91 4 ]
-        %tmp.1 = getm $.Toybox.System;
-        %tmp.2 = getv function %tmp.1 :println;
-        %tmp.3 = "TimeMasterDelegate.mc --- Session ended";
-        invoke %tmp.1 %tmp.2(%tmp.3);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 92 4 ]
-        %tmp.4 = false;
-        putv self :time_started %tmp.4;
+        %tmp.2 = getv ? :AlertsManager;
+        %tmp.3 = getv function %tmp.2 :triggerDefaultAlert;
+        invoke %tmp.2 %tmp.3();
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 93 4 ]
-        %tmp.6 = getv ? :_timer;
-        %tmp.7 = getv function %tmp.6 :stop;
-        invoke %tmp.6 %tmp.7();
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 96 4 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_stop" ]
-        %elapsedTimeInSeconds.1 = local;
-        %tmp.9 = getv ? :DataManager;
-        %tmp.10 = getv function %tmp.9 :getTimerDuration;
-        %tmp.11 = invoke %tmp.9 %tmp.10();
-        lputv %elapsedTimeInSeconds.1 %tmp.11;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 97 4 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_stop" ]
-        %elapsedTimeInMinutes.2 = local;
-        %tmp.13 = lgetv %elapsedTimeInSeconds.1;
-        %tmp.14 = 60;
-        %tmp.15 = div %tmp.13 %tmp.14;
-        lputv %elapsedTimeInMinutes.2 %tmp.15;
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.6 = "TimeMasterDelegate.mc --- Session ended";
+        invoke %tmp.4 %tmp.5(%tmp.6);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 94 4 ]
+        %tmp.7 = false;
+        putv self :time_started %tmp.7;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 95 4 ]
+        %tmp.9 = getv ? :_timer;
+        %tmp.10 = getv function %tmp.9 :stop;
+        invoke %tmp.9 %tmp.10();
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 98 4 ]
-        %tmp.16 = getm $.Toybox.System;
-        %tmp.17 = getv function %tmp.16 :println;
-        %tmp.18 = "TimeMasterDelegate.mc --- Elapsed time: ";
-        %tmp.20 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.21 = add %tmp.18 %tmp.20;
-        %tmp.22 = " minutes";
-        %tmp.23 = add %tmp.21 %tmp.22;
-        invoke %tmp.16 %tmp.17(%tmp.23);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 101 4 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_stop" ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_stop" ]
+        %elapsedTimeInSeconds.1 = local;
+        %tmp.12 = getv ? :DataManager;
+        %tmp.13 = getv function %tmp.12 :getTimerDuration;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %elapsedTimeInSeconds.1 %tmp.14;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 99 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_stop" ]
+        %elapsedTimeInMinutes.2 = local;
+        %tmp.16 = lgetv %elapsedTimeInSeconds.1;
+        %tmp.17 = 60;
+        %tmp.18 = div %tmp.16 %tmp.17;
+        lputv %elapsedTimeInMinutes.2 %tmp.18;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 100 4 ]
+        %tmp.19 = getm $.Toybox.System;
+        %tmp.20 = getv function %tmp.19 :println;
+        %tmp.21 = "TimeMasterDelegate.mc --- Elapsed time: ";
+        %tmp.23 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.24 = add %tmp.21 %tmp.23;
+        %tmp.25 = " minutes";
+        %tmp.26 = add %tmp.24 %tmp.25;
+        invoke %tmp.19 %tmp.20(%tmp.26);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 103 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_stop" ]
         %mode.3 = local;
-        %tmp.25 = getv ? :DataManager;
-        %tmp.26 = getv function %tmp.25 :getMode;
-        %tmp.27 = invoke %tmp.25 %tmp.26();
-        lputv %mode.3 %tmp.27;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 102 4 ]
-        %tmp.28 = getm $.Toybox.System;
-        %tmp.29 = getv function %tmp.28 :println;
-        %tmp.30 = "TimeMasterDelegate.mc --- Current mode: ";
-        %tmp.32 = lgetv %mode.3;
-        %tmp.33 = add %tmp.30 %tmp.32;
-        invoke %tmp.28 %tmp.29(%tmp.33);
+        %tmp.28 = getv ? :DataManager;
+        %tmp.29 = getv function %tmp.28 :getMode;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        lputv %mode.3 %tmp.30;
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 104 4 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_4_120_4_if_stmt:
+        %tmp.31 = getm $.Toybox.System;
+        %tmp.32 = getv function %tmp.31 :println;
+        %tmp.33 = "TimeMasterDelegate.mc --- Current mode: ";
         %tmp.35 = lgetv %mode.3;
-        %tmp.36 = 1;
-        %tmp.37 = eq %tmp.35 %tmp.36;
-        bf %tmp.37 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_4_120_4_if_false;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_4_120_4_if_true:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_19_108_4_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 105 8 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_19_108_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_19_108_4_stop" ]
-        %currentWorkTime.4 = local;
-        %tmp.39 = getv ? :DataManager;
-        %tmp.40 = getv function %tmp.39 :getWorkTime;
-        %tmp.41 = invoke %tmp.39 %tmp.40();
-        lputv %currentWorkTime.4 %tmp.41;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 106 8 ]
-        %tmp.43 = getv ? :DataManager;
-        %tmp.44 = getv function %tmp.43 :setWorkTime;
-        %tmp.46 = lgetv %currentWorkTime.4;
-        %tmp.48 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.49 = add %tmp.46 %tmp.48;
-        invoke %tmp.43 %tmp.44(%tmp.49);
+        %tmp.36 = add %tmp.33 %tmp.35;
+        invoke %tmp.31 %tmp.32(%tmp.36);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 106 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_4_122_4_if_stmt:
+        %tmp.38 = lgetv %mode.3;
+        %tmp.39 = 1;
+        %tmp.40 = eq %tmp.38 %tmp.39;
+        bf %tmp.40 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_4_122_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_4_122_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_19_110_4_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 107 8 ]
-        %tmp.50 = getm $.Toybox.System;
-        %tmp.51 = getv function %tmp.50 :println;
-        %tmp.52 = "TimeMasterDelegate.mc --- Work time updated: ";
-        %tmp.54 = lgetv %currentWorkTime.4;
-        %tmp.56 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.57 = add %tmp.54 %tmp.56;
-        %tmp.58 = add %tmp.52 %tmp.57;
-        invoke %tmp.50 %tmp.51(%tmp.58);
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_19_108_4_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_4_120_4_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_4_120_4_if_false:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 108 11 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_11_120_4_if_stmt:
-        %tmp.60 = lgetv %mode.3;
-        %tmp.61 = 2;
-        %tmp.62 = eq %tmp.60 %tmp.61;
-        bf %tmp.62 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_11_120_4_if_false;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_11_120_4_if_true:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_26_112_4_start:
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_19_110_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_19_110_4_stop" ]
+        %currentWorkTime.4 = local;
+        %tmp.42 = getv ? :DataManager;
+        %tmp.43 = getv function %tmp.42 :getWorkTime;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        lputv %currentWorkTime.4 %tmp.44;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 108 8 ]
+        %tmp.46 = getv ? :DataManager;
+        %tmp.47 = getv function %tmp.46 :setWorkTime;
+        %tmp.49 = lgetv %currentWorkTime.4;
+        %tmp.51 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.52 = add %tmp.49 %tmp.51;
+        invoke %tmp.46 %tmp.47(%tmp.52);
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 109 8 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_26_112_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_26_112_4_stop" ]
-        %currentOutdoorTime.5 = local;
-        %tmp.64 = getv ? :DataManager;
-        %tmp.65 = getv function %tmp.64 :getOutdoorTime;
-        %tmp.66 = invoke %tmp.64 %tmp.65();
-        lputv %currentOutdoorTime.5 %tmp.66;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 110 8 ]
-        %tmp.68 = getv ? :DataManager;
-        %tmp.69 = getv function %tmp.68 :setOutdoorTime;
-        %tmp.71 = lgetv %currentOutdoorTime.5;
-        %tmp.73 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.74 = add %tmp.71 %tmp.73;
-        invoke %tmp.68 %tmp.69(%tmp.74);
+        %tmp.53 = getm $.Toybox.System;
+        %tmp.54 = getv function %tmp.53 :println;
+        %tmp.55 = "TimeMasterDelegate.mc --- Work time updated: ";
+        %tmp.57 = lgetv %currentWorkTime.4;
+        %tmp.59 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.60 = add %tmp.57 %tmp.59;
+        %tmp.61 = add %tmp.55 %tmp.60;
+        invoke %tmp.53 %tmp.54(%tmp.61);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_19_110_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_4_122_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_4_122_4_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 110 11 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_11_122_4_if_stmt:
+        %tmp.63 = lgetv %mode.3;
+        %tmp.64 = 2;
+        %tmp.65 = eq %tmp.63 %tmp.64;
+        bf %tmp.65 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_11_122_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_11_122_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_26_114_4_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 111 8 ]
-        %tmp.75 = getm $.Toybox.System;
-        %tmp.76 = getv function %tmp.75 :println;
-        %tmp.77 = "TimeMasterDelegate.mc --- Outdoor time updated: ";
-        %tmp.79 = lgetv %currentOutdoorTime.5;
-        %tmp.81 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.82 = add %tmp.79 %tmp.81;
-        %tmp.83 = add %tmp.77 %tmp.82;
-        invoke %tmp.75 %tmp.76(%tmp.83);
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_26_112_4_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_11_120_4_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_11_120_4_if_false:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 112 11 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_11_120_4_if_stmt:
-        %tmp.85 = lgetv %mode.3;
-        %tmp.86 = 3;
-        %tmp.87 = eq %tmp.85 %tmp.86;
-        bf %tmp.87 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_11_120_4_if_false;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_11_120_4_if_true:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_26_116_4_start:
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_26_114_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_26_114_4_stop" ]
+        %currentOutdoorTime.5 = local;
+        %tmp.67 = getv ? :DataManager;
+        %tmp.68 = getv function %tmp.67 :getOutdoorTime;
+        %tmp.69 = invoke %tmp.67 %tmp.68();
+        lputv %currentOutdoorTime.5 %tmp.69;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 112 8 ]
+        %tmp.71 = getv ? :DataManager;
+        %tmp.72 = getv function %tmp.71 :setOutdoorTime;
+        %tmp.74 = lgetv %currentOutdoorTime.5;
+        %tmp.76 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.77 = add %tmp.74 %tmp.76;
+        invoke %tmp.71 %tmp.72(%tmp.77);
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 113 8 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_26_116_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_26_116_4_stop" ]
-        %currentLearningTime.6 = local;
-        %tmp.89 = getv ? :DataManager;
-        %tmp.90 = getv function %tmp.89 :getLearningTime;
-        %tmp.91 = invoke %tmp.89 %tmp.90();
-        lputv %currentLearningTime.6 %tmp.91;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 114 8 ]
-        %tmp.93 = getv ? :DataManager;
-        %tmp.94 = getv function %tmp.93 :setLearningTime;
-        %tmp.96 = lgetv %currentLearningTime.6;
-        %tmp.98 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.99 = add %tmp.96 %tmp.98;
-        invoke %tmp.93 %tmp.94(%tmp.99);
+        %tmp.78 = getm $.Toybox.System;
+        %tmp.79 = getv function %tmp.78 :println;
+        %tmp.80 = "TimeMasterDelegate.mc --- Outdoor time updated: ";
+        %tmp.82 = lgetv %currentOutdoorTime.5;
+        %tmp.84 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.85 = add %tmp.82 %tmp.84;
+        %tmp.86 = add %tmp.80 %tmp.85;
+        invoke %tmp.78 %tmp.79(%tmp.86);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_26_114_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_11_122_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_11_122_4_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 114 11 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_11_122_4_if_stmt:
+        %tmp.88 = lgetv %mode.3;
+        %tmp.89 = 3;
+        %tmp.90 = eq %tmp.88 %tmp.89;
+        bf %tmp.90 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_11_122_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_11_122_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_26_118_4_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 115 8 ]
-        %tmp.100 = getm $.Toybox.System;
-        %tmp.101 = getv function %tmp.100 :println;
-        %tmp.102 = "TimeMasterDelegate.mc --- Learning time updated: ";
-        %tmp.104 = lgetv %currentLearningTime.6;
-        %tmp.106 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.107 = add %tmp.104 %tmp.106;
-        %tmp.108 = add %tmp.102 %tmp.107;
-        invoke %tmp.100 %tmp.101(%tmp.108);
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_26_116_4_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_11_120_4_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_11_120_4_if_false:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 116 11 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_11_120_4_if_stmt:
-        %tmp.110 = lgetv %mode.3;
-        %tmp.111 = 4;
-        %tmp.112 = eq %tmp.110 %tmp.111;
-        bf %tmp.112 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_11_120_4_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_11_120_4_if_true:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_26_120_4_start:
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_26_118_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_26_118_4_stop" ]
+        %currentLearningTime.6 = local;
+        %tmp.92 = getv ? :DataManager;
+        %tmp.93 = getv function %tmp.92 :getLearningTime;
+        %tmp.94 = invoke %tmp.92 %tmp.93();
+        lputv %currentLearningTime.6 %tmp.94;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 116 8 ]
+        %tmp.96 = getv ? :DataManager;
+        %tmp.97 = getv function %tmp.96 :setLearningTime;
+        %tmp.99 = lgetv %currentLearningTime.6;
+        %tmp.101 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.102 = add %tmp.99 %tmp.101;
+        invoke %tmp.96 %tmp.97(%tmp.102);
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 117 8 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_26_120_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_26_120_4_stop" ]
-        %currentMiscllTime.7 = local;
-        %tmp.114 = getv ? :DataManager;
-        %tmp.115 = getv function %tmp.114 :getMiscllTime;
-        %tmp.116 = invoke %tmp.114 %tmp.115();
-        lputv %currentMiscllTime.7 %tmp.116;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 118 8 ]
-        %tmp.118 = getv ? :DataManager;
-        %tmp.119 = getv function %tmp.118 :setMiscllTime;
-        %tmp.121 = lgetv %currentMiscllTime.7;
-        %tmp.123 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.124 = add %tmp.121 %tmp.123;
-        invoke %tmp.118 %tmp.119(%tmp.124);
+        %tmp.103 = getm $.Toybox.System;
+        %tmp.104 = getv function %tmp.103 :println;
+        %tmp.105 = "TimeMasterDelegate.mc --- Learning time updated: ";
+        %tmp.107 = lgetv %currentLearningTime.6;
+        %tmp.109 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.110 = add %tmp.107 %tmp.109;
+        %tmp.111 = add %tmp.105 %tmp.110;
+        invoke %tmp.103 %tmp.104(%tmp.111);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_26_118_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_11_122_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_11_122_4_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 118 11 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_11_122_4_if_stmt:
+        %tmp.113 = lgetv %mode.3;
+        %tmp.114 = 4;
+        %tmp.115 = eq %tmp.113 %tmp.114;
+        bf %tmp.115 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_11_122_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_11_122_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_26_122_4_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 119 8 ]
-        %tmp.125 = getm $.Toybox.System;
-        %tmp.126 = getv function %tmp.125 :println;
-        %tmp.127 = "TimeMasterDelegate.mc --- Miscellaneous time updated: ";
-        %tmp.129 = lgetv %currentMiscllTime.7;
-        %tmp.131 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.132 = add %tmp.129 %tmp.131;
-        %tmp.133 = add %tmp.127 %tmp.132;
-        invoke %tmp.125 %tmp.126(%tmp.133);
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_26_120_4_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_11_120_4_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_116_11_120_4_if_end:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_112_11_120_4_if_end:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_108_11_120_4_if_end:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_104_4_120_4_if_end:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 123 4 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_stop" ]
-        %totalTime.8 = local;
-        %tmp.135 = getv ? :DataManager;
-        %tmp.136 = getv function %tmp.135 :getTotalMinutesInvested;
-        %tmp.137 = invoke %tmp.135 %tmp.136();
-        lputv %totalTime.8 %tmp.137;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 124 4 ]
-        %tmp.139 = getv ? :DataManager;
-        %tmp.140 = getv function %tmp.139 :setTotalMinutesInvested;
-        %tmp.142 = lgetv %totalTime.8;
-        %tmp.144 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.145 = add %tmp.142 %tmp.144;
-        invoke %tmp.139 %tmp.140(%tmp.145);
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_26_122_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_26_122_4_stop" ]
+        %currentMiscllTime.7 = local;
+        %tmp.117 = getv ? :DataManager;
+        %tmp.118 = getv function %tmp.117 :getMiscllTime;
+        %tmp.119 = invoke %tmp.117 %tmp.118();
+        lputv %currentMiscllTime.7 %tmp.119;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 120 8 ]
+        %tmp.121 = getv ? :DataManager;
+        %tmp.122 = getv function %tmp.121 :setMiscllTime;
+        %tmp.124 = lgetv %currentMiscllTime.7;
+        %tmp.126 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.127 = add %tmp.124 %tmp.126;
+        invoke %tmp.121 %tmp.122(%tmp.127);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 121 8 ]
+        %tmp.128 = getm $.Toybox.System;
+        %tmp.129 = getv function %tmp.128 :println;
+        %tmp.130 = "TimeMasterDelegate.mc --- Miscellaneous time updated: ";
+        %tmp.132 = lgetv %currentMiscllTime.7;
+        %tmp.134 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.135 = add %tmp.132 %tmp.134;
+        %tmp.136 = add %tmp.130 %tmp.135;
+        invoke %tmp.128 %tmp.129(%tmp.136);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_26_122_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_11_122_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_118_11_122_4_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_114_11_122_4_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_110_11_122_4_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_106_4_122_4_if_end:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 125 4 ]
-        %tmp.146 = getm $.Toybox.System;
-        %tmp.147 = getv function %tmp.146 :println;
-        %tmp.148 = "TimeMasterDelegate.mc --- Total invested time updated: ";
-        %tmp.150 = lgetv %totalTime.8;
-        %tmp.152 = lgetv %elapsedTimeInMinutes.2;
-        %tmp.153 = add %tmp.150 %tmp.152;
-        %tmp.154 = add %tmp.148 %tmp.153;
-        invoke %tmp.146 %tmp.147(%tmp.154);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 128 4 ]
-        %tmp.156 = getv ? :DataManager;
-        %tmp.157 = getv function %tmp.156 :getTimerDuration;
-        %tmp.158 = invoke %tmp.156 %tmp.157();
-        putv self :_currentDuration %tmp.158;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 129 4 ]
-        %tmp.159 = self;
-        %tmp.160 = getv function %tmp.159 :updateUI;
-        invoke %tmp.159 %tmp.160();
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_90_34_130_0_stop:
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_stop" ]
+        %totalTime.8 = local;
+        %tmp.138 = getv ? :DataManager;
+        %tmp.139 = getv function %tmp.138 :getTotalMinutesInvested;
+        %tmp.140 = invoke %tmp.138 %tmp.139();
+        lputv %totalTime.8 %tmp.140;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 126 4 ]
+        %tmp.142 = getv ? :DataManager;
+        %tmp.143 = getv function %tmp.142 :setTotalMinutesInvested;
+        %tmp.145 = lgetv %totalTime.8;
+        %tmp.147 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.148 = add %tmp.145 %tmp.147;
+        invoke %tmp.142 %tmp.143(%tmp.148);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 127 4 ]
+        %tmp.149 = getm $.Toybox.System;
+        %tmp.150 = getv function %tmp.149 :println;
+        %tmp.151 = "TimeMasterDelegate.mc --- Total invested time updated: ";
+        %tmp.153 = lgetv %totalTime.8;
+        %tmp.155 = lgetv %elapsedTimeInMinutes.2;
+        %tmp.156 = add %tmp.153 %tmp.155;
+        %tmp.157 = add %tmp.151 %tmp.156;
+        invoke %tmp.149 %tmp.150(%tmp.157);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 130 4 ]
+        %tmp.159 = getv ? :DataManager;
+        %tmp.160 = getv function %tmp.159 :getTimerDuration;
+        %tmp.161 = invoke %tmp.159 %tmp.160();
+        putv self :_currentDuration %tmp.161;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 131 4 ]
+        %tmp.163 = getv ? :DataManager;
+        %tmp.164 = getv function %tmp.163 :logSession;
+        %tmp.166 = lgetv %mode.3;
+        %tmp.168 = lgetv %elapsedTimeInMinutes.2;
+        invoke %tmp.163 %tmp.164(%tmp.166, %tmp.168);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 132 4 ]
+        %tmp.169 = self;
+        %tmp.170 = getv function %tmp.169 :updateUI;
+        invoke %tmp.169 %tmp.170();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_91_34_133_0_stop:
     }
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 133; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 136; ]
     function updateUI() as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_133_32_139_4_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 134 8 ]
-        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_133_32_139_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_133_32_139_4_stop" ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_136_32_142_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 137 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_136_32_142_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_136_32_142_4_stop" ]
         %mode.1 = local;
         %tmp.2 = getv ? :DataManager;
         %tmp.3 = getv function %tmp.2 :getMode;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %mode.1 %tmp.4;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 135 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 138 8 ]
         %tmp.6 = getv ? :_view;
         %tmp.7 = getv function %tmp.6 :setModeType;
         %tmp.9 = lgetv %mode.1;
         invoke %tmp.6 %tmp.7(%tmp.9);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 136 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 139 8 ]
         %tmp.11 = getv ? :_view;
         %tmp.12 = getv function %tmp.11 :setTimer;
         %tmp.14 = getv ? :_currentDuration;
         invoke %tmp.11 %tmp.12(%tmp.14);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 137 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 140 8 ]
         %tmp.16 = getv ? :_view;
         %tmp.17 = getv function %tmp.16 :setElapsedTime;
         %tmp.19 = getv ? :_elapsedTime;
         invoke %tmp.16 %tmp.17(%tmp.19);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 138 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 141 8 ]
         %tmp.20 = getm $.Toybox.WatchUi;
         %tmp.21 = getv function %tmp.20 :requestUpdate;
         invoke %tmp.20 %tmp.21();
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_133_32_139_4_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_136_32_142_4_stop:
     }
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 141; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 144; ]
     function resetTimer() as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_141_34_147_0_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 142 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_144_34_150_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 145 4 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "TimeMasterDelegate.mc --- Resetting timer to default duration";
         invoke %tmp.1 %tmp.2(%tmp.3);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 143 4 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 146 4 ]
         %tmp.5 = getv ? :DataManager;
         %tmp.6 = getv function %tmp.5 :getTimerDuration;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         putv self :_currentDuration %tmp.7;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 144 4 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 147 4 ]
         %tmp.8 = 0;
         putv self :_elapsedTime %tmp.8;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 145 4 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 148 4 ]
         %tmp.9 = false;
         putv self :time_started %tmp.9;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 146 4 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc" 149 4 ]
         %tmp.10 = self;
         %tmp.11 = getv function %tmp.10 :updateUI;
         invoke %tmp.10 %tmp.11();
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_141_34_147_0_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterDelegate_mc_144_34_150_0_stop:
     }
 }
 [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterDelegate.mc"; @line = 1; ]

@@ -1,7 +1,7 @@
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.System;
-
+import Toybox.Time;
 class DataManager {
 
     // Fetches the saved mode from the application properties
@@ -79,13 +79,13 @@ class DataManager {
 
     static function getTimerDuration() as Number {
         System.println("DataManager.mc --- Fetching TimerDuration from Properties");
-        return Application.Properties.getValue("TimerDuration");
+        return Application.Storage.getValue("TimerDuration");
     }
 
     // Saves the TimerDuration to the application properties
     static function setTimerDuration(timerDuration as Number) as Void {
         System.println("DataManager.mc --- Saving TimerDuration to Properties: " + timerDuration);
-        Application.Properties.setValue("TimerDuration", timerDuration);
+        Application.Storage.setValue("TimerDuration", timerDuration);
     }
 
    static function initializeData() as Void {
@@ -134,5 +134,23 @@ class DataManager {
         System.println("initializeData.mc --- MiscllTime found: " + miscllTime);
     }
 }
+
+static function logSession(mode as Number, sessionTime as Number) as Void {
+    var now = new Time.Moment(Time.now().value());
+    var logEntry =  now + 
+                   ", Mode: " + mode + ", SessionTime: " + sessionTime + " seconds";
+
+    var sessionLog = Storage.getValue("SessionLog");
+    if (sessionLog == null) {
+        sessionLog = "";  // Initialize an empty string if no log exists
+    }
+
+    // Append the new log entry
+    sessionLog += logEntry + "\n";
+    System.println("Session logged: " + logEntry);
+    Storage.setValue("SessionLog", sessionLog);
+    
+}
+
 
 }

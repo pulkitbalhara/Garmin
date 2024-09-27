@@ -289,25 +289,62 @@ d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_44_34_50_12_
 d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_44_34_50_12_stop:
             }
         }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 53; ]
+        class TimerSettingsMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 53; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 53; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 54; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_54_34_59_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 55 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 56 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "30 minutes";
+                %tmp.8 = const :timer_30;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 57 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "45 minutes";
+                %tmp.13 = const :timer_45;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 58 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "60 minutes";
+                %tmp.18 = const :timer_60;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_54_34_59_12_stop:
+            }
+        }
     }
-    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 54; ]
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 63; ]
     module Strings {
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 54; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 63; ]
         <init> {
         }
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 55; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 64; @position = 27; initialized = true; ]
         var mode_misc as ResourceId;
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 56; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 65; @position = 27; initialized = true; ]
         var timer_default as ResourceId;
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 57; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 66; @position = 27; initialized = true; ]
         var elapsed_time as ResourceId;
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 58; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 67; @position = 27; initialized = true; ]
         var mode_outdoor as ResourceId;
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 59; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 68; @position = 27; initialized = true; ]
         var prompt as ResourceId;
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 60; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 69; @position = 27; initialized = true; ]
         var mode_work as ResourceId;
-        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 61; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 70; @position = 27; initialized = true; ]
         var AppName as ResourceId;
     }
 }

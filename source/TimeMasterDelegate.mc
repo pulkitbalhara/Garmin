@@ -77,6 +77,7 @@ function onBack() as Boolean {
 }
 
     function countdown() as Void {
+        
         if (_currentDuration > 0) {
             _currentDuration -= 1;  // Decrease timer by 1 second
             System.println("TimeMasterDelegate.mc --- Timer: " + _currentDuration + " seconds left");
@@ -88,6 +89,7 @@ function onBack() as Boolean {
     }
 
     function endSession() as Void {
+    AlertsManager.triggerDefaultAlert();
     System.println("TimeMasterDelegate.mc --- Session ended");
     time_started = false;
     _timer.stop();  // Stop the timer
@@ -126,6 +128,7 @@ function onBack() as Boolean {
 
     // Reset the timer to the default duration and update the UI
     _currentDuration = DataManager.getTimerDuration();  // Reset to default duration
+    DataManager.logSession(mode, elapsedTimeInMinutes);
     updateUI();  // Refresh the UI
 }
 

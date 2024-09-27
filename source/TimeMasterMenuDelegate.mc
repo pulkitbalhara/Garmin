@@ -17,6 +17,7 @@ class TimeMasterMenuDelegate extends WatchUi.MenuInputDelegate {
             System.println("TimeMasterMenuDelegate.mc --- Start Session selected");
         } else if (item == :item_2) {
             System.println("TimeMasterMenuDelegate.mc --- Settings selected");
+            WatchUi.pushView(new Rez.Menus.TimerSettingsMenu(), new TimerSettingsMenuDelegate(_view), WatchUi.SLIDE_UP);
         } else if (item == :item_3) {
             System.println("TimeMasterMenuDelegate.mc --- Change Mode selected");
             WatchUi.pushView(new Rez.Menus.ModeMenu(), new ModeSelectionDelegate(_view), WatchUi.SLIDE_UP);

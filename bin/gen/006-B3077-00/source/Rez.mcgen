@@ -49,6 +49,15 @@ module Rez {
                 addItem("Miscellaneous", :mode_4);
             }
         }
+
+        class TimerSettingsMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("30 minutes", :timer_30);
+                addItem("45 minutes", :timer_45);
+                addItem("60 minutes", :timer_60);
+            }
+        }
     } // Menus
 
     module Strings {
