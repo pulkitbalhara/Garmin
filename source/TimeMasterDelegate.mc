@@ -21,9 +21,10 @@ class TimeMasterDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new TimeMasterMenuDelegate(), WatchUi.SLIDE_UP);
-        return true;
-    }
+    // Ensure to pass _view when initializing TimeMasterMenuDelegate
+    WatchUi.pushView(new Rez.Menus.MainMenu(), new TimeMasterMenuDelegate(_view), WatchUi.SLIDE_UP);
+    return true;
+}
 
     function onSelect() as Boolean {
         if (time_started) {
