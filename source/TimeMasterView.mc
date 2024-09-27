@@ -14,7 +14,7 @@ class TimeMasterView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
-        System.println("TimeMasterView.mc --- View initialized");
+        //System.println("TimeMasterView.mc --- View initialized");
     }
 
     function onLayout(dc as Dc) as Void {
@@ -23,7 +23,7 @@ class TimeMasterView extends WatchUi.View {
         _timer_label = findDrawableById("timer_label");  // Retrieve timer label
         _elapsed_label = findDrawableById("elapsed_label");  // Retrieve elapsed label
         
-        System.println("TimeMasterView.mc --- Layout set, labels loaded");
+       // System.println("TimeMasterView.mc --- Layout set, labels loaded");
         setModeType(1);  // Example: Set mode to Outdoor
         setTimer(DataManager.getCurrentTimer());  // Example: Set timer to 30:00 (1800 seconds)
         setElapsedTime(0);  // Example: Set elapsed time to 2 hours (7200 seconds)
@@ -31,15 +31,15 @@ class TimeMasterView extends WatchUi.View {
 
     function onUpdate(dc as Dc) as Void {
         View.onUpdate(dc);
-        System.println("TimeMasterView.mc --- View updated");
+       // System.println("TimeMasterView.mc --- View updated");
     }
 
     function onShow() as Void {
-        System.println("TimeMasterView.mc --- View shown");
+       // System.println("TimeMasterView.mc --- View shown");
     }
 
     function onHide() as Void {
-        System.println("TimeMasterView.mc --- View hidden");
+        //System.println("TimeMasterView.mc --- View hidden");
     }
 
     // Updated setModeType to use class-level mode
@@ -61,7 +61,7 @@ class TimeMasterView extends WatchUi.View {
             default:
                 mode = "Work";  // Default to Work if no valid input
         }
-        System.println("TimeMasterView.mc --- Mode set to: " + mode);
+       // System.println("TimeMasterView.mc --- Mode set to: " + mode);
         _mode_label.setText(mode);  // Update the label
         WatchUi.requestUpdate();  // Refresh the UI to reflect the change
     }
@@ -72,7 +72,7 @@ class TimeMasterView extends WatchUi.View {
         var formattedTime = minutes.format("%02d") + ":" + remainingSeconds.format("%02d");
         
         _timer_label.setText(formattedTime);  // Update the timer label
-        System.println("TimeMasterView.mc --- Timer set to: " + formattedTime);
+       // System.println("TimeMasterView.mc --- Timer set to: " + formattedTime);
         WatchUi.requestUpdate();  // Refresh the UI to reflect the change
     }
 
@@ -83,7 +83,7 @@ class TimeMasterView extends WatchUi.View {
         var formattedElapsedTime = hours.format("%02d") + ":" + remainingMinutes.format("%02d");
         
         _elapsed_label.setText(formattedElapsedTime);  // Update the elapsed time label
-        System.println("TimeMasterView.mc --- Elapsed time set to: " + formattedElapsedTime);
+       // System.println("TimeMasterView.mc --- Elapsed time set to: " + formattedElapsedTime);
         WatchUi.requestUpdate();  // Refresh the UI to reflect the change
     }
 

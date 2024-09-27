@@ -18,7 +18,7 @@ class TimeMasterDelegate extends WatchUi.BehaviorDelegate {
     function initialize(view) {
         BehaviorDelegate.initialize();
         _view = view;
-        System.println("TimeMasterDelegate.mc --- Initialized with view");
+        //.println("TimeMasterDelegate.mc --- Initialized with view");
     }
 
     function onMenu() as Boolean {
@@ -27,10 +27,10 @@ class TimeMasterDelegate extends WatchUi.BehaviorDelegate {
     return true;
 }
 function onBack() as Boolean {
-    System.println("TimeMasterDelegate.mc --- Back button pressed");
+    //.println("TimeMasterDelegate.mc --- Back button pressed");
 
     if (paused) {
-        System.println("TimeMasterDelegate.mc --- Timer paused, showing pause menu");
+        //.println("TimeMasterDelegate.mc --- Timer paused, showing pause menu");
         WatchUi.pushView(new Rez.Menus.TimerPausedMenu(), new TimerPausedMenuDelegate(_view), WatchUi.SLIDE_UP);  // Pass the delegate
         return true;
     }
@@ -50,7 +50,7 @@ function onBack() as Boolean {
     }
 
    function startCountdown() as Void {
-    System.println("TimeMasterDelegate.mc --- Starting countdown");
+    //.println("TimeMasterDelegate.mc --- Starting countdown");
     _currentDuration = DataManager.getTimerDuration();  // Fetch stored timer duration
     time_started = true;
     paused = false;
@@ -59,7 +59,7 @@ function onBack() as Boolean {
 }
 
     function pauseCountdown() as Void {
-        System.println("TimeMasterDelegate.mc --- Pausing countdown");
+        //.println("TimeMasterDelegate.mc --- Pausing countdown");
         time_started = false;
         paused = true;
         _timer.stop();  // Stop the timer
@@ -68,7 +68,7 @@ function onBack() as Boolean {
     }
 
    function resumeCountdown() as Void {
-    System.println("TimeMasterDelegate.mc --- Resuming countdown");
+    //.println("TimeMasterDelegate.mc --- Resuming countdown");
     _currentDuration = DataManager.getCurrentTimer();
     time_started = true;
     paused = false;
@@ -80,7 +80,7 @@ function onBack() as Boolean {
         
         if (_currentDuration > 0) {
             _currentDuration -= 1;  // Decrease timer by 1 second
-            System.println("TimeMasterDelegate.mc --- Timer: " + _currentDuration + " seconds left");
+            //.println("TimeMasterDelegate.mc --- Timer: " + _currentDuration + " seconds left");
             DataManager.setCurrentTimer(_currentDuration);  // Save updated timer
             updateUI();  // Update the UI with the new timer value
         } else {
@@ -90,41 +90,41 @@ function onBack() as Boolean {
 
     function endSession() as Void {
     AlertsManager.triggerDefaultAlert();
-    System.println("TimeMasterDelegate.mc --- Session ended");
+    //.println("TimeMasterDelegate.mc --- Session ended");
     time_started = false;
     _timer.stop();  // Stop the timer
 
     // Get the elapsed time for the session and convert to minutes
     var elapsedTimeInSeconds = DataManager.getTimerDuration();
     var elapsedTimeInMinutes = elapsedTimeInSeconds / 60;
-    System.println("TimeMasterDelegate.mc --- Elapsed time: " + elapsedTimeInMinutes + " minutes");
+    //.println("TimeMasterDelegate.mc --- Elapsed time: " + elapsedTimeInMinutes + " minutes");
 
     // Get the current mode and update the appropriate time
     var mode = DataManager.getMode();
-    System.println("TimeMasterDelegate.mc --- Current mode: " + mode);
+    //.println("TimeMasterDelegate.mc --- Current mode: " + mode);
 
     if (mode == 1) {
         var currentWorkTime = DataManager.getWorkTime();
         DataManager.setWorkTime(currentWorkTime + elapsedTimeInMinutes);
-        System.println("TimeMasterDelegate.mc --- Work time updated: " + (currentWorkTime + elapsedTimeInMinutes));
+        //.println("TimeMasterDelegate.mc --- Work time updated: " + (currentWorkTime + elapsedTimeInMinutes));
     } else if (mode == 2) {
         var currentOutdoorTime = DataManager.getOutdoorTime();
         DataManager.setOutdoorTime(currentOutdoorTime + elapsedTimeInMinutes);
-        System.println("TimeMasterDelegate.mc --- Outdoor time updated: " + (currentOutdoorTime + elapsedTimeInMinutes));
+        //.println("TimeMasterDelegate.mc --- Outdoor time updated: " + (currentOutdoorTime + elapsedTimeInMinutes));
     } else if (mode == 3) {
         var currentLearningTime = DataManager.getLearningTime();
         DataManager.setLearningTime(currentLearningTime + elapsedTimeInMinutes);
-        System.println("TimeMasterDelegate.mc --- Learning time updated: " + (currentLearningTime + elapsedTimeInMinutes));
+        //.println("TimeMasterDelegate.mc --- Learning time updated: " + (currentLearningTime + elapsedTimeInMinutes));
     } else if (mode == 4) {
         var currentMiscllTime = DataManager.getMiscllTime();
         DataManager.setMiscllTime(currentMiscllTime + elapsedTimeInMinutes);
-        System.println("TimeMasterDelegate.mc --- Miscellaneous time updated: " + (currentMiscllTime + elapsedTimeInMinutes));
+        //.println("TimeMasterDelegate.mc --- Miscellaneous time updated: " + (currentMiscllTime + elapsedTimeInMinutes));
     }
 
     // Update total invested time in minutes
     var totalTime = DataManager.getTotalMinutesInvested();
     DataManager.setTotalMinutesInvested(totalTime + elapsedTimeInMinutes);
-    System.println("TimeMasterDelegate.mc --- Total invested time updated: " + (totalTime + elapsedTimeInMinutes));
+    //.println("TimeMasterDelegate.mc --- Total invested time updated: " + (totalTime + elapsedTimeInMinutes));
 
     // Reset the timer to the default duration and update the UI
     _currentDuration = DataManager.getTimerDuration();  // Reset to default duration
@@ -142,7 +142,7 @@ function onBack() as Boolean {
     }
 
     function resetTimer() as Void {
-    System.println("TimeMasterDelegate.mc --- Resetting timer to default duration");
+    //.println("TimeMasterDelegate.mc --- Resetting timer to default duration");
     _currentDuration = DataManager.getTimerDuration();  // Reset to default timer duration from storage
     _elapsedTime = 0;  // Reset elapsed time
     time_started = false;

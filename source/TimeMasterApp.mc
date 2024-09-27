@@ -10,24 +10,24 @@ class TimeMasterApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
-        System.println("TimeMasterApp.mc --- App initialized with timer value: " + _initializedValue);
+        //System.println("TimeMasterApp.mc --- App initialized with timer value: " + _initializedValue);
     }
 
     // onStart() is called on application start up
     function onStart(state as Dictionary?) as Void {
         _view = new TimeMasterView();  // Initialize the view here once
         DataManager.initializeData();
-        System.println("TimeMasterApp.mc --- onStart triggered");
+        //System.println("TimeMasterApp.mc --- onStart triggered");
     }
 
     // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
-        System.println("TimeMasterApp.mc --- onStop triggered");
+        //System.println("TimeMasterApp.mc --- onStop triggered");
     }
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        System.println("TimeMasterApp.mc --- Initial view returned");
+        //System.println("TimeMasterApp.mc --- Initial view returned");
         return [ _view, new TimeMasterDelegate(_view) ];  // Pass the same view to the delegate
     }
 }

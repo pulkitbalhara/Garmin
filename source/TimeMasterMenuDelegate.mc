@@ -11,15 +11,15 @@ class TimeMasterMenuDelegate extends WatchUi.MenuInputDelegate {
     }
 
     function onMenuItem(item as Symbol) as Void {
-        System.println("TimeMasterMenuDelegate.mc --- onMenuItem triggered with: " + item);
+        //System.println("TimeMasterMenuDelegate.mc --- onMenuItem triggered with: " + item);
 
         if (item == :item_1) {
-            System.println("TimeMasterMenuDelegate.mc --- Start Session selected");
+            //System.println("TimeMasterMenuDelegate.mc --- Start Session selected");
         } else if (item == :item_2) {
-            System.println("TimeMasterMenuDelegate.mc --- Settings selected");
+            //System.println("TimeMasterMenuDelegate.mc --- Settings selected");
             WatchUi.pushView(new Rez.Menus.TimerSettingsMenu(), new TimerSettingsMenuDelegate(_view), WatchUi.SLIDE_UP);
         } else if (item == :item_3) {
-            System.println("TimeMasterMenuDelegate.mc --- Change Mode selected");
+            //System.println("TimeMasterMenuDelegate.mc --- Change Mode selected");
             WatchUi.pushView(new Rez.Menus.ModeMenu(), new ModeSelectionDelegate(_view), WatchUi.SLIDE_UP);
         }
     }

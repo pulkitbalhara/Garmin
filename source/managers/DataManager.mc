@@ -6,37 +6,37 @@ class DataManager {
 
     // Fetches the saved mode from the application properties
     static function getMode() as Number {
-        System.println("DataManager.mc --- Fetching Mode from Properties");
+        //System.println("DataManager.mc --- Fetching Mode from Properties");
         return Application.Properties.getValue("Mode");
     }
 
     // Saves the mode to the application properties
     static function setMode(mode as Number) as Void {
-        System.println("DataManager.mc --- Saving Mode to Properties: " + mode);
+        //System.println("DataManager.mc --- Saving Mode to Properties: " + mode);
         Application.Properties.setValue("Mode", mode);
     }
 
     // Fetches the current timer value
     static function getCurrentTimer() as Number {
-        System.println("DataManager.mc --- Fetching Timer from Properties");
+        //System.println("DataManager.mc --- Fetching Timer from Properties");
         return Application.Properties.getValue("CurrentTimer");
     }
 
     // Saves the current timer value
     static function setCurrentTimer(timer as Number) as Void {
-        System.println("DataManager.mc --- Saving Timer to Properties: " + timer);
+        //System.println("DataManager.mc --- Saving Timer to Properties: " + timer);
         Application.Properties.setValue("CurrentTimer", timer);
     }
 
     // Fetches the total invested time
     static function getTotalMinutesInvested() as Number {
-        System.println("DataManager.mc --- Fetching TotalMinutesInvested from Properties");
+        //System.println("DataManager.mc --- Fetching TotalMinutesInvested from Properties");
         return Application.Properties.getValue("TotalMinutesInvested");
     }
 
     // Saves the total invested time
     static function setTotalMinutesInvested(minutes as Number) as Void {
-        System.println("DataManager.mc --- Saving TotalMinutesInvested to Properties: " + minutes);
+        //System.println("DataManager.mc --- Saving TotalMinutesInvested to Properties: " + minutes);
         Application.Properties.setValue("TotalMinutesInvested", minutes);
     }
 
@@ -78,13 +78,13 @@ class DataManager {
     }
 
     static function getTimerDuration() as Number {
-        System.println("DataManager.mc --- Fetching TimerDuration from Properties");
+        //System.println("DataManager.mc --- Fetching TimerDuration from Properties");
         return Application.Storage.getValue("TimerDuration");
     }
 
     // Saves the TimerDuration to the application properties
     static function setTimerDuration(timerDuration as Number) as Void {
-        System.println("DataManager.mc --- Saving TimerDuration to Properties: " + timerDuration);
+        //System.println("DataManager.mc --- Saving TimerDuration to Properties: " + timerDuration);
         Application.Storage.setValue("TimerDuration", timerDuration);
     }
 
@@ -92,53 +92,65 @@ class DataManager {
     // Check and initialize TimerDuration
     var timerDuration = DataManager.getTimerDuration();
     if (timerDuration == null) {
-        System.println("initializeData.mc --- TimerDuration is null, setting default to 1800");
+        //System.println("initializeData.mc --- TimerDuration is null, setting default to 1800");
         DataManager.setTimerDuration(1800);  // Default to 1800 seconds (30 minutes)
     } else {
-        System.println("initializeData.mc --- TimerDuration found: " + timerDuration);
+        //System.println("initializeData.mc --- TimerDuration found: " + timerDuration);
     }
 
     // Check and initialize WorkTime
     var workTime = DataManager.getWorkTime();
     if (workTime == null) {
-        System.println("initializeData.mc --- WorkTime is null, setting default to 0");
+        //System.println("initializeData.mc --- WorkTime is null, setting default to 0");
         DataManager.setWorkTime(0);  // Default to 0
     } else {
-        System.println("initializeData.mc --- WorkTime found: " + workTime);
+        //System.println("initializeData.mc --- WorkTime found: " + workTime);
     }
 
     // Check and initialize OutdoorTime
     var outdoorTime = DataManager.getOutdoorTime();
     if (outdoorTime == null) {
-        System.println("initializeData.mc --- OutdoorTime is null, setting default to 0");
+        //System.println("initializeData.mc --- OutdoorTime is null, setting default to 0");
         DataManager.setOutdoorTime(0);  // Default to 0
     } else {
-        System.println("initializeData.mc --- OutdoorTime found: " + outdoorTime);
+        //System.println("initializeData.mc --- OutdoorTime found: " + outdoorTime);
     }
 
     // Check and initialize LearningTime
     var learningTime = DataManager.getLearningTime();
     if (learningTime == null) {
-        System.println("initializeData.mc --- LearningTime is null, setting default to 0");
+        //System.println("initializeData.mc --- LearningTime is null, setting default to 0");
         DataManager.setLearningTime(0);  // Default to 0
     } else {
-        System.println("initializeData.mc --- LearningTime found: " + learningTime);
+        //System.println("initializeData.mc --- LearningTime found: " + learningTime);
     }
 
     // Check and initialize MiscllTime
     var miscllTime = DataManager.getMiscllTime();
     if (miscllTime == null) {
-        System.println("initializeData.mc --- MiscllTime is null, setting default to 0");
+        //System.println("initializeData.mc --- MiscllTime is null, setting default to 0");
         DataManager.setMiscllTime(0);  // Default to 0
     } else {
-        System.println("initializeData.mc --- MiscllTime found: " + miscllTime);
+        //System.println("initializeData.mc --- MiscllTime found: " + miscllTime);
     }
 }
 
 static function logSession(mode as Number, sessionTime as Number) as Void {
-    var now = new Time.Moment(Time.now().value());
-    var logEntry =  now + 
-                   ", Mode: " + mode + ", SessionTime: " + sessionTime + " seconds";
+    var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+    var logEntry = Lang.format(
+        "$1$:$2$:$3$-$4$-$5$/$6$/$7$, Mode: $8$, SessionTime: $9$ minutes",
+        [
+            today.hour,
+            today.min,
+            today.sec,
+            today.day_of_week,
+            today.day,
+            today.month,
+            today.year,
+            mode,
+            sessionTime
+        ]
+    );
 
     var sessionLog = Storage.getValue("SessionLog");
     if (sessionLog == null) {
@@ -149,8 +161,8 @@ static function logSession(mode as Number, sessionTime as Number) as Void {
     sessionLog += logEntry + "\n";
     System.println("Session logged: " + logEntry);
     Storage.setValue("SessionLog", sessionLog);
-    
 }
+
 
 
 }
