@@ -1,0 +1,25 @@
+[ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 1; ]
+class ModeClass{
+    [ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 2; ]
+    static
+    enum {
+        [ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 3; @position = 8; ]
+        Work,
+        [ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 4; @position = 8; ]
+        Outdoor,
+        [ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 5; @position = 8; ]
+        Learning,
+        [ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 6; @position = 8; ]
+        Miscll
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\TimeMaster\source\enum\ModeClass.mc"; @line = 1; ]
+<init> {
+}

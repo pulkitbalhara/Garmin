@@ -1,0 +1,8 @@
+<properties>
+    <property id="TotalMinutesInvested" type="Number">0</property>
+    <property id="MinutesWork" type="Number">0</property>
+    <property id="MinutesOutdoor" type="Number">0</property>
+    <property id="MinutesLearning" type="Number">0</property>
+    <property id="MinutesMiscll" type="Number">0</property>
+    <property id="CurrentTimer" type="Number">1800</property>  <!-- Initialize to 30 minutes -->
+</properties>

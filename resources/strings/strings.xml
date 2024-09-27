@@ -1,0 +1,9 @@
+<strings>
+    <string id="AppName">TimeMaster</string>
+    <string id="prompt">Click the menu button</string>
+    <string id="mode_work">Work</string>
+    <string id="mode_outdoor">Outdoor</string>
+    <string id="mode_misc">Miscellaneous</string>
+    <string id="timer_default">30:00</string>
+    <string id="elapsed_time">0.2 hours</string>
+</strings>

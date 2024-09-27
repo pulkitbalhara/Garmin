@@ -1,0 +1,347 @@
+[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 5; ]
+class TimeMasterView extends WatchUi.View{
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 6; @position = 8; ]
+    var mode = 1;
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 7; @position = 8; ]
+    var timer = 1800;
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 8; @position = 8; ]
+    var elapsed = 0.2;
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 10; @position = 8; ]
+    var _mode_label;
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 11; @position = 8; ]
+    var _timer_label;
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 12; @position = 8; ]
+    var _elapsed_label;
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 14; ]
+    function initialize() as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_14_26_17_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 15 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- Initializing TimeMasterView";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 16 8 ]
+        %tmp.6 = getv ? :View;
+        %tmp.7 = getv function %tmp.6 :initialize;
+        invoke %tmp.6 %tmp.7();
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_14_26_17_4_stop:
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 19; ]
+    function onLayout(dc as Dc) as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_19_40_31_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 20 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- onLayout called";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 21 8 ]
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :setLayout;
+        %tmp.8 = getv ? :Rez;
+        %tmp.9 = getv %tmp.8 :Layouts;
+        %tmp.10 = getv function %tmp.9 :MainLayout;
+        %tmp.12 = lgetv %dc;
+        %tmp.13 = invoke %tmp.9 %tmp.10(%tmp.12);
+        invoke %tmp.5 %tmp.6(%tmp.13);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 22 8 ]
+        %tmp.14 = self;
+        %tmp.15 = getv function %tmp.14 :findDrawableById;
+        %tmp.16 = "mode_label";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        putv self :_mode_label %tmp.17;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 23 8 ]
+        %tmp.18 = self;
+        %tmp.19 = getv function %tmp.18 :findDrawableById;
+        %tmp.20 = "timer_label";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        putv self :_timer_label %tmp.21;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 24 8 ]
+        %tmp.22 = self;
+        %tmp.23 = getv function %tmp.22 :findDrawableById;
+        %tmp.24 = "elapsed_label";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        putv self :_elapsed_label %tmp.25;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 26 8 ]
+        %tmp.27 = getv ? :System;
+        %tmp.28 = getv function %tmp.27 :println;
+        %tmp.29 = "TimeMasterView.mc --- Setting mode to Outdoor";
+        invoke %tmp.27 %tmp.28(%tmp.29);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 27 8 ]
+        %tmp.30 = self;
+        %tmp.31 = getv function %tmp.30 :setModeType;
+        %tmp.32 = 2;
+        invoke %tmp.30 %tmp.31(%tmp.32);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 28 8 ]
+        %tmp.33 = self;
+        %tmp.34 = getv function %tmp.33 :setTimer;
+        %tmp.35 = 259;
+        invoke %tmp.33 %tmp.34(%tmp.35);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 29 8 ]
+        %tmp.36 = self;
+        %tmp.37 = getv function %tmp.36 :setElapsedTime;
+        %tmp.38 = 110;
+        invoke %tmp.36 %tmp.37(%tmp.38);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 30 8 ]
+        %tmp.40 = getv ? :System;
+        %tmp.41 = getv function %tmp.40 :println;
+        %tmp.42 = "TimeMasterView.mc --- Layout setup complete";
+        invoke %tmp.40 %tmp.41(%tmp.42);
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_19_40_31_4_stop:
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 33; ]
+    function onUpdate(dc as Dc) as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_33_40_36_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 34 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- Updating view";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 35 8 ]
+        %tmp.6 = getv ? :View;
+        %tmp.7 = getv function %tmp.6 :onUpdate;
+        %tmp.9 = lgetv %dc;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_33_40_36_4_stop:
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 38; ]
+    function onShow() as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_38_30_40_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 39 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- View is now visible (onShow)";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_38_30_40_4_stop:
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 42; ]
+    function onHide() as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_42_30_44_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 43 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- View is being hidden (onHide)";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_42_30_44_4_stop:
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 47; ]
+    function setModeType(modeNumber as Number) as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_47_55_69_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 48 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- setModeType called with modeNumber: ";
+        %tmp.6 = lgetv %modeNumber;
+        %tmp.7 = add %tmp.4 %tmp.6;
+        invoke %tmp.2 %tmp.3(%tmp.7);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 49 8 ]
+        %tmp.9 = lgetv %modeNumber;
+        push %tmp.9;
+        switch %tmp.9 @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtEnd;
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtBegin:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 50 12 ]
+        %tmp.10 = dup %tmp.9;
+        %tmp.11 = 1;
+        %tmp.12 = getv function %tmp.10 :equals;
+        %tmp.13 = invoke %tmp.10 %tmp.12 (%tmp.11);
+        bt %tmp.13 @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_50_12_52_21_switchCase;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 53 12 ]
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = 2;
+        %tmp.16 = getv function %tmp.14 :equals;
+        %tmp.17 = invoke %tmp.14 %tmp.16 (%tmp.15);
+        bt %tmp.17 @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_53_12_55_21_switchCase;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 56 12 ]
+        %tmp.18 = dup %tmp.9;
+        %tmp.19 = 3;
+        %tmp.20 = getv function %tmp.18 :equals;
+        %tmp.21 = invoke %tmp.18 %tmp.20 (%tmp.19);
+        bt %tmp.21 @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_56_12_58_21_switchCase;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 59 12 ]
+        %tmp.22 = dup %tmp.9;
+        %tmp.23 = 4;
+        %tmp.24 = getv function %tmp.22 :equals;
+        %tmp.25 = invoke %tmp.22 %tmp.24 (%tmp.23);
+        bt %tmp.25 @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_59_12_61_21_switchCase;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 62 12 ]
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtDefault:
+        goto @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_defaultCodeBegin;
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_50_12_52_21_switchCase:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 51 16 ]
+        %tmp.26 = "Work";
+        putv self :mode %tmp.26;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 52 16 ]
+        goto break @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtEnd;
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_53_12_55_21_switchCase:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 54 16 ]
+        %tmp.27 = "Outdoor";
+        putv self :mode %tmp.27;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 55 16 ]
+        goto break @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtEnd;
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_56_12_58_21_switchCase:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 57 16 ]
+        %tmp.28 = "Learning";
+        putv self :mode %tmp.28;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 58 16 ]
+        goto break @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtEnd;
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_59_12_61_21_switchCase:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 60 16 ]
+        %tmp.29 = "Miscellaneous";
+        putv self :mode %tmp.29;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 61 16 ]
+        goto break @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtEnd;
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_62_12_63_29_switchCase:
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_defaultCodeBegin:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 63 16 ]
+        %tmp.30 = "Work";
+        putv self :mode %tmp.30;
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_49_8_64_8_switchStmtEnd:
+        pop;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 66 8 ]
+        %tmp.32 = getv ? :System;
+        %tmp.33 = getv function %tmp.32 :println;
+        %tmp.34 = "TimeMasterView.mc --- Mode set to: ";
+        %tmp.36 = getv ? :mode;
+        %tmp.37 = add %tmp.34 %tmp.36;
+        invoke %tmp.32 %tmp.33(%tmp.37);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 67 8 ]
+        %tmp.39 = getv ? :_mode_label;
+        %tmp.40 = getv function %tmp.39 :setText;
+        %tmp.42 = getv ? :mode;
+        invoke %tmp.39 %tmp.40(%tmp.42);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 68 8 ]
+        %tmp.43 = getm $.Toybox.WatchUi;
+        %tmp.44 = getv function %tmp.43 :requestUpdate;
+        invoke %tmp.43 %tmp.44();
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_47_55_69_4_stop:
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 71; ]
+    function setTimer(seconds as Number) as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 72 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- setTimer called with seconds: ";
+        %tmp.6 = lgetv %seconds;
+        %tmp.7 = add %tmp.4 %tmp.6;
+        invoke %tmp.2 %tmp.3(%tmp.7);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 73 8 ]
+        [ "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_start" "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_stop" ]
+        %minutes.1 = local;
+        %tmp.9 = lgetv %seconds;
+        %tmp.10 = 60;
+        %tmp.11 = div %tmp.9 %tmp.10;
+        lputv %minutes.1 %tmp.11;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 74 8 ]
+        [ "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_start" "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_stop" ]
+        %remainingSeconds.2 = local;
+        %tmp.13 = lgetv %seconds;
+        %tmp.14 = 60;
+        %tmp.15 = mod %tmp.13 %tmp.14;
+        lputv %remainingSeconds.2 %tmp.15;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 75 8 ]
+        [ "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_start" "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_stop" ]
+        %formattedTime.3 = local;
+        %tmp.16 = lgetv %minutes.1;
+        %tmp.17 = getv function %tmp.16 :format;
+        %tmp.18 = "%02d";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = ":";
+        %tmp.21 = add %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %remainingSeconds.2;
+        %tmp.23 = getv function %tmp.22 :format;
+        %tmp.24 = "%02d";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.26 = add %tmp.21 %tmp.25;
+        lputv %formattedTime.3 %tmp.26;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 77 8 ]
+        %tmp.28 = getv ? :_timer_label;
+        %tmp.29 = getv function %tmp.28 :setText;
+        %tmp.31 = lgetv %formattedTime.3;
+        invoke %tmp.28 %tmp.29(%tmp.31);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 78 8 ]
+        %tmp.33 = getv ? :System;
+        %tmp.34 = getv function %tmp.33 :println;
+        %tmp.35 = "TimeMasterView.mc --- Timer updated to: ";
+        %tmp.37 = lgetv %formattedTime.3;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        invoke %tmp.33 %tmp.34(%tmp.38);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 79 8 ]
+        %tmp.39 = getm $.Toybox.WatchUi;
+        %tmp.40 = getv function %tmp.39 :requestUpdate;
+        invoke %tmp.39 %tmp.40();
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_71_49_80_4_stop:
+    }
+    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 82; ]
+    function setElapsedTime(minutes as Number) as Void {
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_start:
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 83 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "TimeMasterView.mc --- setElapsedTime called with minutes: ";
+        %tmp.6 = lgetv %minutes;
+        %tmp.7 = add %tmp.4 %tmp.6;
+        invoke %tmp.2 %tmp.3(%tmp.7);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 84 8 ]
+        [ "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_start" "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_stop" ]
+        %hours.1 = local;
+        %tmp.9 = lgetv %minutes;
+        %tmp.10 = 60;
+        %tmp.11 = div %tmp.9 %tmp.10;
+        lputv %hours.1 %tmp.11;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 85 8 ]
+        [ "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_start" "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_stop" ]
+        %remainingMinutes.2 = local;
+        %tmp.13 = lgetv %minutes;
+        %tmp.14 = 60;
+        %tmp.15 = mod %tmp.13 %tmp.14;
+        lputv %remainingMinutes.2 %tmp.15;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 87 8 ]
+        [ "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_start" "D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_stop" ]
+        %formattedElapsedTime.3 = local;
+        %tmp.16 = lgetv %hours.1;
+        %tmp.17 = getv function %tmp.16 :format;
+        %tmp.18 = "%02d";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = ":";
+        %tmp.21 = add %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %remainingMinutes.2;
+        %tmp.23 = getv function %tmp.22 :format;
+        %tmp.24 = "%02d";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.26 = add %tmp.21 %tmp.25;
+        lputv %formattedElapsedTime.3 %tmp.26;
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 89 8 ]
+        %tmp.28 = getv ? :_elapsed_label;
+        %tmp.29 = getv function %tmp.28 :setText;
+        %tmp.31 = lgetv %formattedElapsedTime.3;
+        invoke %tmp.28 %tmp.29(%tmp.31);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 90 8 ]
+        %tmp.33 = getv ? :System;
+        %tmp.34 = getv function %tmp.33 :println;
+        %tmp.35 = "TimeMasterView.mc --- Elapsed time updated to: ";
+        %tmp.37 = lgetv %formattedElapsedTime.3;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        invoke %tmp.33 %tmp.34(%tmp.38);
+[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc" 91 8 ]
+        %tmp.39 = getm $.Toybox.WatchUi;
+        %tmp.40 = getv function %tmp.39 :requestUpdate;
+        invoke %tmp.39 %tmp.40();
+D_Garmin_TimeMaster_TimeMaster_source_TimeMasterView_mc_82_55_92_4_stop:
+    }
+}
+[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterView.mc"; @line = 1; ]
+<init> {
+}

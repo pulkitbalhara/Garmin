@@ -1,0 +1,5 @@
+<layout id="MainLayout">
+    <label id="mode_label" x="center" y="5" text="Work" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="timer_label" x="center" y="50" text="30:00" color="Graphics.COLOR_YELLOW" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="elapsed_label" x="center" y="120" text="0.0 hours" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+</layout>
