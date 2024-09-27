@@ -1,36 +1,36 @@
-[ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 2; ]
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 3; ]
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 3; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 4; ]
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 4; ]
 using Toybox.Graphics;
-[ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 5; ]
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 5; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
 module Rez {
-    [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
     module Drawables {
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
         var LauncherIcon as ResourceId;
     }
-    [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 12; ]
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 12; ]
     module Layouts {
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 12; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 12; ]
         <init> {
         }
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 13; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 13; ]
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start:
-[ "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen" 14 12 ]
-            [ "d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start" "d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop" ]
+d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 14 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start" "d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop" ]
             %rez_cmp_local_text_mode_label.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
@@ -70,8 +70,8 @@ d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_
             %tmp.45 = aputv %tmp.44 %tmp.41 %tmp.43;
             %tmp.1 = newc %tmp.4 (%tmp.45);
             lputv %rez_cmp_local_text_mode_label.1 %tmp.1;
-[ "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen" 16 12 ]
-            [ "d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start" "d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop" ]
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 16 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start" "d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop" ]
             %rez_cmp_local_text_timer_label.2 = local;
             %tmp.48 = getm $.Toybox.WatchUi;
             %tmp.49 = getv function ? %tmp.48 :Text;
@@ -111,8 +111,8 @@ d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_
             %tmp.90 = aputv %tmp.89 %tmp.86 %tmp.88;
             %tmp.46 = newc %tmp.49 (%tmp.90);
             lputv %rez_cmp_local_text_timer_label.2 %tmp.46;
-[ "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen" 18 12 ]
-            [ "d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start" "d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop" ]
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 18 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_start" "d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop" ]
             %rez_cmp_local_text_elapsed_label.3 = local;
             %tmp.93 = getm $.Toybox.WatchUi;
             %tmp.94 = getv function ? %tmp.93 :Text;
@@ -152,7 +152,7 @@ d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_
             %tmp.135 = aputv %tmp.134 %tmp.131 %tmp.133;
             %tmp.91 = newc %tmp.94 (%tmp.135);
             lputv %rez_cmp_local_text_elapsed_label.3 %tmp.91;
-[ "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen" 20 12 ]
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 20 12 ]
             %tmp.136 = newa 3 Array<WatchUi.Drawable>;
             %tmp.138 = lgetv %rez_cmp_local_text_mode_label.1;
             %tmp.139 = dup %tmp.136;
@@ -164,67 +164,67 @@ d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_
             %tmp.147 = dup %tmp.144;
             %tmp.148 = aputv %tmp.147 2 %tmp.146;
             ret %tmp.148;
-d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop:
+d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_13_74_21_8_stop:
         }
     }
-    [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 24; ]
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 24; ]
     module Menus {
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 24; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 24; ]
         <init> {
         }
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 25; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 25; ]
         class MainMenu extends WatchUi.Menu{
-            [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 25; ]
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 25; ]
             <init> {
             }
-            [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 25; ]
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 25; ]
             static
             <init> {
             }
-            [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 26; ]
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 26; ]
             function initialize() as Void {
-d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_26_34_30_12_start:
-[ "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen" 27 16 ]
+d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_26_34_30_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 27 16 ]
                 %tmp.2 = getv ? :Menu;
                 %tmp.3 = getv function %tmp.2 :initialize;
                 invoke %tmp.2 %tmp.3();
-[ "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen" 28 16 ]
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 28 16 ]
                 %tmp.4 = self;
                 %tmp.5 = getv function %tmp.4 :addItem;
                 %tmp.6 = "Start Session";
                 %tmp.8 = const :item_1;
                 invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
-[ "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen" 29 16 ]
+[ "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen" 29 16 ]
                 %tmp.9 = self;
                 %tmp.10 = getv function %tmp.9 :addItem;
                 %tmp.11 = "Settings";
                 %tmp.13 = const :item_2;
                 invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
-d_Garmin_TimeMaster_TimeMaster_bin_gen_006_B3077_00_source_Rez_mcgen_26_34_30_12_stop:
+d_Pulkit_Coding_Garmin_Garmin_bin_gen_006_B3077_00_source_Rez_mcgen_26_34_30_12_stop:
             }
         }
     }
-    [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 34; ]
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 34; ]
     module Strings {
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 34; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 34; ]
         <init> {
         }
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
         var mode_misc as ResourceId;
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
         var timer_default as ResourceId;
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
         var elapsed_time as ResourceId;
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
         var mode_outdoor as ResourceId;
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
         var prompt as ResourceId;
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
         var mode_work as ResourceId;
-        [ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
         var AppName as ResourceId;
     }
 }
-[ @file = "d:\Garmin\TimeMaster\TimeMaster\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\bin\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
 <init> {
 }

@@ -5,30 +5,32 @@ import Toybox.System;
 
 class TimeMasterApp extends Application.AppBase {
 
+    hidden var _view;  // Declare the view to persist throughout app lifecycle
+    hidden var _initializedValue = 1800;  // Example variable initialization for timer (30 minutes)
+
     function initialize() {
-        System.println("Initializing TimeMasterApp...");
         AppBase.initialize();
+        System.println("TimeMasterApp.mc --- App initialized with timer value: " + _initializedValue);
     }
 
     // onStart() is called on application start up
     function onStart(state as Dictionary?) as Void {
-        System.println("App has started.");
+        _view = new TimeMasterView();  // Initialize the view here once
+        System.println("TimeMasterApp.mc --- onStart triggered");
     }
 
     // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
-        System.println("App is stopping.");
+        System.println("TimeMasterApp.mc --- onStop triggered");
     }
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        System.println("Returning initial view...");
-        return [ new TimeMasterView(), new TimeMasterDelegate() ];
+        System.println("TimeMasterApp.mc --- Initial view returned");
+        return [ _view, new TimeMasterDelegate(_view) ];  // Pass the same view to the delegate
     }
 }
 
-// Get the application instance
 function getApp() as TimeMasterApp {
-    System.println("Getting the TimeMasterApp instance...");
     return Application.getApp() as TimeMasterApp;
 }

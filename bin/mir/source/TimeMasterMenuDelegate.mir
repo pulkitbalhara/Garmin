@@ -1,71 +1,71 @@
-[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 1; ]
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 1; ]
 import Toybox.System;
-[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 2; ]
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 3; ]
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 3; ]
 import Toybox.Lang;
-[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 5; ]
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 5; ]
 class TimeMasterMenuDelegate extends WatchUi.MenuInputDelegate{
-    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 5; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 5; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 7; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 7; ]
     function initialize() as Void {
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_7_26_10_4_start:
-[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc" 8 8 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_7_26_10_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 8 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "TimeMasterMenuDelegate.mc --- Initializing TimeMasterMenuDelegate";
         invoke %tmp.1 %tmp.2(%tmp.3);
-[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc" 9 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 9 8 ]
         %tmp.5 = getv ? :MenuInputDelegate;
         %tmp.6 = getv function %tmp.5 :initialize;
         invoke %tmp.5 %tmp.6();
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_7_26_10_4_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_7_26_10_4_stop:
     }
-    [ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 12; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 12; ]
     function onMenuItem(item as Symbol) as Void {
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_12_48_20_4_start:
-[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc" 13 8 ]
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_stmt:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_12_48_20_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 13 8 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_stmt:
         %tmp.2 = lgetv %item;
         %tmp.4 = const :item_1;
         %tmp.5 = eq %tmp.2 %tmp.4;
-        bf %tmp.5 @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_false;
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_true:
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_29_16_8_start:
-[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc" 14 12 ]
+        bf %tmp.5 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_29_16_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 14 12 ]
         %tmp.6 = getm $.Toybox.System;
         %tmp.7 = getv function %tmp.6 :println;
         %tmp.8 = "TimeMasterMenuDelegate.mc --- Start Session selected";
         invoke %tmp.6 %tmp.7(%tmp.8);
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_29_16_8_stop:
-        goto @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_end;
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_false:
-[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc" 16 15 ]
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_stmt:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_29_16_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 16 15 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_stmt:
         %tmp.10 = lgetv %item;
         %tmp.12 = const :item_2;
         %tmp.13 = eq %tmp.10 %tmp.12;
-        bf %tmp.13 @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_end;
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_true:
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_16_36_19_8_start:
-[ "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc" 17 12 ]
+        bf %tmp.13 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_36_19_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 17 12 ]
         %tmp.14 = getm $.Toybox.System;
         %tmp.15 = getv function %tmp.14 :println;
         %tmp.16 = "TimeMasterMenuDelegate.mc --- Settings selected";
         invoke %tmp.14 %tmp.15(%tmp.16);
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_16_36_19_8_stop:
-        goto @D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_end;
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_end:
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_end:
-D_Garmin_TimeMaster_TimeMaster_source_TimeMasterMenuDelegate_mc_12_48_20_4_stop:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_36_19_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_15_19_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_8_19_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_12_48_20_4_stop:
     }
 }
-[ @file = "D:\Garmin\TimeMaster\TimeMaster\source\TimeMasterMenuDelegate.mc"; @line = 1; ]
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 1; ]
 <init> {
 }

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="D:\Pulkit\Coding\Garmin\Garmin\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="1" lineNum="34" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="1" lineNum="35" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="3" lineNum="7" parent="globals/TimeMasterDelegate" pc="268435510" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="4" lineNum="5" parent="globals/TimeMasterMenuDelegate" pc="268435529" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="5" lineNum="6" parent="globals/TimeMasterApp" pc="268435548" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="6" lineNum="6" parent="globals/TimeMasterView" pc="268435567" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="7" lineNum="24" parent="globals/TimeMasterDelegate" pc="268435586" symbol="onMenu"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="7" lineNum="25" parent="globals/TimeMasterDelegate" pc="268435588" symbol="onMenu"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="7" lineNum="26" parent="globals/TimeMasterDelegate" pc="268435673" symbol="onMenu"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="7" lineNum="27" parent="globals/TimeMasterDelegate" pc="268435694" symbol="onMenu"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="8" lineNum="67" parent="globals/TimeMasterDelegate" pc="268435697" symbol="endSession"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="8" lineNum="68" parent="globals/TimeMasterDelegate" pc="268435699" symbol="endSession"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="8" lineNum="69" parent="globals/TimeMasterDelegate" pc="268435728" symbol="endSession"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="8" lineNum="70" parent="globals/TimeMasterDelegate" pc="268435758" symbol="endSession"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="47" parent="globals/TimeMasterDelegate" pc="268435771" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="48" parent="globals/TimeMasterDelegate" pc="268435773" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="49" parent="globals/TimeMasterDelegate" pc="268435790" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="50" parent="globals/TimeMasterDelegate" pc="268435809" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="51" parent="globals/TimeMasterDelegate" pc="268435839" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="52" parent="globals/TimeMasterDelegate" pc="268435875" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="54" parent="globals/TimeMasterDelegate" pc="268435890" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="55" parent="globals/TimeMasterDelegate" pc="268435900" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="56" parent="globals/TimeMasterDelegate" pc="268435918" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="9" lineNum="57" parent="globals/TimeMasterDelegate" pc="268435939" symbol="countdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="10" lineNum="61" parent="globals/TimeMasterDelegate" pc="268435952" symbol="updateUI"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="10" lineNum="62" parent="globals/TimeMasterDelegate" pc="268435954" symbol="updateUI"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="10" lineNum="63" parent="globals/TimeMasterDelegate" pc="268435980" symbol="updateUI"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="10" lineNum="64" parent="globals/TimeMasterDelegate" pc="268436006" symbol="updateUI"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="11" lineNum="30" parent="globals/TimeMasterDelegate" pc="268436052" symbol="onSelect"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="11" lineNum="31" parent="globals/TimeMasterDelegate" pc="268436054" symbol="onSelect"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="11" lineNum="32" parent="globals/TimeMasterDelegate" pc="268436066" symbol="onSelect"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="11" lineNum="33" parent="globals/TimeMasterDelegate" pc="268436087" symbol="onSelect"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="11" lineNum="35" parent="globals/TimeMasterDelegate" pc="268436102" symbol="onSelect"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="11" lineNum="37" parent="globals/TimeMasterDelegate" pc="268436123" symbol="onSelect"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="12" lineNum="40" parent="globals/TimeMasterDelegate" pc="268436126" symbol="startCountdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="12" lineNum="41" parent="globals/TimeMasterDelegate" pc="268436128" symbol="startCountdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="12" lineNum="42" parent="globals/TimeMasterDelegate" pc="268436138" symbol="startCountdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="12" lineNum="43" parent="globals/TimeMasterDelegate" pc="268436172" symbol="startCountdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="12" lineNum="44" parent="globals/TimeMasterDelegate" pc="268436213" symbol="startCountdown"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="13" lineNum="16" parent="globals/TimeMasterDelegate" pc="268436235" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="13" lineNum="17" parent="globals/TimeMasterDelegate" pc="268436237" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="13" lineNum="18" parent="globals/TimeMasterDelegate" pc="268436255" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="13" lineNum="19" parent="globals/TimeMasterDelegate" pc="268436265" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterDelegate.mc" id="13" lineNum="21" parent="globals/TimeMasterDelegate" pc="268436294" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="14" lineNum="7" parent="globals/DataManager" pc="268436340" symbol="getCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="14" lineNum="8" parent="globals/DataManager" pc="268436344" symbol="getCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="14" lineNum="9" parent="globals/DataManager" pc="268436372" symbol="getCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="14" lineNum="10" parent="globals/DataManager" pc="268436378" symbol="getCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="14" lineNum="11" parent="globals/DataManager" pc="268436410" symbol="getCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="14" lineNum="13" parent="globals/DataManager" pc="268436419" symbol="getCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="15" lineNum="17" parent="globals/DataManager" pc="268436422" symbol="setCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\managers\\DataManager.mc" id="15" lineNum="18" parent="globals/DataManager" pc="268436424" symbol="setCurrentTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="17" lineNum="12" parent="globals/TimeMasterMenuDelegate" pc="268436454" symbol="onMenuItem"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="17" lineNum="13" parent="globals/TimeMasterMenuDelegate" pc="268436456" symbol="onMenuItem"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="17" lineNum="14" parent="globals/TimeMasterMenuDelegate" pc="268436467" symbol="onMenuItem"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="17" lineNum="16" parent="globals/TimeMasterMenuDelegate" pc="268436491" symbol="onMenuItem"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="17" lineNum="17" parent="globals/TimeMasterMenuDelegate" pc="268436502" symbol="onMenuItem"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="18" lineNum="7" parent="globals/TimeMasterMenuDelegate" pc="268436527" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="18" lineNum="8" parent="globals/TimeMasterMenuDelegate" pc="268436529" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterMenuDelegate.mc" id="18" lineNum="9" parent="globals/TimeMasterMenuDelegate" pc="268436550" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="19" lineNum="17" parent="globals/TimeMasterApp" pc="268436569" symbol="onStart"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="19" lineNum="18" parent="globals/TimeMasterApp" pc="268436571" symbol="onStart"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="19" lineNum="19" parent="globals/TimeMasterApp" pc="268436605" symbol="onStart"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="20" lineNum="28" parent="globals/TimeMasterApp" pc="268436627" symbol="getInitialView"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="20" lineNum="29" parent="globals/TimeMasterApp" pc="268436629" symbol="getInitialView"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="20" lineNum="30" parent="globals/TimeMasterApp" pc="268436650" symbol="getInitialView"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="21" lineNum="11" parent="globals/TimeMasterApp" pc="268436715" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="21" lineNum="12" parent="globals/TimeMasterApp" pc="268436717" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="21" lineNum="13" parent="globals/TimeMasterApp" pc="268436735" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="22" lineNum="23" parent="globals/TimeMasterApp" pc="268436766" symbol="onStop"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterApp.mc" id="22" lineNum="24" parent="globals/TimeMasterApp" pc="268436768" symbol="onStop"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="23" lineNum="37" parent="globals/TimeMasterView" pc="268436790" symbol="onShow"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="23" lineNum="38" parent="globals/TimeMasterView" pc="268436792" symbol="onShow"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="20" parent="globals/TimeMasterView" pc="268436814" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="21" parent="globals/TimeMasterView" pc="268436816" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="22" parent="globals/TimeMasterView" pc="268436857" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="23" parent="globals/TimeMasterView" pc="268436881" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="24" parent="globals/TimeMasterView" pc="268436905" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="26" parent="globals/TimeMasterView" pc="268436929" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="27" parent="globals/TimeMasterView" pc="268436950" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="28" parent="globals/TimeMasterView" pc="268436967" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="24" lineNum="29" parent="globals/TimeMasterView" pc="268436984" symbol="onLayout"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="25" lineNum="79" parent="globals/TimeMasterView" pc="268437002" symbol="setElapsedTime"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="25" lineNum="80" parent="globals/TimeMasterView" pc="268437006" symbol="setElapsedTime"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="25" lineNum="81" parent="globals/TimeMasterView" pc="268437016" symbol="setElapsedTime"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="25" lineNum="83" parent="globals/TimeMasterView" pc="268437026" symbol="setElapsedTime"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="25" lineNum="85" parent="globals/TimeMasterView" pc="268437067" symbol="setElapsedTime"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="25" lineNum="86" parent="globals/TimeMasterView" pc="268437087" symbol="setElapsedTime"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="25" lineNum="87" parent="globals/TimeMasterView" pc="268437111" symbol="setElapsedTime"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="26" lineNum="15" parent="globals/TimeMasterView" pc="268437128" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="26" lineNum="16" parent="globals/TimeMasterView" pc="268437130" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="26" lineNum="17" parent="globals/TimeMasterView" pc="268437148" symbol="initialize"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="27" lineNum="41" parent="globals/TimeMasterView" pc="268437170" symbol="onHide"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="27" lineNum="42" parent="globals/TimeMasterView" pc="268437172" symbol="onHide"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="28" lineNum="69" parent="globals/TimeMasterView" pc="268437194" symbol="setTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="28" lineNum="70" parent="globals/TimeMasterView" pc="268437198" symbol="setTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="28" lineNum="71" parent="globals/TimeMasterView" pc="268437208" symbol="setTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="28" lineNum="72" parent="globals/TimeMasterView" pc="268437218" symbol="setTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="28" lineNum="74" parent="globals/TimeMasterView" pc="268437259" symbol="setTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="28" lineNum="75" parent="globals/TimeMasterView" pc="268437279" symbol="setTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="28" lineNum="76" parent="globals/TimeMasterView" pc="268437303" symbol="setTimer"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="29" lineNum="32" parent="globals/TimeMasterView" pc="268437320" symbol="onUpdate"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="29" lineNum="33" parent="globals/TimeMasterView" pc="268437322" symbol="onUpdate"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="29" lineNum="34" parent="globals/TimeMasterView" pc="268437342" symbol="onUpdate"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="46" parent="globals/TimeMasterView" pc="268437364" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="48" parent="globals/TimeMasterView" pc="268437368" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="49" parent="globals/TimeMasterView" pc="268437370" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="52" parent="globals/TimeMasterView" pc="268437390" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="55" parent="globals/TimeMasterView" pc="268437410" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="58" parent="globals/TimeMasterView" pc="268437430" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="61" parent="globals/TimeMasterView" pc="268437450" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="50" parent="globals/TimeMasterView" pc="268437453" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="51" parent="globals/TimeMasterView" pc="268437460" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="53" parent="globals/TimeMasterView" pc="268437463" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="54" parent="globals/TimeMasterView" pc="268437470" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="56" parent="globals/TimeMasterView" pc="268437473" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="57" parent="globals/TimeMasterView" pc="268437480" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="59" parent="globals/TimeMasterView" pc="268437483" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="60" parent="globals/TimeMasterView" pc="268437490" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="62" parent="globals/TimeMasterView" pc="268437493" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="64" parent="globals/TimeMasterView" pc="268437501" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="65" parent="globals/TimeMasterView" pc="268437525" symbol="setModeType"/>
+        <entry filename="D:\\Pulkit\\Coding\\Garmin\\Garmin\\source\\TimeMasterView.mc" id="30" lineNum="66" parent="globals/TimeMasterView" pc="268437545" symbol="setModeType"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="13" parent="globals/Rez/Layouts" pc="268437562" symbol="MainLayout"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="14" parent="globals/Rez/Layouts" pc="268437574" symbol="MainLayout"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="16" parent="globals/Rez/Layouts" pc="268437699" symbol="MainLayout"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="18" parent="globals/Rez/Layouts" pc="268437824" symbol="MainLayout"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="20" parent="globals/Rez/Layouts" pc="268437949" symbol="MainLayout"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="32" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437986" symbol="&lt;init&gt;"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="33" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268438005" symbol="initialize"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="33" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268438007" symbol="initialize"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="33" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268438025" symbol="initialize"/>
+        <entry filename="d:\\Pulkit\\Coding\\Garmin\\Garmin\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="33" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268438047" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry field="true" id="30" symbol="_timer_label"/>
+        <entry field="true" id="29" symbol="_mode_label"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="6" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="37" method="true" symbol="MainLayout"/>
+        <entry field="true" id="35" symbol="timer"/>
+        <entry field="true" id="21" symbol="selectedMode"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="19" method="true" symbol="countdown"/>
+        <entry field="true" id="41" symbol="mode_misc"/>
+        <entry field="true" id="39" symbol="AppName"/>
+        <entry field="true" id="27" symbol="_initializedValue"/>
+        <entry id="7" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="33" method="true" symbol="setModeType"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="3" module="true" symbol="globals/Rez"/>
+        <entry id="9" object="true" symbol="TimeMasterApp"/>
+        <entry id="2" module="true" symbol="globals/DataManager/&lt;statics&gt;"/>
+        <entry field="true" id="44" symbol="prompt"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="20" method="true" symbol="endSession"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8" object="true" symbol="DataManager"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="16" symbol="_elapsedTime"/>
+        <entry id="12" object="true" symbol="TimeMasterView"/>
+        <entry id="47" symbol="item_2"/>
+        <entry id="46" symbol="item_1"/>
+        <entry id="14" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="28" symbol="_elapsed_label"/>
+        <entry id="32" method="true" symbol="setElapsedTime"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="17" symbol="_timer"/>
+        <entry field="true" id="40" symbol="elapsed_time"/>
+        <entry id="25" method="true" symbol="getCurrentTimer"/>
+        <entry field="true" id="8390041" method="true" symbol="mode"/>
+        <entry field="true" id="31" symbol="elapsed"/>
+        <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="22" method="true" symbol="startCountdown"/>
+        <entry id="38" object="true" symbol="MainMenu"/>
+        <entry field="true" id="42" symbol="mode_outdoor"/>
+        <entry id="11" object="true" symbol="TimeMasterMenuDelegate"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="15" symbol="_currentDuration"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="36" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="24" method="true" symbol="updateUI"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="18" symbol="_view"/>
+        <entry id="34" method="true" symbol="setTimer"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="43" symbol="mode_work"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="10" object="true" symbol="TimeMasterDelegate"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="8389347" symbol="color"/>
+        <entry field="true" id="23" symbol="time_started"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="13" module="true" symbol="Layouts"/>
+        <entry id="26" method="true" symbol="setCurrentTimer"/>
+        <entry field="true" id="45" symbol="timer_default"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436339" name="view" stackId="1" startPc="268436235"/>
+        <entry endPc="268436421" name="value" stackId="1" startPc="268436344"/>
+        <entry arg="true" endPc="268436453" name="timer" stackId="1" startPc="268436422"/>
+        <entry arg="true" endPc="268436526" name="item" stackId="1" startPc="268436454"/>
+        <entry arg="true" endPc="268436626" name="state" stackId="1" startPc="268436569"/>
+        <entry arg="true" endPc="268436789" name="state" stackId="1" startPc="268436766"/>
+        <entry arg="true" endPc="268437001" name="dc" stackId="1" startPc="268436814"/>
+        <entry arg="true" endPc="268437127" name="minutes" stackId="1" startPc="268437002"/>
+        <entry endPc="268437126" name="hours" stackId="2" startPc="268437006"/>
+        <entry endPc="268437126" name="remainingMinutes" stackId="3" startPc="268437006"/>
+        <entry endPc="268437126" name="formattedElapsedTime" stackId="4" startPc="268437006"/>
+        <entry arg="true" endPc="268437319" name="seconds" stackId="1" startPc="268437194"/>
+        <entry endPc="268437318" name="minutes" stackId="2" startPc="268437198"/>
+        <entry endPc="268437318" name="remainingSeconds" stackId="3" startPc="268437198"/>
+        <entry endPc="268437318" name="formattedTime" stackId="4" startPc="268437198"/>
+        <entry arg="true" endPc="268437363" name="dc" stackId="1" startPc="268437320"/>
+        <entry arg="true" endPc="268437561" name="modeNumber" stackId="1" startPc="268437364"/>
+        <entry endPc="268437560" name="mode" stackId="2" startPc="268437368"/>
+        <entry arg="true" endPc="268437985" name="dc" stackId="1" startPc="268437562"/>
+        <entry endPc="268437985" name="rez_cmp_local_text_mode_label" stackId="2" startPc="268437574"/>
+        <entry endPc="268437985" name="rez_cmp_local_text_timer_label" stackId="3" startPc="268437574"/>
+        <entry endPc="268437985" name="rez_cmp_local_text_elapsed_label" stackId="4" startPc="268437574"/>
+    </localVars>
+    <deviceInfo partNumber="006-B3077-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="mode_work"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="elapsed_time"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="mode_misc"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="timer_default"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="mode_outdoor"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="79" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="174" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/TimeMasterDelegate" offset="237" parentId="globals" symbolId="TimeMasterDelegate" type="class"/>
+        <dataEntry label="globals/DataManager" offset="380" parentId="globals" symbolId="DataManager" type="class"/>
+        <dataEntry label="globals/DataManager/&lt;statics&gt;" offset="427" parentId="DataManager" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/TimeMasterMenuDelegate" offset="474" parentId="globals" symbolId="TimeMasterMenuDelegate" type="class"/>
+        <dataEntry label="globals/TimeMasterApp" offset="529" parentId="globals" symbolId="TimeMasterApp" type="class"/>
+        <dataEntry label="globals/TimeMasterView" offset="616" parentId="globals" symbolId="TimeMasterView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="767" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="806" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="845" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="884" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="971" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435509" name="&lt;init&gt;" parent="Rez" startPc="268435486">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="TimeMasterDelegate" startPc="268435510">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="TimeMasterMenuDelegate" startPc="268435529">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435566" name="&lt;init&gt;" parent="TimeMasterApp" startPc="268435548">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435585" name="&lt;init&gt;" parent="TimeMasterView" startPc="268435567">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435696" name="onMenu" parent="TimeMasterDelegate" startPc="268435586">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435770" name="endSession" parent="TimeMasterDelegate" startPc="268435697">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435951" name="countdown" parent="TimeMasterDelegate" startPc="268435771">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436051" name="updateUI" parent="TimeMasterDelegate" startPc="268435952">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436125" name="onSelect" parent="TimeMasterDelegate" startPc="268436052">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436234" name="startCountdown" parent="TimeMasterDelegate" startPc="268436126">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436339" name="initialize" parent="TimeMasterDelegate" startPc="268436235">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436421" name="getCurrentTimer" parent="DataManager" startPc="268436340">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436453" name="setCurrentTimer" parent="DataManager" startPc="268436422">
+            <param id="timer"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436526" name="onMenuItem" parent="TimeMasterMenuDelegate" startPc="268436454">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436568" name="initialize" parent="TimeMasterMenuDelegate" startPc="268436527">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436626" name="onStart" parent="TimeMasterApp" startPc="268436569">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436714" name="getInitialView" parent="TimeMasterApp" startPc="268436627">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436765" name="initialize" parent="TimeMasterApp" startPc="268436715">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436789" name="onStop" parent="TimeMasterApp" startPc="268436766">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436813" name="onShow" parent="TimeMasterView" startPc="268436790">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437001" name="onLayout" parent="TimeMasterView" startPc="268436814">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437127" name="setElapsedTime" parent="TimeMasterView" startPc="268437002">
+            <param id="minutes"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437169" name="initialize" parent="TimeMasterView" startPc="268437128">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437193" name="onHide" parent="TimeMasterView" startPc="268437170">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437319" name="setTimer" parent="TimeMasterView" startPc="268437194">
+            <param id="seconds"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437363" name="onUpdate" parent="TimeMasterView" startPc="268437320">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437561" name="setModeType" parent="TimeMasterView" startPc="268437364">
+            <param id="modeNumber"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437985" name="MainLayout" parent="Layouts" startPc="268437562">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438004" name="&lt;init&gt;" parent="MainMenu" startPc="268437986">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438069" name="initialize" parent="MainMenu" startPc="268438005">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
