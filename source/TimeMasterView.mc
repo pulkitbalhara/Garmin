@@ -15,6 +15,7 @@ class TimeMasterView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
+        WatchUi.requestUpdate();
         //System.println("TimeMasterView.mc --- View initialized");
     }
 
@@ -24,10 +25,9 @@ class TimeMasterView extends WatchUi.View {
         _timer_label = findDrawableById("timer_label");  // Retrieve timer label
         _elapsed_label = findDrawableById("elapsed_label");  // Retrieve elapsed label
         _status_label = findDrawableById("status_label");
-       // System.println("TimeMasterView.mc --- Layout set, labels loaded");
-        setModeType(1);  // Example: Set mode to Outdoor
-        setTimer(DataManager.getCurrentTimer());  // Example: Set timer to 30:00 (1800 seconds)
-        setElapsedTime(0);  // Example: Set elapsed time to 2 hours (7200 seconds)
+       // System.println("TimeMasterView.mc --- Layout set, labels loaded");  // Example: Set mode to Outdoor
+        setTimer(DataManager.getTimerDuration());  // Example: Set timer to 30:00 (1800 seconds)
+        setElapsedTime(DataManager.getTotalMinutesInvested());  // Example: Set elapsed time to 2 hours (7200 seconds)
     }
 
     function onUpdate(dc as Dc) as Void {
@@ -70,7 +70,7 @@ class TimeMasterView extends WatchUi.View {
     function setTimer(seconds as Number) as Void {
         var minutes = seconds / 60;
         var remainingSeconds = seconds % 60;
-        var formattedTime = minutes.format("%02d") + ":" + remainingSeconds.format("%02d");
+        var formattedTime = minutes.format("%02d") + " min Left" ;
         
         _timer_label.setText(formattedTime);  // Update the timer label
        // System.println("TimeMasterView.mc --- Timer set to: " + formattedTime);

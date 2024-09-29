@@ -63,7 +63,7 @@ function onBack() as Boolean {
     paused = false;
     _timer = new Timer.Timer();
     _view.setStatus("Timer Running", Graphics.COLOR_GREEN);
-    _timer.start(method(:countdown), 1000, true);  // Call countdown every second
+    _timer.start(method(:countdown), 60000, true);  // Call countdown every second
 }
 
     function pauseCountdown() as Void {
@@ -82,14 +82,13 @@ function onBack() as Boolean {
     time_started = true;
     paused = false;
     _view.setStatus("Timer Running", Graphics.COLOR_GREEN);
-    _timer.start(method(:countdown), 1000, true);  // Resume the countdown
+    _timer.start(method(:countdown), 60000, true);  // Resume the countdown
     updateUI();  // Ensure UI is updated after resuming
 }
-
     function countdown() as Void {
         
         if (_currentDuration > 0) {
-            _currentDuration -= 1;  // Decrease timer by 1 second
+            _currentDuration -= 60;  // Decrease timer by 60 seconds
             //.println("TimeMasterDelegate.mc --- Timer: " + _currentDuration + " seconds left");
             DataManager.setCurrentTimer(_currentDuration);  // Save updated timer
             updateUI();  // Update the UI with the new timer value

@@ -31,17 +31,21 @@ class TimeMasterView extends WatchUi.View{
     var _status_label;
     [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc"; @line = 16; ]
     function initialize() as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_16_26_19_4_start:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_16_26_20_4_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 17 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_16_26_19_4_stop:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 18 8 ]
+        %tmp.4 = getm $.Toybox.WatchUi;
+        %tmp.5 = getv function %tmp.4 :requestUpdate;
+        invoke %tmp.4 %tmp.5();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_16_26_20_4_stop:
     }
-    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc"; @line = 21; ]
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc"; @line = 22; ]
     function onLayout(dc as Dc) as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_21_40_31_4_start:
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 22 8 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_22_40_31_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 23 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -50,48 +54,45 @@ D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_21_40_31_4_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 23 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 24 8 ]
         %tmp.10 = self;
         %tmp.11 = getv function %tmp.10 :findDrawableById;
         %tmp.12 = "mode_label";
         %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
         putv self :_mode_label %tmp.13;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 24 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 25 8 ]
         %tmp.14 = self;
         %tmp.15 = getv function %tmp.14 :findDrawableById;
         %tmp.16 = "timer_label";
         %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
         putv self :_timer_label %tmp.17;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 25 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 26 8 ]
         %tmp.18 = self;
         %tmp.19 = getv function %tmp.18 :findDrawableById;
         %tmp.20 = "elapsed_label";
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
         putv self :_elapsed_label %tmp.21;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 26 8 ]
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 27 8 ]
         %tmp.22 = self;
         %tmp.23 = getv function %tmp.22 :findDrawableById;
         %tmp.24 = "status_label";
         %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
         putv self :_status_label %tmp.25;
-[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 28 8 ]
-        %tmp.26 = self;
-        %tmp.27 = getv function %tmp.26 :setModeType;
-        %tmp.28 = 1;
-        invoke %tmp.26 %tmp.27(%tmp.28);
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 29 8 ]
-        %tmp.29 = self;
-        %tmp.30 = getv function %tmp.29 :setTimer;
-        %tmp.32 = getv ? :DataManager;
-        %tmp.33 = getv function %tmp.32 :getCurrentTimer;
-        %tmp.34 = invoke %tmp.32 %tmp.33();
-        invoke %tmp.29 %tmp.30(%tmp.34);
+        %tmp.26 = self;
+        %tmp.27 = getv function %tmp.26 :setTimer;
+        %tmp.29 = getv ? :DataManager;
+        %tmp.30 = getv function %tmp.29 :getTimerDuration;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        invoke %tmp.26 %tmp.27(%tmp.31);
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 30 8 ]
-        %tmp.35 = self;
-        %tmp.36 = getv function %tmp.35 :setElapsedTime;
-        %tmp.37 = 0;
-        invoke %tmp.35 %tmp.36(%tmp.37);
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_21_40_31_4_stop:
+        %tmp.32 = self;
+        %tmp.33 = getv function %tmp.32 :setElapsedTime;
+        %tmp.35 = getv ? :DataManager;
+        %tmp.36 = getv function %tmp.35 :getTotalMinutesInvested;
+        %tmp.37 = invoke %tmp.35 %tmp.36();
+        invoke %tmp.32 %tmp.33(%tmp.37);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_22_40_31_4_stop:
     }
     [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc"; @line = 33; ]
     function onUpdate(dc as Dc) as Void {
@@ -213,23 +214,18 @@ D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_70_49_78_4_start:
         %tmp.10 = getv function %tmp.9 :format;
         %tmp.11 = "%02d";
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
-        %tmp.13 = ":";
+        %tmp.13 = " min Left";
         %tmp.14 = add %tmp.12 %tmp.13;
-        %tmp.15 = lgetv %remainingSeconds.2;
-        %tmp.16 = getv function %tmp.15 :format;
-        %tmp.17 = "%02d";
-        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
-        %tmp.19 = add %tmp.14 %tmp.18;
-        lputv %formattedTime.3 %tmp.19;
+        lputv %formattedTime.3 %tmp.14;
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 75 8 ]
-        %tmp.21 = getv ? :_timer_label;
-        %tmp.22 = getv function %tmp.21 :setText;
-        %tmp.24 = lgetv %formattedTime.3;
-        invoke %tmp.21 %tmp.22(%tmp.24);
+        %tmp.16 = getv ? :_timer_label;
+        %tmp.17 = getv function %tmp.16 :setText;
+        %tmp.19 = lgetv %formattedTime.3;
+        invoke %tmp.16 %tmp.17(%tmp.19);
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc" 77 8 ]
-        %tmp.25 = getm $.Toybox.WatchUi;
-        %tmp.26 = getv function %tmp.25 :requestUpdate;
-        invoke %tmp.25 %tmp.26();
+        %tmp.20 = getm $.Toybox.WatchUi;
+        %tmp.21 = getv function %tmp.20 :requestUpdate;
+        invoke %tmp.20 %tmp.21();
 D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterView_mc_70_49_78_4_stop:
     }
     [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterView.mc"; @line = 80; ]

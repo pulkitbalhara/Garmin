@@ -18,6 +18,11 @@ class TimeMasterMenuDelegate extends WatchUi.MenuInputDelegate {
         } else if (item == :item_4) {
             //System.println("TimeMasterMenuDelegate.mc --- Settings selected");
             WatchUi.pushView(new Rez.Menus.TimerSettingsMenu(), new TimerSettingsMenuDelegate(_view), WatchUi.SLIDE_UP);
+        }else if (item == :item_0) {
+            //System.println("TimeMasterMenuDelegate.mc --- Settings selected");
+            //WatchUi.pushView(new Rez.Menus.TimerSettingsMenu(), new TimerSettingsMenuDelegate(_view), WatchUi.SLIDE_UP);
+            //startBackgroundMode();
+
         } else if (item == :item_3) {
             //System.println("TimeMasterMenuDelegate.mc --- Change Mode selected");
             WatchUi.pushView(new Rez.Menus.ModeMenu(), new ModeSelectionDelegate(_view), WatchUi.SLIDE_UP);
@@ -47,7 +52,7 @@ class TimeMasterMenuDelegate extends WatchUi.MenuInputDelegate {
     
     // Optionally, notify the user
     //_view.showAlert("Daily Log Reset!", "Total time spent today has been reset.", WatchUi.ALERT_OK);
-    
+    _view.setElapsedTime(0);
     // Update the UI if necessary
     WatchUi.requestUpdate();
 }
@@ -66,7 +71,10 @@ function resetAllData() as Void {
     //_view.showAlert("All Data Reset!", "All session data has been reset.", WatchUi.ALERT_OK);
     
     // Update the UI to reflect the reset
+    _view.setElapsedTime(0);
     WatchUi.requestUpdate();
+}
+
 }
 
 
@@ -74,7 +82,7 @@ function resetAllData() as Void {
     
 
 
-}
+
 
 
 

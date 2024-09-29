@@ -53,6 +53,7 @@ module Rez {
             function initialize() {
                 Menu.initialize();
                 addItem("Start Session", :item_1);
+                addItem("Bkground(Cmng Soon)", :item_0);
                 addItem("Exit", :item_2);
                 addItem("Change Mode", :item_3);
                 addItem("Settings", :item_4);
