@@ -1,0 +1,95 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Layouts {
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_mode_label = new WatchUi.Text({:identifier=>"mode_label", :color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>(240 * (20 / 100.0)), :text=>"Work", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            var rez_cmp_local_text_status_label = new WatchUi.Text({:identifier=>"status_label", :color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>(240 * (40 / 100.0)), :text=>" ", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_timer_label = new WatchUi.Text({:identifier=>"timer_label", :color=>Graphics.COLOR_YELLOW, :locX=>(240 * 0.5), :locY=>(240 * (70 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            var rez_cmp_local_text_elapsed_label = new WatchUi.Text({:identifier=>"elapsed_label", :color=>Graphics.COLOR_LT_GRAY, :locX=>(240 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            return [rez_cmp_local_text_mode_label, rez_cmp_local_text_status_label, rez_cmp_local_text_timer_label, rez_cmp_local_text_elapsed_label] as Array<WatchUi.Drawable>;
+        }
+
+        function SummaryLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_summary_heading = new WatchUi.Text({:identifier=>"summary_heading", :color=>Graphics.COLOR_WHITE, :locX=>(240 * (50 / 100.0)), :locY=>(240 * (5 / 100.0)), :text=>"Session Summary", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
+
+            var rez_cmp_local_text_total_time_label = new WatchUi.Text({:identifier=>"total_time_label", :color=>Graphics.COLOR_LT_GRAY, :locX=>(240 * (50 / 100.0)), :locY=>(240 * (15 / 100.0)), :text=>"Total Time: ", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
+
+            var rez_cmp_local_text_work_time_label = new WatchUi.Text({:identifier=>"work_time_label", :color=>Graphics.COLOR_WHITE, :locX=>(240 * (50 / 100.0)), :locY=>(240 * (30 / 100.0)), :text=>"Work Time: ", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_outdoor_time_label = new WatchUi.Text({:identifier=>"outdoor_time_label", :color=>Graphics.COLOR_WHITE, :locX=>(240 * (50 / 100.0)), :locY=>(240 * (45 / 100.0)), :text=>"Outdoor Time: ", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_learning_time_label = new WatchUi.Text({:identifier=>"learning_time_label", :color=>Graphics.COLOR_WHITE, :locX=>(240 * (50 / 100.0)), :locY=>(240 * (60 / 100.0)), :text=>"Learning Time: ", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_miscll_time_label = new WatchUi.Text({:identifier=>"miscll_time_label", :color=>Graphics.COLOR_WHITE, :locX=>(240 * (50 / 100.0)), :locY=>(240 * (75 / 100.0)), :text=>"Miscellaneous Time: ", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_summary_heading, rez_cmp_local_text_total_time_label, rez_cmp_local_text_work_time_label, rez_cmp_local_text_outdoor_time_label, rez_cmp_local_text_learning_time_label, rez_cmp_local_text_miscll_time_label] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Menus {
+        class TimerPausedMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Resume Session", :resume);
+                addItem("Discard Session", :discard);
+                addItem("Save Session", :save);
+            }
+        }
+
+        class MainMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Start Session", :item_1);
+                addItem("Bkground(Cmng Soon)", :item_0);
+                addItem("Exit", :item_2);
+                addItem("Change Mode", :item_3);
+                addItem("Settings", :item_4);
+                addItem("Summary", :item_5);
+                addItem("Reset Daily Log", :item_6);
+                addItem("Reset All Data", :item_7);
+            }
+        }
+
+        class ModeMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Work", :mode_1);
+                addItem("Outdoor", :mode_2);
+                addItem("Learning", :mode_3);
+                addItem("Miscellaneous", :mode_4);
+            }
+        }
+
+        class TimerSettingsMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("30 minutes", :timer_30);
+                addItem("45 minutes", :timer_45);
+                addItem("60 minutes", :timer_60);
+            }
+        }
+    } // Menus
+
+    module Strings {
+        (:initialized) var mode_misc as ResourceId;
+        (:initialized) var timer_default as ResourceId;
+        (:initialized) var elapsed_time as ResourceId;
+        (:initialized) var mode_outdoor as ResourceId;
+        (:initialized) var prompt as ResourceId;
+        (:initialized) var mode_work as ResourceId;
+        (:initialized) var AppName as ResourceId;
+    } // Strings
+} // Rez

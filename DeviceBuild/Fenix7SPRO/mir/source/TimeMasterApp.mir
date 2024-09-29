@@ -1,0 +1,79 @@
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 6; ]
+class TimeMasterApp extends Application.AppBase{
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 8; @position = 15; ]
+    protected
+    var _view;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 9; @position = 15; ]
+    protected
+    var _initializedValue = 1800;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 11; ]
+    function initialize() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_11_26_14_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc" 12 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_11_26_14_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 17; ]
+    function onStart(state as Dictionary or Null) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_17_51_21_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc" 18 8 ]
+        %tmp.4 = getv ? :TimeMasterView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :_view %tmp.1;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc" 19 8 ]
+        %tmp.6 = getv ? :DataManager;
+        %tmp.7 = getv function %tmp.6 :initializeData;
+        invoke %tmp.6 %tmp.7();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_17_51_21_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 24; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 29; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_29_68_32_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc" 31 8 ]
+        %tmp.1 = newa 2;
+        %tmp.3 = getv ? :_view;
+        %tmp.4 = dup %tmp.1;
+        %tmp.5 = aputv %tmp.4 0 %tmp.3;
+        %tmp.9 = getv ? :TimeMasterDelegate;
+        %tmp.11 = getv ? :_view;
+        %tmp.6 = newc %tmp.9 (%tmp.11);
+        %tmp.12 = dup %tmp.5;
+        %tmp.13 = aputv %tmp.12 1 %tmp.6;
+        ret %tmp.13;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_29_68_32_4_stop:
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 35; ]
+function getApp() as TimeMasterApp {
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_35_35_37_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc" 36 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 TimeMasterApp;
+    ret %tmp.4;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterApp_mc_35_35_37_0_stop:
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterApp.mc"; @line = 1; ]
+<init> {
+}

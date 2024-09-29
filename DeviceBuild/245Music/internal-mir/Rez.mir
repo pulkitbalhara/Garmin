@@ -1,0 +1,740 @@
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 12; ]
+    module Layouts {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 13; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 14 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_stop" ]
+            %rez_cmp_local_text_mode_label.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 7;
+            %tmp.7 = const :identifier;
+            %tmp.8 = "mode_label";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            %tmp.13 = getm $.Toybox.Graphics;
+            %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            %tmp.19 = 240;
+            %tmp.20 = 0.5;
+            %tmp.21 = mul %tmp.19 %tmp.20;
+            %tmp.22 = dup %tmp.16;
+            %tmp.23 = aputv %tmp.22 %tmp.18 %tmp.21;
+            %tmp.25 = const :locY;
+            %tmp.26 = 240;
+            %tmp.27 = 20;
+            %tmp.28 = 100.0;
+            %tmp.29 = div %tmp.27 %tmp.28;
+            %tmp.30 = mul %tmp.26 %tmp.29;
+            %tmp.31 = dup %tmp.23;
+            %tmp.32 = aputv %tmp.31 %tmp.25 %tmp.30;
+            %tmp.34 = const :text;
+            %tmp.35 = "Work";
+            %tmp.36 = dup %tmp.32;
+            %tmp.37 = aputv %tmp.36 %tmp.34 %tmp.35;
+            %tmp.39 = const :justification;
+            %tmp.40 = getm $.Toybox.Graphics;
+            %tmp.41 = getv %tmp.40 :TEXT_JUSTIFY_CENTER;
+            %tmp.42 = dup %tmp.37;
+            %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
+            %tmp.45 = const :font;
+            %tmp.46 = getm $.Toybox.Graphics;
+            %tmp.47 = getv %tmp.46 :FONT_LARGE;
+            %tmp.48 = dup %tmp.43;
+            %tmp.49 = aputv %tmp.48 %tmp.45 %tmp.47;
+            %tmp.1 = newc %tmp.4 (%tmp.49);
+            lputv %rez_cmp_local_text_mode_label.1 %tmp.1;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 16 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_stop" ]
+            %rez_cmp_local_text_status_label.2 = local;
+            %tmp.52 = getm $.Toybox.WatchUi;
+            %tmp.53 = getv function ? %tmp.52 :Text;
+            %tmp.54 = newd 7;
+            %tmp.56 = const :identifier;
+            %tmp.57 = "status_label";
+            %tmp.58 = dup %tmp.54;
+            %tmp.59 = aputv %tmp.58 %tmp.56 %tmp.57;
+            %tmp.61 = const :color;
+            %tmp.62 = getm $.Toybox.Graphics;
+            %tmp.63 = getv %tmp.62 :COLOR_WHITE;
+            %tmp.64 = dup %tmp.59;
+            %tmp.65 = aputv %tmp.64 %tmp.61 %tmp.63;
+            %tmp.67 = const :locX;
+            %tmp.68 = 240;
+            %tmp.69 = 0.5;
+            %tmp.70 = mul %tmp.68 %tmp.69;
+            %tmp.71 = dup %tmp.65;
+            %tmp.72 = aputv %tmp.71 %tmp.67 %tmp.70;
+            %tmp.74 = const :locY;
+            %tmp.75 = 240;
+            %tmp.76 = 40;
+            %tmp.77 = 100.0;
+            %tmp.78 = div %tmp.76 %tmp.77;
+            %tmp.79 = mul %tmp.75 %tmp.78;
+            %tmp.80 = dup %tmp.72;
+            %tmp.81 = aputv %tmp.80 %tmp.74 %tmp.79;
+            %tmp.83 = const :text;
+            %tmp.84 = " ";
+            %tmp.85 = dup %tmp.81;
+            %tmp.86 = aputv %tmp.85 %tmp.83 %tmp.84;
+            %tmp.88 = const :justification;
+            %tmp.89 = getm $.Toybox.Graphics;
+            %tmp.90 = getv %tmp.89 :TEXT_JUSTIFY_CENTER;
+            %tmp.91 = dup %tmp.86;
+            %tmp.92 = aputv %tmp.91 %tmp.88 %tmp.90;
+            %tmp.94 = const :font;
+            %tmp.95 = getm $.Toybox.Graphics;
+            %tmp.96 = getv %tmp.95 :FONT_MEDIUM;
+            %tmp.97 = dup %tmp.92;
+            %tmp.98 = aputv %tmp.97 %tmp.94 %tmp.96;
+            %tmp.50 = newc %tmp.53 (%tmp.98);
+            lputv %rez_cmp_local_text_status_label.2 %tmp.50;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 18 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_stop" ]
+            %rez_cmp_local_text_timer_label.3 = local;
+            %tmp.101 = getm $.Toybox.WatchUi;
+            %tmp.102 = getv function ? %tmp.101 :Text;
+            %tmp.103 = newd 6;
+            %tmp.105 = const :identifier;
+            %tmp.106 = "timer_label";
+            %tmp.107 = dup %tmp.103;
+            %tmp.108 = aputv %tmp.107 %tmp.105 %tmp.106;
+            %tmp.110 = const :color;
+            %tmp.111 = getm $.Toybox.Graphics;
+            %tmp.112 = getv %tmp.111 :COLOR_YELLOW;
+            %tmp.113 = dup %tmp.108;
+            %tmp.114 = aputv %tmp.113 %tmp.110 %tmp.112;
+            %tmp.116 = const :locX;
+            %tmp.117 = 240;
+            %tmp.118 = 0.5;
+            %tmp.119 = mul %tmp.117 %tmp.118;
+            %tmp.120 = dup %tmp.114;
+            %tmp.121 = aputv %tmp.120 %tmp.116 %tmp.119;
+            %tmp.123 = const :locY;
+            %tmp.124 = 240;
+            %tmp.125 = 70;
+            %tmp.126 = 100.0;
+            %tmp.127 = div %tmp.125 %tmp.126;
+            %tmp.128 = mul %tmp.124 %tmp.127;
+            %tmp.129 = dup %tmp.121;
+            %tmp.130 = aputv %tmp.129 %tmp.123 %tmp.128;
+            %tmp.132 = const :justification;
+            %tmp.133 = getm $.Toybox.Graphics;
+            %tmp.134 = getv %tmp.133 :TEXT_JUSTIFY_CENTER;
+            %tmp.135 = dup %tmp.130;
+            %tmp.136 = aputv %tmp.135 %tmp.132 %tmp.134;
+            %tmp.138 = const :font;
+            %tmp.139 = getm $.Toybox.Graphics;
+            %tmp.140 = getv %tmp.139 :FONT_LARGE;
+            %tmp.141 = dup %tmp.136;
+            %tmp.142 = aputv %tmp.141 %tmp.138 %tmp.140;
+            %tmp.99 = newc %tmp.102 (%tmp.142);
+            lputv %rez_cmp_local_text_timer_label.3 %tmp.99;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 20 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_stop" ]
+            %rez_cmp_local_text_elapsed_label.4 = local;
+            %tmp.145 = getm $.Toybox.WatchUi;
+            %tmp.146 = getv function ? %tmp.145 :Text;
+            %tmp.147 = newd 6;
+            %tmp.149 = const :identifier;
+            %tmp.150 = "elapsed_label";
+            %tmp.151 = dup %tmp.147;
+            %tmp.152 = aputv %tmp.151 %tmp.149 %tmp.150;
+            %tmp.154 = const :color;
+            %tmp.155 = getm $.Toybox.Graphics;
+            %tmp.156 = getv %tmp.155 :COLOR_LT_GRAY;
+            %tmp.157 = dup %tmp.152;
+            %tmp.158 = aputv %tmp.157 %tmp.154 %tmp.156;
+            %tmp.160 = const :locX;
+            %tmp.161 = 240;
+            %tmp.162 = 0.5;
+            %tmp.163 = mul %tmp.161 %tmp.162;
+            %tmp.164 = dup %tmp.158;
+            %tmp.165 = aputv %tmp.164 %tmp.160 %tmp.163;
+            %tmp.167 = const :locY;
+            %tmp.168 = getm $.Toybox.WatchUi;
+            %tmp.169 = getv %tmp.168 :LAYOUT_VALIGN_BOTTOM;
+            %tmp.170 = dup %tmp.165;
+            %tmp.171 = aputv %tmp.170 %tmp.167 %tmp.169;
+            %tmp.173 = const :justification;
+            %tmp.174 = getm $.Toybox.Graphics;
+            %tmp.175 = getv %tmp.174 :TEXT_JUSTIFY_CENTER;
+            %tmp.176 = dup %tmp.171;
+            %tmp.177 = aputv %tmp.176 %tmp.173 %tmp.175;
+            %tmp.179 = const :font;
+            %tmp.180 = getm $.Toybox.Graphics;
+            %tmp.181 = getv %tmp.180 :FONT_MEDIUM;
+            %tmp.182 = dup %tmp.177;
+            %tmp.183 = aputv %tmp.182 %tmp.179 %tmp.181;
+            %tmp.143 = newc %tmp.146 (%tmp.183);
+            lputv %rez_cmp_local_text_elapsed_label.4 %tmp.143;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 22 12 ]
+            %tmp.184 = newa 4 Array<WatchUi.Drawable>;
+            %tmp.186 = lgetv %rez_cmp_local_text_mode_label.1;
+            %tmp.187 = dup %tmp.184;
+            %tmp.188 = aputv %tmp.187 0 %tmp.186;
+            %tmp.190 = lgetv %rez_cmp_local_text_status_label.2;
+            %tmp.191 = dup %tmp.188;
+            %tmp.192 = aputv %tmp.191 1 %tmp.190;
+            %tmp.194 = lgetv %rez_cmp_local_text_timer_label.3;
+            %tmp.195 = dup %tmp.192;
+            %tmp.196 = aputv %tmp.195 2 %tmp.194;
+            %tmp.198 = lgetv %rez_cmp_local_text_elapsed_label.4;
+            %tmp.199 = dup %tmp.196;
+            %tmp.200 = aputv %tmp.199 3 %tmp.198;
+            ret %tmp.200;
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_13_74_23_8_stop:
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 25; ]
+        function SummaryLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 26 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_stop" ]
+            %rez_cmp_local_text_summary_heading.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 7;
+            %tmp.7 = const :identifier;
+            %tmp.8 = "summary_heading";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            %tmp.13 = getm $.Toybox.Graphics;
+            %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            %tmp.19 = 240;
+            %tmp.20 = 50;
+            %tmp.21 = 100.0;
+            %tmp.22 = div %tmp.20 %tmp.21;
+            %tmp.23 = mul %tmp.19 %tmp.22;
+            %tmp.24 = dup %tmp.16;
+            %tmp.25 = aputv %tmp.24 %tmp.18 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 240;
+            %tmp.29 = 5;
+            %tmp.30 = 100.0;
+            %tmp.31 = div %tmp.29 %tmp.30;
+            %tmp.32 = mul %tmp.28 %tmp.31;
+            %tmp.33 = dup %tmp.25;
+            %tmp.34 = aputv %tmp.33 %tmp.27 %tmp.32;
+            %tmp.36 = const :text;
+            %tmp.37 = "Session Summary";
+            %tmp.38 = dup %tmp.34;
+            %tmp.39 = aputv %tmp.38 %tmp.36 %tmp.37;
+            %tmp.41 = const :justification;
+            %tmp.42 = getm $.Toybox.Graphics;
+            %tmp.43 = getv %tmp.42 :TEXT_JUSTIFY_CENTER;
+            %tmp.44 = dup %tmp.39;
+            %tmp.45 = aputv %tmp.44 %tmp.41 %tmp.43;
+            %tmp.47 = const :font;
+            %tmp.48 = getm $.Toybox.Graphics;
+            %tmp.49 = getv %tmp.48 :FONT_TINY;
+            %tmp.50 = dup %tmp.45;
+            %tmp.51 = aputv %tmp.50 %tmp.47 %tmp.49;
+            %tmp.1 = newc %tmp.4 (%tmp.51);
+            lputv %rez_cmp_local_text_summary_heading.1 %tmp.1;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 28 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_stop" ]
+            %rez_cmp_local_text_total_time_label.2 = local;
+            %tmp.54 = getm $.Toybox.WatchUi;
+            %tmp.55 = getv function ? %tmp.54 :Text;
+            %tmp.56 = newd 7;
+            %tmp.58 = const :identifier;
+            %tmp.59 = "total_time_label";
+            %tmp.60 = dup %tmp.56;
+            %tmp.61 = aputv %tmp.60 %tmp.58 %tmp.59;
+            %tmp.63 = const :color;
+            %tmp.64 = getm $.Toybox.Graphics;
+            %tmp.65 = getv %tmp.64 :COLOR_LT_GRAY;
+            %tmp.66 = dup %tmp.61;
+            %tmp.67 = aputv %tmp.66 %tmp.63 %tmp.65;
+            %tmp.69 = const :locX;
+            %tmp.70 = 240;
+            %tmp.71 = 50;
+            %tmp.72 = 100.0;
+            %tmp.73 = div %tmp.71 %tmp.72;
+            %tmp.74 = mul %tmp.70 %tmp.73;
+            %tmp.75 = dup %tmp.67;
+            %tmp.76 = aputv %tmp.75 %tmp.69 %tmp.74;
+            %tmp.78 = const :locY;
+            %tmp.79 = 240;
+            %tmp.80 = 15;
+            %tmp.81 = 100.0;
+            %tmp.82 = div %tmp.80 %tmp.81;
+            %tmp.83 = mul %tmp.79 %tmp.82;
+            %tmp.84 = dup %tmp.76;
+            %tmp.85 = aputv %tmp.84 %tmp.78 %tmp.83;
+            %tmp.87 = const :text;
+            %tmp.88 = "Total Time: ";
+            %tmp.89 = dup %tmp.85;
+            %tmp.90 = aputv %tmp.89 %tmp.87 %tmp.88;
+            %tmp.92 = const :justification;
+            %tmp.93 = getm $.Toybox.Graphics;
+            %tmp.94 = getv %tmp.93 :TEXT_JUSTIFY_CENTER;
+            %tmp.95 = dup %tmp.90;
+            %tmp.96 = aputv %tmp.95 %tmp.92 %tmp.94;
+            %tmp.98 = const :font;
+            %tmp.99 = getm $.Toybox.Graphics;
+            %tmp.100 = getv %tmp.99 :FONT_TINY;
+            %tmp.101 = dup %tmp.96;
+            %tmp.102 = aputv %tmp.101 %tmp.98 %tmp.100;
+            %tmp.52 = newc %tmp.55 (%tmp.102);
+            lputv %rez_cmp_local_text_total_time_label.2 %tmp.52;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 30 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_stop" ]
+            %rez_cmp_local_text_work_time_label.3 = local;
+            %tmp.105 = getm $.Toybox.WatchUi;
+            %tmp.106 = getv function ? %tmp.105 :Text;
+            %tmp.107 = newd 7;
+            %tmp.109 = const :identifier;
+            %tmp.110 = "work_time_label";
+            %tmp.111 = dup %tmp.107;
+            %tmp.112 = aputv %tmp.111 %tmp.109 %tmp.110;
+            %tmp.114 = const :color;
+            %tmp.115 = getm $.Toybox.Graphics;
+            %tmp.116 = getv %tmp.115 :COLOR_WHITE;
+            %tmp.117 = dup %tmp.112;
+            %tmp.118 = aputv %tmp.117 %tmp.114 %tmp.116;
+            %tmp.120 = const :locX;
+            %tmp.121 = 240;
+            %tmp.122 = 50;
+            %tmp.123 = 100.0;
+            %tmp.124 = div %tmp.122 %tmp.123;
+            %tmp.125 = mul %tmp.121 %tmp.124;
+            %tmp.126 = dup %tmp.118;
+            %tmp.127 = aputv %tmp.126 %tmp.120 %tmp.125;
+            %tmp.129 = const :locY;
+            %tmp.130 = 240;
+            %tmp.131 = 30;
+            %tmp.132 = 100.0;
+            %tmp.133 = div %tmp.131 %tmp.132;
+            %tmp.134 = mul %tmp.130 %tmp.133;
+            %tmp.135 = dup %tmp.127;
+            %tmp.136 = aputv %tmp.135 %tmp.129 %tmp.134;
+            %tmp.138 = const :text;
+            %tmp.139 = "Work Time: ";
+            %tmp.140 = dup %tmp.136;
+            %tmp.141 = aputv %tmp.140 %tmp.138 %tmp.139;
+            %tmp.143 = const :justification;
+            %tmp.144 = getm $.Toybox.Graphics;
+            %tmp.145 = getv %tmp.144 :TEXT_JUSTIFY_CENTER;
+            %tmp.146 = dup %tmp.141;
+            %tmp.147 = aputv %tmp.146 %tmp.143 %tmp.145;
+            %tmp.149 = const :font;
+            %tmp.150 = getm $.Toybox.Graphics;
+            %tmp.151 = getv %tmp.150 :FONT_XTINY;
+            %tmp.152 = dup %tmp.147;
+            %tmp.153 = aputv %tmp.152 %tmp.149 %tmp.151;
+            %tmp.103 = newc %tmp.106 (%tmp.153);
+            lputv %rez_cmp_local_text_work_time_label.3 %tmp.103;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 32 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_stop" ]
+            %rez_cmp_local_text_outdoor_time_label.4 = local;
+            %tmp.156 = getm $.Toybox.WatchUi;
+            %tmp.157 = getv function ? %tmp.156 :Text;
+            %tmp.158 = newd 7;
+            %tmp.160 = const :identifier;
+            %tmp.161 = "outdoor_time_label";
+            %tmp.162 = dup %tmp.158;
+            %tmp.163 = aputv %tmp.162 %tmp.160 %tmp.161;
+            %tmp.165 = const :color;
+            %tmp.166 = getm $.Toybox.Graphics;
+            %tmp.167 = getv %tmp.166 :COLOR_WHITE;
+            %tmp.168 = dup %tmp.163;
+            %tmp.169 = aputv %tmp.168 %tmp.165 %tmp.167;
+            %tmp.171 = const :locX;
+            %tmp.172 = 240;
+            %tmp.173 = 50;
+            %tmp.174 = 100.0;
+            %tmp.175 = div %tmp.173 %tmp.174;
+            %tmp.176 = mul %tmp.172 %tmp.175;
+            %tmp.177 = dup %tmp.169;
+            %tmp.178 = aputv %tmp.177 %tmp.171 %tmp.176;
+            %tmp.180 = const :locY;
+            %tmp.181 = 240;
+            %tmp.182 = 45;
+            %tmp.183 = 100.0;
+            %tmp.184 = div %tmp.182 %tmp.183;
+            %tmp.185 = mul %tmp.181 %tmp.184;
+            %tmp.186 = dup %tmp.178;
+            %tmp.187 = aputv %tmp.186 %tmp.180 %tmp.185;
+            %tmp.189 = const :text;
+            %tmp.190 = "Outdoor Time: ";
+            %tmp.191 = dup %tmp.187;
+            %tmp.192 = aputv %tmp.191 %tmp.189 %tmp.190;
+            %tmp.194 = const :justification;
+            %tmp.195 = getm $.Toybox.Graphics;
+            %tmp.196 = getv %tmp.195 :TEXT_JUSTIFY_CENTER;
+            %tmp.197 = dup %tmp.192;
+            %tmp.198 = aputv %tmp.197 %tmp.194 %tmp.196;
+            %tmp.200 = const :font;
+            %tmp.201 = getm $.Toybox.Graphics;
+            %tmp.202 = getv %tmp.201 :FONT_XTINY;
+            %tmp.203 = dup %tmp.198;
+            %tmp.204 = aputv %tmp.203 %tmp.200 %tmp.202;
+            %tmp.154 = newc %tmp.157 (%tmp.204);
+            lputv %rez_cmp_local_text_outdoor_time_label.4 %tmp.154;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 34 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_stop" ]
+            %rez_cmp_local_text_learning_time_label.5 = local;
+            %tmp.207 = getm $.Toybox.WatchUi;
+            %tmp.208 = getv function ? %tmp.207 :Text;
+            %tmp.209 = newd 7;
+            %tmp.211 = const :identifier;
+            %tmp.212 = "learning_time_label";
+            %tmp.213 = dup %tmp.209;
+            %tmp.214 = aputv %tmp.213 %tmp.211 %tmp.212;
+            %tmp.216 = const :color;
+            %tmp.217 = getm $.Toybox.Graphics;
+            %tmp.218 = getv %tmp.217 :COLOR_WHITE;
+            %tmp.219 = dup %tmp.214;
+            %tmp.220 = aputv %tmp.219 %tmp.216 %tmp.218;
+            %tmp.222 = const :locX;
+            %tmp.223 = 240;
+            %tmp.224 = 50;
+            %tmp.225 = 100.0;
+            %tmp.226 = div %tmp.224 %tmp.225;
+            %tmp.227 = mul %tmp.223 %tmp.226;
+            %tmp.228 = dup %tmp.220;
+            %tmp.229 = aputv %tmp.228 %tmp.222 %tmp.227;
+            %tmp.231 = const :locY;
+            %tmp.232 = 240;
+            %tmp.233 = 60;
+            %tmp.234 = 100.0;
+            %tmp.235 = div %tmp.233 %tmp.234;
+            %tmp.236 = mul %tmp.232 %tmp.235;
+            %tmp.237 = dup %tmp.229;
+            %tmp.238 = aputv %tmp.237 %tmp.231 %tmp.236;
+            %tmp.240 = const :text;
+            %tmp.241 = "Learning Time: ";
+            %tmp.242 = dup %tmp.238;
+            %tmp.243 = aputv %tmp.242 %tmp.240 %tmp.241;
+            %tmp.245 = const :justification;
+            %tmp.246 = getm $.Toybox.Graphics;
+            %tmp.247 = getv %tmp.246 :TEXT_JUSTIFY_CENTER;
+            %tmp.248 = dup %tmp.243;
+            %tmp.249 = aputv %tmp.248 %tmp.245 %tmp.247;
+            %tmp.251 = const :font;
+            %tmp.252 = getm $.Toybox.Graphics;
+            %tmp.253 = getv %tmp.252 :FONT_XTINY;
+            %tmp.254 = dup %tmp.249;
+            %tmp.255 = aputv %tmp.254 %tmp.251 %tmp.253;
+            %tmp.205 = newc %tmp.208 (%tmp.255);
+            lputv %rez_cmp_local_text_learning_time_label.5 %tmp.205;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 36 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_start" "d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_stop" ]
+            %rez_cmp_local_text_miscll_time_label.6 = local;
+            %tmp.258 = getm $.Toybox.WatchUi;
+            %tmp.259 = getv function ? %tmp.258 :Text;
+            %tmp.260 = newd 7;
+            %tmp.262 = const :identifier;
+            %tmp.263 = "miscll_time_label";
+            %tmp.264 = dup %tmp.260;
+            %tmp.265 = aputv %tmp.264 %tmp.262 %tmp.263;
+            %tmp.267 = const :color;
+            %tmp.268 = getm $.Toybox.Graphics;
+            %tmp.269 = getv %tmp.268 :COLOR_WHITE;
+            %tmp.270 = dup %tmp.265;
+            %tmp.271 = aputv %tmp.270 %tmp.267 %tmp.269;
+            %tmp.273 = const :locX;
+            %tmp.274 = 240;
+            %tmp.275 = 50;
+            %tmp.276 = 100.0;
+            %tmp.277 = div %tmp.275 %tmp.276;
+            %tmp.278 = mul %tmp.274 %tmp.277;
+            %tmp.279 = dup %tmp.271;
+            %tmp.280 = aputv %tmp.279 %tmp.273 %tmp.278;
+            %tmp.282 = const :locY;
+            %tmp.283 = 240;
+            %tmp.284 = 75;
+            %tmp.285 = 100.0;
+            %tmp.286 = div %tmp.284 %tmp.285;
+            %tmp.287 = mul %tmp.283 %tmp.286;
+            %tmp.288 = dup %tmp.280;
+            %tmp.289 = aputv %tmp.288 %tmp.282 %tmp.287;
+            %tmp.291 = const :text;
+            %tmp.292 = "Miscellaneous Time: ";
+            %tmp.293 = dup %tmp.289;
+            %tmp.294 = aputv %tmp.293 %tmp.291 %tmp.292;
+            %tmp.296 = const :justification;
+            %tmp.297 = getm $.Toybox.Graphics;
+            %tmp.298 = getv %tmp.297 :TEXT_JUSTIFY_CENTER;
+            %tmp.299 = dup %tmp.294;
+            %tmp.300 = aputv %tmp.299 %tmp.296 %tmp.298;
+            %tmp.302 = const :font;
+            %tmp.303 = getm $.Toybox.Graphics;
+            %tmp.304 = getv %tmp.303 :FONT_XTINY;
+            %tmp.305 = dup %tmp.300;
+            %tmp.306 = aputv %tmp.305 %tmp.302 %tmp.304;
+            %tmp.256 = newc %tmp.259 (%tmp.306);
+            lputv %rez_cmp_local_text_miscll_time_label.6 %tmp.256;
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 38 12 ]
+            %tmp.307 = newa 6 Array<WatchUi.Drawable>;
+            %tmp.309 = lgetv %rez_cmp_local_text_summary_heading.1;
+            %tmp.310 = dup %tmp.307;
+            %tmp.311 = aputv %tmp.310 0 %tmp.309;
+            %tmp.313 = lgetv %rez_cmp_local_text_total_time_label.2;
+            %tmp.314 = dup %tmp.311;
+            %tmp.315 = aputv %tmp.314 1 %tmp.313;
+            %tmp.317 = lgetv %rez_cmp_local_text_work_time_label.3;
+            %tmp.318 = dup %tmp.315;
+            %tmp.319 = aputv %tmp.318 2 %tmp.317;
+            %tmp.321 = lgetv %rez_cmp_local_text_outdoor_time_label.4;
+            %tmp.322 = dup %tmp.319;
+            %tmp.323 = aputv %tmp.322 3 %tmp.321;
+            %tmp.325 = lgetv %rez_cmp_local_text_learning_time_label.5;
+            %tmp.326 = dup %tmp.323;
+            %tmp.327 = aputv %tmp.326 4 %tmp.325;
+            %tmp.329 = lgetv %rez_cmp_local_text_miscll_time_label.6;
+            %tmp.330 = dup %tmp.327;
+            %tmp.331 = aputv %tmp.330 5 %tmp.329;
+            ret %tmp.331;
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_25_77_39_8_stop:
+        }
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 42; ]
+    module Menus {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 42; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 43; ]
+        class TimerPausedMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 43; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 43; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 44; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_44_34_49_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 45 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 46 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "Resume Session";
+                %tmp.8 = const :resume;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 47 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "Discard Session";
+                %tmp.13 = const :discard;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 48 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "Save Session";
+                %tmp.18 = const :save;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_44_34_49_12_stop:
+            }
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 52; ]
+        class MainMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 52; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 52; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 53; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_53_34_63_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 54 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 55 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "Start Session";
+                %tmp.8 = const :item_1;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 56 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "Bkground(Cmng Soon)";
+                %tmp.13 = const :item_0;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 57 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "Exit";
+                %tmp.18 = const :item_2;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 58 16 ]
+                %tmp.19 = self;
+                %tmp.20 = getv function %tmp.19 :addItem;
+                %tmp.21 = "Change Mode";
+                %tmp.23 = const :item_3;
+                invoke %tmp.19 %tmp.20(%tmp.21, %tmp.23);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 59 16 ]
+                %tmp.24 = self;
+                %tmp.25 = getv function %tmp.24 :addItem;
+                %tmp.26 = "Settings";
+                %tmp.28 = const :item_4;
+                invoke %tmp.24 %tmp.25(%tmp.26, %tmp.28);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 60 16 ]
+                %tmp.29 = self;
+                %tmp.30 = getv function %tmp.29 :addItem;
+                %tmp.31 = "Summary";
+                %tmp.33 = const :item_5;
+                invoke %tmp.29 %tmp.30(%tmp.31, %tmp.33);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 61 16 ]
+                %tmp.34 = self;
+                %tmp.35 = getv function %tmp.34 :addItem;
+                %tmp.36 = "Reset Daily Log";
+                %tmp.38 = const :item_6;
+                invoke %tmp.34 %tmp.35(%tmp.36, %tmp.38);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 62 16 ]
+                %tmp.39 = self;
+                %tmp.40 = getv function %tmp.39 :addItem;
+                %tmp.41 = "Reset All Data";
+                %tmp.43 = const :item_7;
+                invoke %tmp.39 %tmp.40(%tmp.41, %tmp.43);
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_53_34_63_12_stop:
+            }
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 66; ]
+        class ModeMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 66; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 66; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 67; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_67_34_73_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 68 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 69 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "Work";
+                %tmp.8 = const :mode_1;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 70 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "Outdoor";
+                %tmp.13 = const :mode_2;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 71 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "Learning";
+                %tmp.18 = const :mode_3;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 72 16 ]
+                %tmp.19 = self;
+                %tmp.20 = getv function %tmp.19 :addItem;
+                %tmp.21 = "Miscellaneous";
+                %tmp.23 = const :mode_4;
+                invoke %tmp.19 %tmp.20(%tmp.21, %tmp.23);
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_67_34_73_12_stop:
+            }
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 76; ]
+        class TimerSettingsMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 76; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 76; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 77; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_77_34_82_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 78 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 79 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "30 minutes";
+                %tmp.8 = const :timer_30;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 80 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "45 minutes";
+                %tmp.13 = const :timer_45;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen" 81 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "60 minutes";
+                %tmp.18 = const :timer_60;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+d_Pulkit_Coding_Garmin_Garmin_DeviceBuild_245Music_gen_006_B3077_00_source_Rez_mcgen_77_34_82_12_stop:
+            }
+        }
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 86; ]
+    module Strings {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 86; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 87; @position = 27; initialized = true; ]
+        var mode_misc as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 88; @position = 27; initialized = true; ]
+        var timer_default as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 89; @position = 27; initialized = true; ]
+        var elapsed_time as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 90; @position = 27; initialized = true; ]
+        var mode_outdoor as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 91; @position = 27; initialized = true; ]
+        var prompt as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 92; @position = 27; initialized = true; ]
+        var mode_work as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 93; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+    }
+}
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\DeviceBuild\245Music\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

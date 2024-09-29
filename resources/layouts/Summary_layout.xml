@@ -1,0 +1,61 @@
+<layout id="SummaryLayout">
+    <!-- Summary Heading -->
+    <label 
+        id="summary_heading" 
+        text="Session Summary" 
+        x="50%" 
+        y="5%" 
+        color="Graphics.COLOR_WHITE" 
+        justification="Graphics.TEXT_JUSTIFY_CENTER" 
+        font="Graphics.FONT_TINY" />
+
+    <!-- Total Time Invested -->
+    <label 
+        id="total_time_label" 
+        text="Total Time: " 
+        x="50%" 
+        y="15%" 
+        color="Graphics.COLOR_LT_GRAY" 
+        justification="Graphics.TEXT_JUSTIFY_CENTER" 
+        font="Graphics.FONT_TINY" />
+
+    <!-- Work Time -->
+    <label 
+        id="work_time_label" 
+        text="Work Time: " 
+        x="50%" 
+        y="30%" 
+        color="Graphics.COLOR_WHITE" 
+        justification="Graphics.TEXT_JUSTIFY_CENTER" 
+        font="Graphics.FONT_XTINY" />
+
+    <!-- Outdoor Time -->
+    <label 
+        id="outdoor_time_label" 
+        text="Outdoor Time: " 
+        x="50%" 
+        y="45%" 
+        color="Graphics.COLOR_WHITE" 
+        justification="Graphics.TEXT_JUSTIFY_CENTER" 
+        font="Graphics.FONT_XTINY" />
+
+    <!-- Learning Time -->
+    <label 
+        id="learning_time_label" 
+        text="Learning Time: " 
+        x="50%" 
+        y="60%" 
+        color="Graphics.COLOR_WHITE" 
+        justification="Graphics.TEXT_JUSTIFY_CENTER" 
+        font="Graphics.FONT_XTINY" />
+
+    <!-- Miscellaneous Time -->
+    <label 
+        id="miscll_time_label" 
+        text="Miscellaneous Time: " 
+        x="50%" 
+        y="75%" 
+        color="Graphics.COLOR_WHITE" 
+        justification="Graphics.TEXT_JUSTIFY_CENTER" 
+        font="Graphics.FONT_XTINY" />
+</layout>

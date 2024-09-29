@@ -1,0 +1,54 @@
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 1; ]
+import Toybox.Attention;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 4; ]
+class AlertsManager{
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 7; ]
+    static
+    function triggerVibration(intensity as Number, duration as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_Alerts_mc_7_86_11_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc" 8 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_Alerts_mc_7_86_11_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_Alerts_mc_7_86_11_4_stop" ]
+        %vibeProfile.1 = local;
+        %tmp.3 = getm $.Toybox.Attention;
+        %tmp.4 = getv function ? %tmp.3 :VibeProfile;
+        %tmp.6 = lgetv %intensity;
+        %tmp.8 = lgetv %duration;
+        %tmp.1 = newc %tmp.4 (%tmp.6, %tmp.8);
+        lputv %vibeProfile.1 %tmp.1;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc" 9 8 ]
+        %tmp.9 = getm $.Toybox.Attention;
+        %tmp.10 = getv function %tmp.9 :vibrate;
+        %tmp.11 = newa 1;
+        %tmp.13 = lgetv %vibeProfile.1;
+        %tmp.14 = dup %tmp.11;
+        %tmp.15 = aputv %tmp.14 0 %tmp.13;
+        invoke %tmp.9 %tmp.10(%tmp.15);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_Alerts_mc_7_86_11_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 14; ]
+    static
+    function triggerDefaultAlert() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_Alerts_mc_14_50_16_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc" 15 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :triggerVibration;
+        %tmp.3 = 50;
+        %tmp.4 = 2000;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_Alerts_mc_14_50_16_4_stop:
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\Alerts.mc"; @line = 1; ]
+<init> {
+}

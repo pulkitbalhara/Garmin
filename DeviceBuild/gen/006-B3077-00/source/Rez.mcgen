@@ -1,0 +1,72 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Layouts {
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_mode_label = new WatchUi.Text({:identifier=>"mode_label", :color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>5, :text=>"Work", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_timer_label = new WatchUi.Text({:identifier=>"timer_label", :color=>Graphics.COLOR_YELLOW, :locX=>(240 * 0.5), :locY=>50, :text=>"30:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_text_elapsed_label = new WatchUi.Text({:identifier=>"elapsed_label", :color=>Graphics.COLOR_LT_GRAY, :locX=>(240 * 0.5), :locY=>120, :text=>"0.0 hours", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            return [rez_cmp_local_text_mode_label, rez_cmp_local_text_timer_label, rez_cmp_local_text_elapsed_label] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Menus {
+        class TimerPausedMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Resume Session", :resume);
+                addItem("Discard Session", :discard);
+                addItem("Save Session", :save);
+            }
+        }
+
+        class MainMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Start Session", :item_1);
+                addItem("Settings", :item_2);
+                addItem("Change Mode", :item_3);
+            }
+        }
+
+        class ModeMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Work", :mode_1);
+                addItem("Outdoor", :mode_2);
+                addItem("Learning", :mode_3);
+                addItem("Miscellaneous", :mode_4);
+            }
+        }
+
+        class TimerSettingsMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("30 minutes", :timer_30);
+                addItem("45 minutes", :timer_45);
+                addItem("60 minutes", :timer_60);
+            }
+        }
+    } // Menus
+
+    module Strings {
+        (:initialized) var mode_misc as ResourceId;
+        (:initialized) var timer_default as ResourceId;
+        (:initialized) var elapsed_time as ResourceId;
+        (:initialized) var mode_outdoor as ResourceId;
+        (:initialized) var prompt as ResourceId;
+        (:initialized) var mode_work as ResourceId;
+        (:initialized) var AppName as ResourceId;
+    } // Strings
+} // Rez

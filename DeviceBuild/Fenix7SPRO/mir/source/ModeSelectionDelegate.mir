@@ -1,0 +1,116 @@
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 1; ]
+import Toybox.WatchUi;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 5; ]
+class ModeSelectionDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 6; @position = 15; ]
+    protected
+    var _view;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 7; @position = 8; ]
+    var selectedMode = 1;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 10; ]
+    function initialize(view) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_10_30_14_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 11 8 ]
+        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 12 8 ]
+        %tmp.5 = lgetv %view;
+        putv self :_view %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_10_30_14_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 17; ]
+    function onMenuItem(item as Symbol) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_17_48_44_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 21 8 ]
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_8_33_8_if_stmt:
+        %tmp.2 = lgetv %item;
+        %tmp.4 = const :mode_1;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_8_33_8_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_8_33_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_29_24_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 22 12 ]
+        %tmp.6 = 1;
+        putv self :selectedMode %tmp.6;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_29_24_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_8_33_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_8_33_8_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 24 15 ]
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_15_33_8_if_stmt:
+        %tmp.8 = lgetv %item;
+        %tmp.10 = const :mode_2;
+        %tmp.11 = eq %tmp.8 %tmp.10;
+        bf %tmp.11 @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_15_33_8_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_15_33_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_36_27_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 25 12 ]
+        %tmp.12 = 2;
+        putv self :selectedMode %tmp.12;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_36_27_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_15_33_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_15_33_8_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 27 15 ]
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_15_33_8_if_stmt:
+        %tmp.14 = lgetv %item;
+        %tmp.16 = const :mode_3;
+        %tmp.17 = eq %tmp.14 %tmp.16;
+        bf %tmp.17 @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_15_33_8_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_15_33_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_36_30_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 28 12 ]
+        %tmp.18 = 3;
+        putv self :selectedMode %tmp.18;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_36_30_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_15_33_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_15_33_8_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 30 15 ]
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_30_15_33_8_if_stmt:
+        %tmp.20 = lgetv %item;
+        %tmp.22 = const :mode_4;
+        %tmp.23 = eq %tmp.20 %tmp.22;
+        bf %tmp.23 @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_30_15_33_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_30_15_33_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_30_36_33_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 31 12 ]
+        %tmp.24 = 4;
+        putv self :selectedMode %tmp.24;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_30_36_33_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_30_15_33_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_30_15_33_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_27_15_33_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_24_15_33_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_21_8_33_8_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 36 8 ]
+        %tmp.26 = getv ? :DataManager;
+        %tmp.27 = getv function %tmp.26 :setMode;
+        %tmp.29 = getv ? :selectedMode;
+        invoke %tmp.26 %tmp.27(%tmp.29);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 39 8 ]
+        %tmp.31 = getv ? :_view;
+        %tmp.32 = getv function %tmp.31 :setModeType;
+        %tmp.34 = getv ? :selectedMode;
+        invoke %tmp.31 %tmp.32(%tmp.34);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc" 43 8 ]
+        %tmp.35 = getm $.Toybox.WatchUi;
+        %tmp.36 = getv function %tmp.35 :popView;
+        %tmp.37 = getm $.Toybox.WatchUi;
+        %tmp.38 = getv %tmp.37 :SLIDE_DOWN;
+        invoke %tmp.35 %tmp.36(%tmp.38);
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionDelegate_mc_17_48_44_4_stop:
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionDelegate.mc"; @line = 1; ]
+<init> {
+}

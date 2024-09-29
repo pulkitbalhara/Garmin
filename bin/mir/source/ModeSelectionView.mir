@@ -1,0 +1,48 @@
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 5; ]
+class ModeSelectionView extends WatchUi.View{
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 7; ]
+    function initialize() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionView_mc_7_26_9_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc" 8 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionView_mc_7_26_9_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 11; ]
+    function onLayout(dc as Graphics.Dc) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionView_mc_11_49_13_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc" 12 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :ModeLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+D_Pulkit_Coding_Garmin_Garmin_source_ModeSelectionView_mc_11_49_13_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 15; ]
+    function onShow() as Void {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 19; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\ModeSelectionView.mc"; @line = 1; ]
+<init> {
+}

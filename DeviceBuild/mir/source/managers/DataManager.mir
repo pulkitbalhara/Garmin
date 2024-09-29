@@ -1,0 +1,458 @@
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 4; ]
+import Toybox.Time;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 5; ]
+class DataManager{
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 8; ]
+    static
+    function getMode() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_8_40_11_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 10 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "Mode";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_8_40_11_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 14; ]
+    static
+    function setMode(mode as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_14_52_17_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 16 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "Mode";
+        %tmp.6 = lgetv %mode;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_14_52_17_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 20; ]
+    static
+    function getCurrentTimer() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_20_48_23_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 22 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "CurrentTimer";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_20_48_23_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 26; ]
+    static
+    function setCurrentTimer(timer as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_26_61_29_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 28 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "CurrentTimer";
+        %tmp.6 = lgetv %timer;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_26_61_29_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 32; ]
+    static
+    function getTotalMinutesInvested() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_32_56_35_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 34 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "TotalMinutesInvested";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_32_56_35_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 38; ]
+    static
+    function setTotalMinutesInvested(minutes as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_38_71_41_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 40 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "TotalMinutesInvested";
+        %tmp.6 = lgetv %minutes;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_38_71_41_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 45; ]
+    static
+    function getWorkTime() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_45_44_47_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 46 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "WorkTime";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_45_44_47_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 49; ]
+    static
+    function setWorkTime(time as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_49_56_51_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 50 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "WorkTime";
+        %tmp.6 = lgetv %time;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_49_56_51_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 54; ]
+    static
+    function getOutdoorTime() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_54_47_56_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 55 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "OutdoorTime";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_54_47_56_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 58; ]
+    static
+    function setOutdoorTime(time as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_58_59_60_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 59 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "OutdoorTime";
+        %tmp.6 = lgetv %time;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_58_59_60_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 63; ]
+    static
+    function getLearningTime() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_63_48_65_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 64 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "LearningTime";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_63_48_65_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 67; ]
+    static
+    function setLearningTime(time as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_67_60_69_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 68 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "LearningTime";
+        %tmp.6 = lgetv %time;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_67_60_69_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 72; ]
+    static
+    function getMiscllTime() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_72_46_74_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 73 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "MiscllTime";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_72_46_74_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 76; ]
+    static
+    function setMiscllTime(time as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_76_58_78_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 77 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "MiscllTime";
+        %tmp.6 = lgetv %time;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_76_58_78_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 80; ]
+    static
+    function getTimerDuration() as Number {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_80_49_83_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 82 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "TimerDuration";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_80_49_83_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 86; ]
+    static
+    function setTimerDuration(timerDuration as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_86_70_89_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 88 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Storage;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "TimerDuration";
+        %tmp.6 = lgetv %timerDuration;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_86_70_89_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 91; ]
+    static
+    function initializeData() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 93 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_stop" ]
+        %timerDuration.1 = local;
+        %tmp.2 = getv ? :DataManager;
+        %tmp.3 = getv function %tmp.2 :getTimerDuration;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %timerDuration.1 %tmp.4;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 94 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_4_99_4_if_stmt:
+        %tmp.6 = lgetv %timerDuration.1;
+        %tmp.7 = null;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_4_99_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_4_99_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_31_97_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 96 8 ]
+        %tmp.10 = getv ? :DataManager;
+        %tmp.11 = getv function %tmp.10 :setTimerDuration;
+        %tmp.12 = 1800;
+        invoke %tmp.10 %tmp.11(%tmp.12);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_31_97_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_4_99_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_4_99_4_if_false:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_94_4_99_4_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 102 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_stop" ]
+        %workTime.2 = local;
+        %tmp.14 = getv ? :DataManager;
+        %tmp.15 = getv function %tmp.14 :getWorkTime;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %workTime.2 %tmp.16;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 103 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_4_108_4_if_stmt:
+        %tmp.18 = lgetv %workTime.2;
+        %tmp.19 = null;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_4_108_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_4_108_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_26_106_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 105 8 ]
+        %tmp.22 = getv ? :DataManager;
+        %tmp.23 = getv function %tmp.22 :setWorkTime;
+        %tmp.24 = 0;
+        invoke %tmp.22 %tmp.23(%tmp.24);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_26_106_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_4_108_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_4_108_4_if_false:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_103_4_108_4_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 111 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_stop" ]
+        %outdoorTime.3 = local;
+        %tmp.26 = getv ? :DataManager;
+        %tmp.27 = getv function %tmp.26 :getOutdoorTime;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        lputv %outdoorTime.3 %tmp.28;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 112 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_4_117_4_if_stmt:
+        %tmp.30 = lgetv %outdoorTime.3;
+        %tmp.31 = null;
+        %tmp.32 = eq %tmp.30 %tmp.31;
+        bf %tmp.32 @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_4_117_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_4_117_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_29_115_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 114 8 ]
+        %tmp.34 = getv ? :DataManager;
+        %tmp.35 = getv function %tmp.34 :setOutdoorTime;
+        %tmp.36 = 0;
+        invoke %tmp.34 %tmp.35(%tmp.36);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_29_115_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_4_117_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_4_117_4_if_false:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_112_4_117_4_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 120 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_stop" ]
+        %learningTime.4 = local;
+        %tmp.38 = getv ? :DataManager;
+        %tmp.39 = getv function %tmp.38 :getLearningTime;
+        %tmp.40 = invoke %tmp.38 %tmp.39();
+        lputv %learningTime.4 %tmp.40;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 121 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_4_126_4_if_stmt:
+        %tmp.42 = lgetv %learningTime.4;
+        %tmp.43 = null;
+        %tmp.44 = eq %tmp.42 %tmp.43;
+        bf %tmp.44 @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_4_126_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_4_126_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_30_124_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 123 8 ]
+        %tmp.46 = getv ? :DataManager;
+        %tmp.47 = getv function %tmp.46 :setLearningTime;
+        %tmp.48 = 0;
+        invoke %tmp.46 %tmp.47(%tmp.48);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_30_124_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_4_126_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_4_126_4_if_false:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_121_4_126_4_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 129 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_stop" ]
+        %miscllTime.5 = local;
+        %tmp.50 = getv ? :DataManager;
+        %tmp.51 = getv function %tmp.50 :getMiscllTime;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        lputv %miscllTime.5 %tmp.52;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 130 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_4_135_4_if_stmt:
+        %tmp.54 = lgetv %miscllTime.5;
+        %tmp.55 = null;
+        %tmp.56 = eq %tmp.54 %tmp.55;
+        bf %tmp.56 @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_4_135_4_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_4_135_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_28_133_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 132 8 ]
+        %tmp.58 = getv ? :DataManager;
+        %tmp.59 = getv function %tmp.58 :setMiscllTime;
+        %tmp.60 = 0;
+        invoke %tmp.58 %tmp.59(%tmp.60);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_28_133_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_4_135_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_4_135_4_if_false:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_130_4_135_4_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_91_44_136_0_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 138; ]
+    static
+    function logSession(mode as Number, sessionTime as Number) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 139 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_stop" ]
+        %today.1 = local;
+        %tmp.2 = getv ? :Gregorian;
+        %tmp.3 = getv function %tmp.2 :info;
+        %tmp.4 = getm $.Toybox.Time;
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = getm $.Toybox.Time;
+        %tmp.8 = getv %tmp.7 :FORMAT_MEDIUM;
+        %tmp.9 = invoke %tmp.2 %tmp.3(%tmp.6, %tmp.8);
+        lputv %today.1 %tmp.9;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 140 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_stop" ]
+        %logEntry.2 = local;
+        %tmp.10 = getm $.Toybox.Lang;
+        %tmp.11 = getv function %tmp.10 :format;
+        %tmp.12 = "$1$:$2$:$3$-$4$-$5$/$6$/$7$, Mode: $8$, SessionTime: $9$ minutes";
+        %tmp.13 = newa 9;
+        %tmp.14 = lgetv %today.1;
+        %tmp.15 = getv %tmp.14 :hour;
+        %tmp.16 = dup %tmp.13;
+        %tmp.17 = aputv %tmp.16 0 %tmp.15;
+        %tmp.18 = lgetv %today.1;
+        %tmp.19 = getv %tmp.18 :min;
+        %tmp.20 = dup %tmp.17;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        %tmp.22 = lgetv %today.1;
+        %tmp.23 = getv %tmp.22 :sec;
+        %tmp.24 = dup %tmp.21;
+        %tmp.25 = aputv %tmp.24 2 %tmp.23;
+        %tmp.26 = lgetv %today.1;
+        %tmp.27 = getv %tmp.26 :day_of_week;
+        %tmp.28 = dup %tmp.25;
+        %tmp.29 = aputv %tmp.28 3 %tmp.27;
+        %tmp.30 = lgetv %today.1;
+        %tmp.31 = getv %tmp.30 :day;
+        %tmp.32 = dup %tmp.29;
+        %tmp.33 = aputv %tmp.32 4 %tmp.31;
+        %tmp.34 = lgetv %today.1;
+        %tmp.35 = getv %tmp.34 :month;
+        %tmp.36 = dup %tmp.33;
+        %tmp.37 = aputv %tmp.36 5 %tmp.35;
+        %tmp.38 = lgetv %today.1;
+        %tmp.39 = getv %tmp.38 :year;
+        %tmp.40 = dup %tmp.37;
+        %tmp.41 = aputv %tmp.40 6 %tmp.39;
+        %tmp.43 = lgetv %mode;
+        %tmp.44 = dup %tmp.41;
+        %tmp.45 = aputv %tmp.44 7 %tmp.43;
+        %tmp.47 = lgetv %sessionTime;
+        %tmp.48 = dup %tmp.45;
+        %tmp.49 = aputv %tmp.48 8 %tmp.47;
+        %tmp.50 = invoke %tmp.10 %tmp.11(%tmp.12, %tmp.49);
+        lputv %logEntry.2 %tmp.50;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 155 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_stop" ]
+        %sessionLog.3 = local;
+        %tmp.52 = getv ? :Storage;
+        %tmp.53 = getv function %tmp.52 :getValue;
+        %tmp.54 = "SessionLog";
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        lputv %sessionLog.3 %tmp.55;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 156 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_156_4_158_4_if_stmt:
+        %tmp.57 = lgetv %sessionLog.3;
+        %tmp.58 = null;
+        %tmp.59 = eq %tmp.57 %tmp.58;
+        bf %tmp.59 @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_156_4_158_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_156_4_158_4_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_156_28_158_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 157 8 ]
+        %tmp.60 = "";
+        lputv %sessionLog.3 %tmp.60;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_156_28_158_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_156_4_158_4_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_156_4_158_4_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 161 4 ]
+        %tmp.61 = lgetv %sessionLog.3;
+        %tmp.63 = lgetv %logEntry.2;
+        %tmp.64 = "\n";
+        %tmp.65 = add %tmp.63 %tmp.64;
+        %tmp.66 = add %tmp.61 %tmp.65;
+        lputv %sessionLog.3 %tmp.66;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 162 4 ]
+        %tmp.67 = getm $.Toybox.System;
+        %tmp.68 = getv function %tmp.67 :println;
+        %tmp.69 = "Session logged: ";
+        %tmp.71 = lgetv %logEntry.2;
+        %tmp.72 = add %tmp.69 %tmp.71;
+        invoke %tmp.67 %tmp.68(%tmp.72);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc" 163 4 ]
+        %tmp.74 = getv ? :Storage;
+        %tmp.75 = getv function %tmp.74 :setValue;
+        %tmp.76 = "SessionLog";
+        %tmp.78 = lgetv %sessionLog.3;
+        invoke %tmp.74 %tmp.75(%tmp.76, %tmp.78);
+D_Pulkit_Coding_Garmin_Garmin_source_managers_DataManager_mc_138_74_164_0_stop:
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\managers\DataManager.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,330 @@
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 1; ]
+import Toybox.WatchUi;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 5; ]
+class TimerPausedMenuDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 7; @position = 15; ]
+    protected
+    var _view;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 10; ]
+    function initialize(view) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_10_30_14_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 11 8 ]
+        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 12 8 ]
+        %tmp.5 = lgetv %view;
+        putv self :_view %tmp.5;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_10_30_14_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 16; ]
+    function onMenuItem(item as Symbol) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_16_48_39_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 19 8 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_8_38_8_if_stmt:
+        %tmp.2 = lgetv %item;
+        %tmp.4 = const :resume;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_8_38_8_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_8_38_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_29_25_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 22 12 ]
+        %tmp.7 = getv ? :_view;
+        %tmp.8 = getv function %tmp.7 :setTimer;
+        %tmp.10 = getv ? :DataManager;
+        %tmp.11 = getv function %tmp.10 :getCurrentTimer;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        invoke %tmp.7 %tmp.8(%tmp.12);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_29_25_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_8_38_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_8_38_8_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 25 15 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_15_38_8_if_stmt:
+        %tmp.14 = lgetv %item;
+        %tmp.16 = const :discard;
+        %tmp.17 = eq %tmp.14 %tmp.16;
+        bf %tmp.17 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_15_38_8_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_15_38_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_37_32_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 28 12 ]
+        %tmp.19 = getv ? :_view;
+        %tmp.20 = getv function %tmp.19 :setTimer;
+        %tmp.22 = getv ? :DataManager;
+        %tmp.23 = getv function %tmp.22 :getTimerDuration;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        invoke %tmp.19 %tmp.20(%tmp.24);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 29 12 ]
+        %tmp.26 = getv ? :DataManager;
+        %tmp.27 = getv function %tmp.26 :setCurrentTimer;
+        %tmp.29 = getv ? :DataManager;
+        %tmp.30 = getv function %tmp.29 :getTimerDuration;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        invoke %tmp.26 %tmp.27(%tmp.31);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_37_32_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_15_38_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_15_38_8_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 32 15 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_32_15_38_8_if_stmt:
+        %tmp.33 = lgetv %item;
+        %tmp.35 = const :save;
+        %tmp.36 = eq %tmp.33 %tmp.35;
+        bf %tmp.36 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_32_15_38_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_32_15_38_8_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_32_34_38_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 35 12 ]
+        %tmp.37 = self;
+        %tmp.38 = getv function %tmp.37 :saveSession;
+        invoke %tmp.37 %tmp.38();
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 37 12 ]
+        %tmp.40 = getv ? :AlertsManager;
+        %tmp.41 = getv function %tmp.40 :triggerVibration;
+        %tmp.42 = 50;
+        %tmp.43 = 1000;
+        invoke %tmp.40 %tmp.41(%tmp.42, %tmp.43);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_32_34_38_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_32_15_38_8_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_32_15_38_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_25_15_38_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_19_8_38_8_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_16_48_39_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 42; ]
+    function saveSession() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 46 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_stop" ]
+        %elapsedTime.1 = local;
+        %tmp.2 = getv ? :DataManager;
+        %tmp.3 = getv function %tmp.2 :getTimerDuration;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.6 = getv ? :DataManager;
+        %tmp.7 = getv function %tmp.6 :getCurrentTimer;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = sub %tmp.4 %tmp.8;
+        %tmp.10 = 60;
+        %tmp.11 = div %tmp.9 %tmp.10;
+        lputv %elapsedTime.1 %tmp.11;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 50 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_stop" ]
+        %mode.2 = local;
+        %tmp.13 = getv ? :DataManager;
+        %tmp.14 = getv function %tmp.13 :getMode;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        lputv %mode.2 %tmp.15;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 55 0 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_0_81_0_if_stmt:
+        %tmp.17 = lgetv %mode.2;
+        %tmp.18 = 1;
+        %tmp.19 = eq %tmp.17 %tmp.18;
+        bf %tmp.19 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_0_81_0_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_0_81_0_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_15_60_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 56 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_15_60_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_15_60_0_stop" ]
+        %currentWorkTime.3 = local;
+        %tmp.21 = getv ? :DataManager;
+        %tmp.22 = getv function %tmp.21 :getWorkTime;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        lputv %currentWorkTime.3 %tmp.23;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 57 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_57_4_57_56_if_stmt:
+        %tmp.25 = lgetv %currentWorkTime.3;
+        %tmp.26 = null;
+        %tmp.27 = eq %tmp.25 %tmp.26;
+        bf %tmp.27 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_57_4_57_56_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_57_4_57_56_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_57_33_57_56_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 57 35 ]
+        %tmp.28 = 0;
+        lputv %currentWorkTime.3 %tmp.28;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_57_33_57_56_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_57_4_57_56_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_57_4_57_56_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 58 4 ]
+        %tmp.30 = getv ? :DataManager;
+        %tmp.31 = getv function %tmp.30 :setWorkTime;
+        %tmp.33 = lgetv %currentWorkTime.3;
+        %tmp.35 = lgetv %elapsedTime.1;
+        %tmp.36 = add %tmp.33 %tmp.35;
+        invoke %tmp.30 %tmp.31(%tmp.36);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_15_60_0_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_0_81_0_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_0_81_0_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 62 5 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_5_81_0_if_stmt:
+        %tmp.38 = lgetv %mode.2;
+        %tmp.39 = 2;
+        %tmp.40 = eq %tmp.38 %tmp.39;
+        bf %tmp.40 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_5_81_0_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_5_81_0_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_20_67_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 63 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_20_67_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_20_67_0_stop" ]
+        %currentOutdoorTime.4 = local;
+        %tmp.42 = getv ? :DataManager;
+        %tmp.43 = getv function %tmp.42 :getOutdoorTime;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        lputv %currentOutdoorTime.4 %tmp.44;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 64 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_64_4_64_62_if_stmt:
+        %tmp.46 = lgetv %currentOutdoorTime.4;
+        %tmp.47 = null;
+        %tmp.48 = eq %tmp.46 %tmp.47;
+        bf %tmp.48 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_64_4_64_62_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_64_4_64_62_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_64_36_64_62_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 64 38 ]
+        %tmp.49 = 0;
+        lputv %currentOutdoorTime.4 %tmp.49;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_64_36_64_62_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_64_4_64_62_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_64_4_64_62_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 65 4 ]
+        %tmp.51 = getv ? :DataManager;
+        %tmp.52 = getv function %tmp.51 :setOutdoorTime;
+        %tmp.54 = lgetv %currentOutdoorTime.4;
+        %tmp.56 = lgetv %elapsedTime.1;
+        %tmp.57 = add %tmp.54 %tmp.56;
+        invoke %tmp.51 %tmp.52(%tmp.57);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_20_67_0_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_5_81_0_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_5_81_0_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 69 5 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_5_81_0_if_stmt:
+        %tmp.59 = lgetv %mode.2;
+        %tmp.60 = 3;
+        %tmp.61 = eq %tmp.59 %tmp.60;
+        bf %tmp.61 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_5_81_0_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_5_81_0_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_20_74_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 70 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_20_74_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_20_74_0_stop" ]
+        %currentLearningTime.5 = local;
+        %tmp.63 = getv ? :DataManager;
+        %tmp.64 = getv function %tmp.63 :getLearningTime;
+        %tmp.65 = invoke %tmp.63 %tmp.64();
+        lputv %currentLearningTime.5 %tmp.65;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 71 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_71_4_71_64_if_stmt:
+        %tmp.67 = lgetv %currentLearningTime.5;
+        %tmp.68 = null;
+        %tmp.69 = eq %tmp.67 %tmp.68;
+        bf %tmp.69 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_71_4_71_64_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_71_4_71_64_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_71_37_71_64_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 71 39 ]
+        %tmp.70 = 0;
+        lputv %currentLearningTime.5 %tmp.70;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_71_37_71_64_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_71_4_71_64_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_71_4_71_64_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 72 4 ]
+        %tmp.72 = getv ? :DataManager;
+        %tmp.73 = getv function %tmp.72 :setLearningTime;
+        %tmp.75 = lgetv %currentLearningTime.5;
+        %tmp.77 = lgetv %elapsedTime.1;
+        %tmp.78 = add %tmp.75 %tmp.77;
+        invoke %tmp.72 %tmp.73(%tmp.78);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_20_74_0_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_5_81_0_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_5_81_0_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 76 5 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_5_81_0_if_stmt:
+        %tmp.80 = lgetv %mode.2;
+        %tmp.81 = 4;
+        %tmp.82 = eq %tmp.80 %tmp.81;
+        bf %tmp.82 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_5_81_0_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_5_81_0_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_20_81_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 77 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_20_81_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_20_81_0_stop" ]
+        %currentMiscllTime.6 = local;
+        %tmp.84 = getv ? :DataManager;
+        %tmp.85 = getv function %tmp.84 :getMiscllTime;
+        %tmp.86 = invoke %tmp.84 %tmp.85();
+        lputv %currentMiscllTime.6 %tmp.86;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 78 4 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_78_4_78_60_if_stmt:
+        %tmp.88 = lgetv %currentMiscllTime.6;
+        %tmp.89 = null;
+        %tmp.90 = eq %tmp.88 %tmp.89;
+        bf %tmp.90 @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_78_4_78_60_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_78_4_78_60_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_78_35_78_60_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 78 37 ]
+        %tmp.91 = 0;
+        lputv %currentMiscllTime.6 %tmp.91;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_78_35_78_60_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_78_4_78_60_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_78_4_78_60_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 79 4 ]
+        %tmp.93 = getv ? :DataManager;
+        %tmp.94 = getv function %tmp.93 :setMiscllTime;
+        %tmp.96 = lgetv %currentMiscllTime.6;
+        %tmp.98 = lgetv %elapsedTime.1;
+        %tmp.99 = add %tmp.96 %tmp.98;
+        invoke %tmp.93 %tmp.94(%tmp.99);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_20_81_0_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_5_81_0_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_76_5_81_0_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_69_5_81_0_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_62_5_81_0_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_55_0_81_0_if_end:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 84 4 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_start" "D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_stop" ]
+        %totalTime.7 = local;
+        %tmp.101 = getv ? :DataManager;
+        %tmp.102 = getv function %tmp.101 :getTotalMinutesInvested;
+        %tmp.103 = invoke %tmp.101 %tmp.102();
+        lputv %totalTime.7 %tmp.103;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 85 4 ]
+        %tmp.105 = getv ? :DataManager;
+        %tmp.106 = getv function %tmp.105 :setTotalMinutesInvested;
+        %tmp.108 = lgetv %totalTime.7;
+        %tmp.110 = lgetv %elapsedTime.1;
+        %tmp.111 = add %tmp.108 %tmp.110;
+        invoke %tmp.105 %tmp.106(%tmp.111);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 87 4 ]
+        %tmp.113 = getv ? :DataManager;
+        %tmp.114 = getv function %tmp.113 :logSession;
+        %tmp.116 = lgetv %mode.2;
+        %tmp.118 = lgetv %elapsedTime.1;
+        invoke %tmp.113 %tmp.114(%tmp.116, %tmp.118);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 89 4 ]
+        %tmp.120 = getv ? :_view;
+        %tmp.121 = getv function %tmp.120 :setTimer;
+        %tmp.123 = getv ? :DataManager;
+        %tmp.124 = getv function %tmp.123 :getTimerDuration;
+        %tmp.125 = invoke %tmp.123 %tmp.124();
+        invoke %tmp.120 %tmp.121(%tmp.125);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 90 4 ]
+        %tmp.127 = getv ? :_view;
+        %tmp.128 = getv function %tmp.127 :setElapsedTime;
+        %tmp.130 = getv ? :DataManager;
+        %tmp.131 = getv function %tmp.130 :getTotalMinutesInvested;
+        %tmp.132 = invoke %tmp.130 %tmp.131();
+        invoke %tmp.127 %tmp.128(%tmp.132);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc" 91 4 ]
+        %tmp.134 = getv ? :DataManager;
+        %tmp.135 = getv function %tmp.134 :setCurrentTimer;
+        %tmp.137 = getv ? :DataManager;
+        %tmp.138 = getv function %tmp.137 :getTimerDuration;
+        %tmp.139 = invoke %tmp.137 %tmp.138();
+        invoke %tmp.134 %tmp.135(%tmp.139);
+D_Pulkit_Coding_Garmin_Garmin_source_TimerPausedMenuDelegate_mc_42_35_95_0_stop:
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimerPausedMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

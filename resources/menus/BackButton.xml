@@ -1,0 +1,5 @@
+<menu id="TimerPausedMenu">
+    <menu-item id="resume" label="Resume Session" />
+    <menu-item id="discard" label="Discard Session" />
+    <menu-item id="save" label="Save Session" />
+</menu>

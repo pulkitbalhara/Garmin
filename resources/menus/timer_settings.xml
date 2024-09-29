@@ -1,0 +1,5 @@
+<menu id="TimerSettingsMenu">
+    <menu-item id="timer_30" label="30 minutes" />
+    <menu-item id="timer_45" label="45 minutes" />
+    <menu-item id="timer_60" label="60 minutes" />
+</menu>

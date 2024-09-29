@@ -1,0 +1,289 @@
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 1; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 2; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 3; ]
+using Toybox.System;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 4; ]
+import Toybox.Lang;
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 6; ]
+class SummaryView extends Ui.View{
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 7; @position = 15; ]
+    protected
+    var _totalTimeLabel;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 8; @position = 15; ]
+    protected
+    var _workTimeLabel;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 9; @position = 15; ]
+    protected
+    var _outdoorTimeLabel;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 10; @position = 15; ]
+    protected
+    var _learningTimeLabel;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 11; @position = 15; ]
+    protected
+    var _miscllTimeLabel;
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 13; ]
+    function initialize() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_13_26_16_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 14 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 15 8 ]
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.6 = "SummaryView.mc --- SummaryView initialized";
+        invoke %tmp.4 %tmp.5(%tmp.6);
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_13_26_16_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 18; ]
+    function onLayout(dc as Gfx.Dc) as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_18_44_32_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 19 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "SummaryView.mc --- onLayout triggered";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 22 8 ]
+        %tmp.4 = self;
+        %tmp.5 = getv function %tmp.4 :setLayout;
+        %tmp.7 = getv ? :Rez;
+        %tmp.8 = getv %tmp.7 :Layouts;
+        %tmp.9 = getv function %tmp.8 :SummaryLayout;
+        %tmp.11 = lgetv %dc;
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        invoke %tmp.4 %tmp.5(%tmp.12);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 25 8 ]
+        %tmp.13 = self;
+        %tmp.14 = getv function %tmp.13 :findDrawableById;
+        %tmp.15 = "total_time_label";
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        putv self :_totalTimeLabel %tmp.16;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 26 8 ]
+        %tmp.17 = self;
+        %tmp.18 = getv function %tmp.17 :findDrawableById;
+        %tmp.19 = "work_time_label";
+        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+        putv self :_workTimeLabel %tmp.20;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 27 8 ]
+        %tmp.21 = self;
+        %tmp.22 = getv function %tmp.21 :findDrawableById;
+        %tmp.23 = "outdoor_time_label";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        putv self :_outdoorTimeLabel %tmp.24;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 28 8 ]
+        %tmp.25 = self;
+        %tmp.26 = getv function %tmp.25 :findDrawableById;
+        %tmp.27 = "learning_time_label";
+        %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
+        putv self :_learningTimeLabel %tmp.28;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 29 8 ]
+        %tmp.29 = self;
+        %tmp.30 = getv function %tmp.29 :findDrawableById;
+        %tmp.31 = "miscll_time_label";
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        putv self :_miscllTimeLabel %tmp.32;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 31 8 ]
+        %tmp.33 = self;
+        %tmp.34 = getv function %tmp.33 :updateSummary;
+        invoke %tmp.33 %tmp.34();
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_18_44_32_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 34; ]
+    function onShow() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_34_30_37_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 35 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "SummaryView.mc --- View shown";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 36 8 ]
+        %tmp.5 = getv ? :View;
+        %tmp.6 = getv function %tmp.5 :onShow;
+        invoke %tmp.5 %tmp.6();
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_34_30_37_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 39; ]
+    function onHide() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_39_30_42_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 40 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "SummaryView.mc --- View hidden";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 41 8 ]
+        %tmp.5 = getv ? :View;
+        %tmp.6 = getv function %tmp.5 :onHide;
+        invoke %tmp.5 %tmp.6();
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_39_30_42_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 45; ]
+    function convertMinutesToHoursMinutes(minutes as Number) as String {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_45_71_49_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 46 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_45_71_49_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_45_71_49_4_stop" ]
+        %hours.1 = local;
+        %tmp.2 = lgetv %minutes;
+        %tmp.3 = 60;
+        %tmp.4 = div %tmp.2 %tmp.3;
+        lputv %hours.1 %tmp.4;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 47 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_45_71_49_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_45_71_49_4_stop" ]
+        %remainingMinutes.2 = local;
+        %tmp.6 = lgetv %minutes;
+        %tmp.7 = 60;
+        %tmp.8 = mod %tmp.6 %tmp.7;
+        lputv %remainingMinutes.2 %tmp.8;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 48 8 ]
+        %tmp.9 = lgetv %hours.1;
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "%02d";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        %tmp.13 = ":";
+        %tmp.14 = add %tmp.12 %tmp.13;
+        %tmp.15 = lgetv %remainingMinutes.2;
+        %tmp.16 = getv function %tmp.15 :format;
+        %tmp.17 = "%02d";
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        %tmp.19 = add %tmp.14 %tmp.18;
+        ret %tmp.19;
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_45_71_49_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 52; ]
+    function updateSummary() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 54 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_stop" ]
+        %totalMinutesInvested.1 = local;
+        %tmp.2 = getv ? :DataManager;
+        %tmp.3 = getv function %tmp.2 :getTotalMinutesInvested;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %totalMinutesInvested.1 %tmp.4;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 55 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_stop" ]
+        %workTime.2 = local;
+        %tmp.6 = getv ? :DataManager;
+        %tmp.7 = getv function %tmp.6 :getWorkTime;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %workTime.2 %tmp.8;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 56 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_stop" ]
+        %outdoorTime.3 = local;
+        %tmp.10 = getv ? :DataManager;
+        %tmp.11 = getv function %tmp.10 :getOutdoorTime;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        lputv %outdoorTime.3 %tmp.12;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 57 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_stop" ]
+        %learningTime.4 = local;
+        %tmp.14 = getv ? :DataManager;
+        %tmp.15 = getv function %tmp.14 :getLearningTime;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %learningTime.4 %tmp.16;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 58 8 ]
+        [ "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_start" "D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_stop" ]
+        %miscllTime.5 = local;
+        %tmp.18 = getv ? :DataManager;
+        %tmp.19 = getv function %tmp.18 :getMiscllTime;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %miscllTime.5 %tmp.20;
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 61 8 ]
+        %tmp.22 = getv ? :_totalTimeLabel;
+        %tmp.23 = getv function %tmp.22 :setText;
+        %tmp.24 = "Total Time: ";
+        %tmp.25 = self;
+        %tmp.26 = getv function %tmp.25 :convertMinutesToHoursMinutes;
+        %tmp.28 = lgetv %totalMinutesInvested.1;
+        %tmp.29 = invoke %tmp.25 %tmp.26(%tmp.28);
+        %tmp.30 = add %tmp.24 %tmp.29;
+        invoke %tmp.22 %tmp.23(%tmp.30);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 62 8 ]
+        %tmp.32 = getv ? :_workTimeLabel;
+        %tmp.33 = getv function %tmp.32 :setText;
+        %tmp.34 = "Work Time: ";
+        %tmp.35 = self;
+        %tmp.36 = getv function %tmp.35 :convertMinutesToHoursMinutes;
+        %tmp.38 = lgetv %workTime.2;
+        %tmp.39 = invoke %tmp.35 %tmp.36(%tmp.38);
+        %tmp.40 = add %tmp.34 %tmp.39;
+        invoke %tmp.32 %tmp.33(%tmp.40);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 63 8 ]
+        %tmp.42 = getv ? :_outdoorTimeLabel;
+        %tmp.43 = getv function %tmp.42 :setText;
+        %tmp.44 = "Outdoor Time: ";
+        %tmp.45 = self;
+        %tmp.46 = getv function %tmp.45 :convertMinutesToHoursMinutes;
+        %tmp.48 = lgetv %outdoorTime.3;
+        %tmp.49 = invoke %tmp.45 %tmp.46(%tmp.48);
+        %tmp.50 = add %tmp.44 %tmp.49;
+        invoke %tmp.42 %tmp.43(%tmp.50);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 64 8 ]
+        %tmp.52 = getv ? :_learningTimeLabel;
+        %tmp.53 = getv function %tmp.52 :setText;
+        %tmp.54 = "Learning Time: ";
+        %tmp.55 = self;
+        %tmp.56 = getv function %tmp.55 :convertMinutesToHoursMinutes;
+        %tmp.58 = lgetv %learningTime.4;
+        %tmp.59 = invoke %tmp.55 %tmp.56(%tmp.58);
+        %tmp.60 = add %tmp.54 %tmp.59;
+        invoke %tmp.52 %tmp.53(%tmp.60);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 65 8 ]
+        %tmp.62 = getv ? :_miscllTimeLabel;
+        %tmp.63 = getv function %tmp.62 :setText;
+        %tmp.64 = "Miscellaneous Time: ";
+        %tmp.65 = self;
+        %tmp.66 = getv function %tmp.65 :convertMinutesToHoursMinutes;
+        %tmp.68 = lgetv %miscllTime.5;
+        %tmp.69 = invoke %tmp.65 %tmp.66(%tmp.68);
+        %tmp.70 = add %tmp.64 %tmp.69;
+        invoke %tmp.62 %tmp.63(%tmp.70);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 68 8 ]
+        %tmp.72 = getv ? :WatchUi;
+        %tmp.73 = getv function %tmp.72 :requestUpdate;
+        invoke %tmp.72 %tmp.73();
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_52_37_69_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 71; ]
+    function onBack() as Boolean {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_71_33_76_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 72 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "SummaryView.mc --- Back button pressed, returning to previous menu";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 74 8 ]
+        %tmp.4 = getm $.Toybox.WatchUi;
+        %tmp.5 = getv function %tmp.4 :popView;
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv %tmp.6 :SLIDE_DOWN;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 75 8 ]
+        %tmp.8 = true;
+        ret %tmp.8;
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_71_33_76_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 78; ]
+    function onSelect() as Boolean {
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_78_35_82_4_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 80 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "SummaryView.mc --- Select button pressed";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc" 81 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+D_Pulkit_Coding_Garmin_Garmin_source_SummaryView_mc_78_35_82_4_stop:
+    }
+}
+[ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\SummaryView.mc"; @line = 1; ]
+<init> {
+}

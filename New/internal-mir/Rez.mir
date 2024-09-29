@@ -1,0 +1,353 @@
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 12; ]
+    module Layouts {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 13; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 14 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_start" "d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_stop" ]
+            %rez_cmp_local_text_mode_label.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 7;
+            %tmp.7 = const :identifier;
+            %tmp.8 = "mode_label";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            %tmp.13 = getm $.Toybox.Graphics;
+            %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            %tmp.19 = 240;
+            %tmp.20 = 0.5;
+            %tmp.21 = mul %tmp.19 %tmp.20;
+            %tmp.22 = dup %tmp.16;
+            %tmp.23 = aputv %tmp.22 %tmp.18 %tmp.21;
+            %tmp.25 = const :locY;
+            %tmp.26 = 5;
+            %tmp.27 = dup %tmp.23;
+            %tmp.28 = aputv %tmp.27 %tmp.25 %tmp.26;
+            %tmp.30 = const :text;
+            %tmp.31 = "Work";
+            %tmp.32 = dup %tmp.28;
+            %tmp.33 = aputv %tmp.32 %tmp.30 %tmp.31;
+            %tmp.35 = const :justification;
+            %tmp.36 = getm $.Toybox.Graphics;
+            %tmp.37 = getv %tmp.36 :TEXT_JUSTIFY_CENTER;
+            %tmp.38 = dup %tmp.33;
+            %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
+            %tmp.41 = const :font;
+            %tmp.42 = getm $.Toybox.Graphics;
+            %tmp.43 = getv %tmp.42 :FONT_MEDIUM;
+            %tmp.44 = dup %tmp.39;
+            %tmp.45 = aputv %tmp.44 %tmp.41 %tmp.43;
+            %tmp.1 = newc %tmp.4 (%tmp.45);
+            lputv %rez_cmp_local_text_mode_label.1 %tmp.1;
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 16 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_start" "d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_stop" ]
+            %rez_cmp_local_text_timer_label.2 = local;
+            %tmp.48 = getm $.Toybox.WatchUi;
+            %tmp.49 = getv function ? %tmp.48 :Text;
+            %tmp.50 = newd 7;
+            %tmp.52 = const :identifier;
+            %tmp.53 = "timer_label";
+            %tmp.54 = dup %tmp.50;
+            %tmp.55 = aputv %tmp.54 %tmp.52 %tmp.53;
+            %tmp.57 = const :color;
+            %tmp.58 = getm $.Toybox.Graphics;
+            %tmp.59 = getv %tmp.58 :COLOR_YELLOW;
+            %tmp.60 = dup %tmp.55;
+            %tmp.61 = aputv %tmp.60 %tmp.57 %tmp.59;
+            %tmp.63 = const :locX;
+            %tmp.64 = 240;
+            %tmp.65 = 0.5;
+            %tmp.66 = mul %tmp.64 %tmp.65;
+            %tmp.67 = dup %tmp.61;
+            %tmp.68 = aputv %tmp.67 %tmp.63 %tmp.66;
+            %tmp.70 = const :locY;
+            %tmp.71 = 50;
+            %tmp.72 = dup %tmp.68;
+            %tmp.73 = aputv %tmp.72 %tmp.70 %tmp.71;
+            %tmp.75 = const :text;
+            %tmp.76 = "30:00";
+            %tmp.77 = dup %tmp.73;
+            %tmp.78 = aputv %tmp.77 %tmp.75 %tmp.76;
+            %tmp.80 = const :justification;
+            %tmp.81 = getm $.Toybox.Graphics;
+            %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_CENTER;
+            %tmp.83 = dup %tmp.78;
+            %tmp.84 = aputv %tmp.83 %tmp.80 %tmp.82;
+            %tmp.86 = const :font;
+            %tmp.87 = getm $.Toybox.Graphics;
+            %tmp.88 = getv %tmp.87 :FONT_MEDIUM;
+            %tmp.89 = dup %tmp.84;
+            %tmp.90 = aputv %tmp.89 %tmp.86 %tmp.88;
+            %tmp.46 = newc %tmp.49 (%tmp.90);
+            lputv %rez_cmp_local_text_timer_label.2 %tmp.46;
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 18 12 ]
+            [ "d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_start" "d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_stop" ]
+            %rez_cmp_local_text_elapsed_label.3 = local;
+            %tmp.93 = getm $.Toybox.WatchUi;
+            %tmp.94 = getv function ? %tmp.93 :Text;
+            %tmp.95 = newd 7;
+            %tmp.97 = const :identifier;
+            %tmp.98 = "elapsed_label";
+            %tmp.99 = dup %tmp.95;
+            %tmp.100 = aputv %tmp.99 %tmp.97 %tmp.98;
+            %tmp.102 = const :color;
+            %tmp.103 = getm $.Toybox.Graphics;
+            %tmp.104 = getv %tmp.103 :COLOR_LT_GRAY;
+            %tmp.105 = dup %tmp.100;
+            %tmp.106 = aputv %tmp.105 %tmp.102 %tmp.104;
+            %tmp.108 = const :locX;
+            %tmp.109 = 240;
+            %tmp.110 = 0.5;
+            %tmp.111 = mul %tmp.109 %tmp.110;
+            %tmp.112 = dup %tmp.106;
+            %tmp.113 = aputv %tmp.112 %tmp.108 %tmp.111;
+            %tmp.115 = const :locY;
+            %tmp.116 = 120;
+            %tmp.117 = dup %tmp.113;
+            %tmp.118 = aputv %tmp.117 %tmp.115 %tmp.116;
+            %tmp.120 = const :text;
+            %tmp.121 = "0.0 hours";
+            %tmp.122 = dup %tmp.118;
+            %tmp.123 = aputv %tmp.122 %tmp.120 %tmp.121;
+            %tmp.125 = const :justification;
+            %tmp.126 = getm $.Toybox.Graphics;
+            %tmp.127 = getv %tmp.126 :TEXT_JUSTIFY_CENTER;
+            %tmp.128 = dup %tmp.123;
+            %tmp.129 = aputv %tmp.128 %tmp.125 %tmp.127;
+            %tmp.131 = const :font;
+            %tmp.132 = getm $.Toybox.Graphics;
+            %tmp.133 = getv %tmp.132 :FONT_MEDIUM;
+            %tmp.134 = dup %tmp.129;
+            %tmp.135 = aputv %tmp.134 %tmp.131 %tmp.133;
+            %tmp.91 = newc %tmp.94 (%tmp.135);
+            lputv %rez_cmp_local_text_elapsed_label.3 %tmp.91;
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 20 12 ]
+            %tmp.136 = newa 3 Array<WatchUi.Drawable>;
+            %tmp.138 = lgetv %rez_cmp_local_text_mode_label.1;
+            %tmp.139 = dup %tmp.136;
+            %tmp.140 = aputv %tmp.139 0 %tmp.138;
+            %tmp.142 = lgetv %rez_cmp_local_text_timer_label.2;
+            %tmp.143 = dup %tmp.140;
+            %tmp.144 = aputv %tmp.143 1 %tmp.142;
+            %tmp.146 = lgetv %rez_cmp_local_text_elapsed_label.3;
+            %tmp.147 = dup %tmp.144;
+            %tmp.148 = aputv %tmp.147 2 %tmp.146;
+            ret %tmp.148;
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_13_74_21_8_stop:
+        }
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 24; ]
+    module Menus {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 25; ]
+        class TimerPausedMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 25; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 25; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 26; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_26_34_31_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 27 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 28 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "Resume Session";
+                %tmp.8 = const :resume;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 29 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "Discard Session";
+                %tmp.13 = const :discard;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 30 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "Save Session";
+                %tmp.18 = const :save;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_26_34_31_12_stop:
+            }
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 34; ]
+        class MainMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 34; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 34; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 35; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_35_34_40_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 36 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 37 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "Start Session";
+                %tmp.8 = const :item_1;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 38 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "Settings";
+                %tmp.13 = const :item_2;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 39 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "Change Mode";
+                %tmp.18 = const :item_3;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_35_34_40_12_stop:
+            }
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 43; ]
+        class ModeMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 43; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 43; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 44; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_44_34_50_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 45 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 46 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "Work";
+                %tmp.8 = const :mode_1;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 47 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "Outdoor";
+                %tmp.13 = const :mode_2;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 48 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "Learning";
+                %tmp.18 = const :mode_3;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 49 16 ]
+                %tmp.19 = self;
+                %tmp.20 = getv function %tmp.19 :addItem;
+                %tmp.21 = "Miscellaneous";
+                %tmp.23 = const :mode_4;
+                invoke %tmp.19 %tmp.20(%tmp.21, %tmp.23);
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_44_34_50_12_stop:
+            }
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 53; ]
+        class TimerSettingsMenu extends WatchUi.Menu{
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 53; ]
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 53; ]
+            static
+            <init> {
+            }
+            [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 54; ]
+            function initialize() as Void {
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_54_34_59_12_start:
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 55 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 56 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = "30 minutes";
+                %tmp.8 = const :timer_30;
+                invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 57 16 ]
+                %tmp.9 = self;
+                %tmp.10 = getv function %tmp.9 :addItem;
+                %tmp.11 = "45 minutes";
+                %tmp.13 = const :timer_45;
+                invoke %tmp.9 %tmp.10(%tmp.11, %tmp.13);
+[ "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen" 58 16 ]
+                %tmp.14 = self;
+                %tmp.15 = getv function %tmp.14 :addItem;
+                %tmp.16 = "60 minutes";
+                %tmp.18 = const :timer_60;
+                invoke %tmp.14 %tmp.15(%tmp.16, %tmp.18);
+d_Pulkit_Coding_Garmin_Garmin_New_gen_006_B3600_00_source_Rez_mcgen_54_34_59_12_stop:
+            }
+        }
+    }
+    [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 63; ]
+    module Strings {
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 63; ]
+        <init> {
+        }
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 64; @position = 27; initialized = true; ]
+        var mode_misc as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 65; @position = 27; initialized = true; ]
+        var timer_default as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 66; @position = 27; initialized = true; ]
+        var elapsed_time as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 67; @position = 27; initialized = true; ]
+        var mode_outdoor as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 68; @position = 27; initialized = true; ]
+        var prompt as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 69; @position = 27; initialized = true; ]
+        var mode_work as ResourceId;
+        [ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 70; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+    }
+}
+[ @file = "d:\Pulkit\Coding\Garmin\Garmin\New\gen\006-B3600-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

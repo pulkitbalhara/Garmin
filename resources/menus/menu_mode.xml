@@ -1,0 +1,6 @@
+<menu id="ModeMenu">
+    <menu-item id="mode_1" label="Work" />
+    <menu-item id="mode_2" label="Outdoor" />
+    <menu-item id="mode_3" label="Learning" />
+    <menu-item id="mode_4" label="Miscellaneous" />
+</menu>

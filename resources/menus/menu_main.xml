@@ -1,0 +1,13 @@
+<menu id="MainMenu">
+    <menu-item id="item_1" label="Start Session" />
+     <menu-item id="item_0" label="Bkground(Cmng Soon)" />
+    <menu-item id="item_2" label="Exit" />
+    <menu-item id="item_3" label="Change Mode" />  <!-- New option -->
+    <menu-item id="item_4" label="Settings" />
+    <menu-item id="item_5" label="Summary" />
+    <menu-item id="item_6" label="Reset Daily Log" />
+    <menu-item id="item_7" label="Reset All Data" />
+
+</menu>
+
+
