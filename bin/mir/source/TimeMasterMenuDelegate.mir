@@ -30,23 +30,23 @@ D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_8_30_11_4_stop:
     }
     [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 13; ]
     function onMenuItem(item as Symbol) as Void {
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_48_25_4_start:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_48_40_4_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 16 8 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_24_8_if_stmt:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_37_7_if_stmt:
         %tmp.2 = lgetv %item;
         %tmp.4 = const :item_1;
         %tmp.5 = eq %tmp.2 %tmp.4;
-        bf %tmp.5 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_24_8_if_false;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_24_8_if_true:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_24_8_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_24_8_if_false:
+        bf %tmp.5 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_37_7_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_37_7_if_true:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_37_7_if_false:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 18 15 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_24_8_if_stmt:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_37_7_if_stmt:
         %tmp.7 = lgetv %item;
-        %tmp.9 = const :item_2;
+        %tmp.9 = const :item_4;
         %tmp.10 = eq %tmp.7 %tmp.9;
-        bf %tmp.10 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_24_8_if_false;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_24_8_if_true:
+        bf %tmp.10 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_37_7_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_37_7_if_true:
 D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_36_21_8_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 20 12 ]
         %tmp.11 = getm $.Toybox.WatchUi;
@@ -62,15 +62,15 @@ D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_36_21_8_start:
         %tmp.26 = getv %tmp.25 :SLIDE_UP;
         invoke %tmp.11 %tmp.12(%tmp.13, %tmp.19, %tmp.26);
 D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_36_21_8_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_24_8_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_24_8_if_false:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_37_7_if_false:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 21 15 ]
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_24_8_if_stmt:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_37_7_if_stmt:
         %tmp.28 = lgetv %item;
         %tmp.30 = const :item_3;
         %tmp.31 = eq %tmp.28 %tmp.30;
-        bf %tmp.31 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_24_8_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_24_8_if_true:
+        bf %tmp.31 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_37_7_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_37_7_if_true:
 D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_36_24_8_start:
 [ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 23 12 ]
         %tmp.32 = getm $.Toybox.WatchUi;
@@ -86,11 +86,140 @@ D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_36_24_8_start:
         %tmp.47 = getv %tmp.46 :SLIDE_UP;
         invoke %tmp.32 %tmp.33(%tmp.34, %tmp.40, %tmp.47);
 D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_36_24_8_stop:
-        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_24_8_if_end;
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_24_8_if_end:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_24_8_if_end:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_24_8_if_end:
-D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_48_25_4_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_37_7_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 24 14 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_14_37_7_if_stmt:
+        %tmp.49 = lgetv %item;
+        %tmp.51 = const :item_2;
+        %tmp.52 = eq %tmp.49 %tmp.51;
+        bf %tmp.52 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_14_37_7_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_14_37_7_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_35_27_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 26 12 ]
+        %tmp.53 = getm $.Toybox.WatchUi;
+        %tmp.54 = getv function %tmp.53 :popView;
+        %tmp.55 = getm $.Toybox.WatchUi;
+        %tmp.56 = getv %tmp.55 :SLIDE_IMMEDIATE;
+        invoke %tmp.53 %tmp.54(%tmp.56);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_35_27_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_14_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_14_37_7_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 27 14 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_14_37_7_if_stmt:
+        %tmp.58 = lgetv %item;
+        %tmp.60 = const :item_5;
+        %tmp.61 = eq %tmp.58 %tmp.60;
+        bf %tmp.61 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_14_37_7_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_14_37_7_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_35_31_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 29 8 ]
+        %tmp.62 = getm $.Toybox.WatchUi;
+        %tmp.63 = getv function %tmp.62 :pushView;
+        %tmp.67 = getv ? :SummaryView;
+        %tmp.64 = newc %tmp.67 ();
+        %tmp.68 = null;
+        %tmp.69 = getm $.Toybox.WatchUi;
+        %tmp.70 = getv %tmp.69 :SLIDE_UP;
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.68, %tmp.70);
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_35_31_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_14_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_14_37_7_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 31 14 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_14_37_7_if_stmt:
+        %tmp.72 = lgetv %item;
+        %tmp.74 = const :item_6;
+        %tmp.75 = eq %tmp.72 %tmp.74;
+        bf %tmp.75 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_14_37_7_if_false;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_14_37_7_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_35_34_8_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 33 8 ]
+        %tmp.76 = self;
+        %tmp.77 = getv function %tmp.76 :resetDailyLog;
+        invoke %tmp.76 %tmp.77();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_35_34_8_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_14_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_14_37_7_if_false:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 34 15 ]
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_34_15_37_7_if_stmt:
+        %tmp.79 = lgetv %item;
+        %tmp.81 = const :item_7;
+        %tmp.82 = eq %tmp.79 %tmp.81;
+        bf %tmp.82 @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_34_15_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_34_15_37_7_if_true:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_34_36_37_7_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 36 8 ]
+        %tmp.83 = self;
+        %tmp.84 = getv function %tmp.83 :resetAllData;
+        invoke %tmp.83 %tmp.84();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_34_36_37_7_stop:
+        goto @D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_34_15_37_7_if_end;
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_34_15_37_7_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_31_14_37_7_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_27_14_37_7_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_24_14_37_7_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_21_15_37_7_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_18_15_37_7_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_16_8_37_7_if_end:
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_13_48_40_4_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 42; ]
+    function resetDailyLog() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_42_37_53_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 43 4 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager --- Resetting Daily Log";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 46 4 ]
+        %tmp.5 = getv ? :DataManager;
+        %tmp.6 = getv function %tmp.5 :setTotalMinutesInvested;
+        %tmp.7 = 0;
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 52 4 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :requestUpdate;
+        invoke %tmp.8 %tmp.9();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_42_37_53_0_stop:
+    }
+    [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 55; ]
+    function resetAllData() as Void {
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_55_32_70_0_start:
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 56 4 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "DataManager --- Resetting All Data";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 59 4 ]
+        %tmp.5 = getv ? :DataManager;
+        %tmp.6 = getv function %tmp.5 :setWorkTime;
+        %tmp.7 = 0;
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 60 4 ]
+        %tmp.9 = getv ? :DataManager;
+        %tmp.10 = getv function %tmp.9 :setOutdoorTime;
+        %tmp.11 = 0;
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 61 4 ]
+        %tmp.13 = getv ? :DataManager;
+        %tmp.14 = getv function %tmp.13 :setLearningTime;
+        %tmp.15 = 0;
+        invoke %tmp.13 %tmp.14(%tmp.15);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 62 4 ]
+        %tmp.17 = getv ? :DataManager;
+        %tmp.18 = getv function %tmp.17 :setMiscllTime;
+        %tmp.19 = 0;
+        invoke %tmp.17 %tmp.18(%tmp.19);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 63 4 ]
+        %tmp.21 = getv ? :DataManager;
+        %tmp.22 = getv function %tmp.21 :setTotalMinutesInvested;
+        %tmp.23 = 0;
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc" 69 4 ]
+        %tmp.24 = getm $.Toybox.WatchUi;
+        %tmp.25 = getv function %tmp.24 :requestUpdate;
+        invoke %tmp.24 %tmp.25();
+D_Pulkit_Coding_Garmin_Garmin_source_TimeMasterMenuDelegate_mc_55_32_70_0_stop:
     }
 }
 [ @file = "D:\Pulkit\Coding\Garmin\Garmin\source\TimeMasterMenuDelegate.mc"; @line = 1; ]

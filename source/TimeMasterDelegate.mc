@@ -35,6 +35,13 @@ function onBack() as Boolean {
         return true;
     }
 
+    if (time_started) {
+        System.println("TimeMasterDelegate --- Timer is running, pausing timer and showing options");
+        pauseCountdown();  // Pause the timer
+        WatchUi.pushView(new Rez.Menus.TimerPausedMenu(), new TimerPausedMenuDelegate(_view), WatchUi.SLIDE_UP);
+        return true;  // Do not exit the app
+    }
+
     return false;
 }
 
@@ -55,6 +62,7 @@ function onBack() as Boolean {
     time_started = true;
     paused = false;
     _timer = new Timer.Timer();
+    _view.setStatus("Timer Running", Graphics.COLOR_GREEN);
     _timer.start(method(:countdown), 1000, true);  // Call countdown every second
 }
 
@@ -62,6 +70,7 @@ function onBack() as Boolean {
         //.println("TimeMasterDelegate.mc --- Pausing countdown");
         time_started = false;
         paused = true;
+        _view.setStatus("Timer Paused", Graphics.COLOR_RED); 
         _timer.stop();  // Stop the timer
         pausedDuration = _currentDuration;  // Save the current duration
         DataManager.setCurrentTimer(_currentDuration);
@@ -72,6 +81,7 @@ function onBack() as Boolean {
     _currentDuration = DataManager.getCurrentTimer();
     time_started = true;
     paused = false;
+    _view.setStatus("Timer Running", Graphics.COLOR_GREEN);
     _timer.start(method(:countdown), 1000, true);  // Resume the countdown
     updateUI();  // Ensure UI is updated after resuming
 }
@@ -92,6 +102,7 @@ function onBack() as Boolean {
     AlertsManager.triggerDefaultAlert();
     //.println("TimeMasterDelegate.mc --- Session ended");
     time_started = false;
+    _view.setStatus("Timer Ended", Graphics.COLOR_WHITE);
     _timer.stop();  // Stop the timer
 
     // Get the elapsed time for the session and convert to minutes
@@ -137,7 +148,7 @@ function onBack() as Boolean {
         var mode = DataManager.getMode();
         _view.setModeType(mode);  // Use _view to set mode
         _view.setTimer(_currentDuration);  // Update timer in view
-        _view.setElapsedTime(_elapsedTime);  // Update elapsed time in view
+        _view.setElapsedTime(DataManager.getTotalMinutesInvested());  // Update elapsed time in view
         WatchUi.requestUpdate();  // Request an update to redraw the UI
     }
 

@@ -31,13 +31,13 @@ class DataManager {
     // Fetches the total invested time
     static function getTotalMinutesInvested() as Number {
         //System.println("DataManager.mc --- Fetching TotalMinutesInvested from Properties");
-        return Application.Properties.getValue("TotalMinutesInvested");
+        return Application.Storage.getValue("TotalMinutesInvested");
     }
 
     // Saves the total invested time
     static function setTotalMinutesInvested(minutes as Number) as Void {
         //System.println("DataManager.mc --- Saving TotalMinutesInvested to Properties: " + minutes);
-        Application.Properties.setValue("TotalMinutesInvested", minutes);
+        Application.Storage.setValue("TotalMinutesInvested", minutes);
     }
 
 
@@ -89,6 +89,14 @@ class DataManager {
     }
 
    static function initializeData() as Void {
+    var minutesDaily = DataManager.getTotalMinutesInvested();
+    if (minutesDaily == null) {
+        //System.println("initializeData.mc --- TimerDuration is null, setting default to 1800");
+        DataManager.setTotalMinutesInvested(0);  // Default to 1800 seconds (30 minutes)
+    } else {
+        //System.println("initializeData.mc --- TimerDuration found: " + timerDuration);
+    }
+
     // Check and initialize TimerDuration
     var timerDuration = DataManager.getTimerDuration();
     if (timerDuration == null) {

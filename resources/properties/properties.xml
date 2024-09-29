@@ -1,6 +1,6 @@
 <properties>
     <property id="TotalMinutesInvested" type="Number">0</property>
-    <property id="CurrentTimer" type="Number">1800</property>  <!-- Initialize to 30 minutes -->
+    <property id="CurrentTimer" type="Number">10</property>  <!-- Initialize to 30 minutes -->
     <property id="Mode" type="Number">1</property>  <!-- Mode initialized to Work -->
       <!-- TimerDuration added -->
 </properties>

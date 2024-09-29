@@ -11,6 +11,7 @@ class TimeMasterView extends WatchUi.View {
     var _mode_label; 
     var _timer_label;
     var _elapsed_label;
+    var _status_label;
 
     function initialize() {
         View.initialize();
@@ -22,7 +23,7 @@ class TimeMasterView extends WatchUi.View {
         _mode_label = findDrawableById("mode_label");
         _timer_label = findDrawableById("timer_label");  // Retrieve timer label
         _elapsed_label = findDrawableById("elapsed_label");  // Retrieve elapsed label
-        
+        _status_label = findDrawableById("status_label");
        // System.println("TimeMasterView.mc --- Layout set, labels loaded");
         setModeType(1);  // Example: Set mode to Outdoor
         setTimer(DataManager.getCurrentTimer());  // Example: Set timer to 30:00 (1800 seconds)
@@ -87,5 +88,10 @@ class TimeMasterView extends WatchUi.View {
         WatchUi.requestUpdate();  // Refresh the UI to reflect the change
     }
 
-    
+    function setStatus(status as String, color as Number) as Void {
+    _status_label.setText(status);
+    _status_label.setColor(color);
+    WatchUi.requestUpdate();
+}
+
 }

@@ -1,5 +1,13 @@
 <layout id="MainLayout">
-    <label id="mode_label" x="center" y="5" text="Work" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="timer_label" x="center" y="50" text="30:00" color="Graphics.COLOR_YELLOW" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="elapsed_label" x="center" y="120" text="0.0 hours" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <!-- Mode Label (Work/Outdoor etc.) -->
+    <label id="mode_label" x="center" y="20%" text="Work" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_LARGE"/>
+
+    <!-- Status Label (Running/Paused/Ended) positioned between mode and timer -->
+    <label id="status_label" x="center" y="40%" text=" " color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM"/>
+
+    <!-- Timer Label -->
+    <label id="timer_label" x="center" y="70%" text="" color="Graphics.COLOR_YELLOW" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_LARGE" />
+
+    <!-- Elapsed Time Label positioned at the bottom -->
+    <label id="elapsed_label" x="center" y="bottom" text="" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" />
 </layout>
